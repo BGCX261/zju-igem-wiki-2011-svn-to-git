@@ -1,0 +1,275 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Protocol</title>
+<link href='http://fonts.googleapis.com/css?family=Molengo'
+	rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Hammersmith+One'
+	rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Alice'
+	rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Ovo' rel='stylesheet'
+	type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Federo'
+	rel='stylesheet' type='text/css'>
+
+<link href="modeling.css" rel="stylesheet" type="text/css">
+
+<link href="global.css" rel="stylesheet" type="text/css">
+
+<link href="template2.css" rel="stylesheet" type="text/css"><!-- include the Tools -->
+<script src="http://cdn.jquerytools.org/1.2.6/full/jquery.tools.min.js"></script>
+
+<style type="text/css">
+</style>
+</head>
+
+<body>
+<div class="global">
+
+<div id=top2></div>
+
+<div class="header">
+<div class="bgimg"></div>
+<div class="bgpart1"></div>
+<div class="bgpart2"></div>
+
+
+<div class="banner">
+<div class="logo"><img
+	src="http://2011.igem.org/wiki/images/c/c9/Logo.png" width="200"
+	height="200" /></div>
+<div class="title"><img
+	src="http://ung.igem.org/wiki/images/b/b3/Title.png" width="603"
+	height="220" /></div>
+<div class="igemlogo"><a target="_blank"
+	href="http://2011.igem.org"><img
+	src="http://2011.igem.org/wiki/images/e/e2/Igemlogo.png" width="180"
+	height="150" /></a></div>
+</div>
+<!--banner-->
+<div class="nav">
+<ul id="topnav">
+	<li><a id="P_Home" href="http://zjuchina.tk/index.html">Home</a></li>
+
+	<li><a id="P_Project"
+		href="http://zjuchina.tk/Project.html">Project</a> <!--Subnav Starts Here-->
+
+
+	<!--Subnav Ends Here--></li>
+	<li><a id="P_Team" href="http://zjuchina.tk/Team.html">Team</a>
+
+	</li>
+	<li><a id="P_Notebook"
+		href="http://zjuchina.tk/Notebook.html">Notebook</a></li>
+	<li><a id="P_HumanPractice"
+		href="http://zjuchina.tk/Humanpractice.html">HumanPractice</a>
+	</li>
+	<li id="search">
+	<div id="searchbar">
+
+	<div>
+	<form action="http://www.google.com.hk/cse" id="cse-search-box"
+		target="_blank">
+	<div><input type="hidden" name="cx"
+		value="005438704919531788579:zbfi5n-q5du" /> <input type="hidden"
+		name="cof" value="FORID:10" /> <input type="hidden" name="ie"
+		value="UTF-8" /> <input type="text" name="q" size="15" /> <input
+		type="submit" name="sa" value="Search" /></div>
+	</form>
+	<script type="text/javascript"
+		src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script></div>
+	</div>
+	</li>
+</ul>
+</div>
+<!--navbar--> <script type="text/javascript">
+   document.getElementById('P_Team').onclick=function(){
+	   document.getElementById('P_Te').style.display='block'
+
+	    document.getElementById('P_Pr').style.display='none'
+		document.getElementById('P_No').style.display='none'
+		document.getElementById('P_Hu').style.display='none'
+		<!-- document.getElementById('P_Pr').style.display='none' -->
+	   };
+	    document.getElementById('P_Project').onclick=function(){
+	   document.getElementById('P_Pr').style.display='block'
+	    document.getElementById('P_Te').style.display='none'
+		document.getElementById('P_No').style.display='none'
+		document.getElementById('P_Hu').style.display='none'
+		<!-- document.getElementById('P_Pr').style.display='none' -->
+	   };
+	    document.getElementById('P_Notebook').onclick=function(){
+	   document.getElementById('P_No').style.display='block'
+	    document.getElementById('P_Pr').style.display='none'
+		document.getElementById('P_Te').style.display='none'
+		document.getElementById('P_Hu').style.display='none'
+		<!-- document.getElementById('P_Pr').style.display='none' -->
+	   };
+	    document.getElementById('P_HumanPractice').onclick=function(){
+	   document.getElementById('P_Hu').style.display='block'
+	    document.getElementById('P_Pr').style.display='none'
+		document.getElementById('P_No').style.display='none'
+		document.getElementById('P_Te').style.display='none'
+		<!-- document.getElementById('P_Pr').style.display='none' -->
+	   };
+	  
+</script></div>
+<!--header-->
+<div id="contentwrapper">
+
+<div class="main">
+<div class="bgpart3"></div>
+<div class="leftulcontainer" id="blue">
+<div id="leftul" class="leftul">
+<div id="accordion">
+
+<h4>Lab Notes</h4>
+
+<div class="pane"><a
+	href="http://zjuchina.tk/Notebook.html">July</a> <a
+	href="http://zjuchina.tk/August.html">August<br />
+</a> <a href="http://zjuchina.tk/September.html">September<br />
+</a></div>
+
+<h4 class="current">Protocol</h4>
+
+<div class="pane" style="display: block;"><a
+	href="http://zjuchina.tk/Protocol.html">Protocol</a></div>
+<h4>Brainstorm</h4>
+<div class="pane"><a
+	href="http://zjuchina.tk/Brainstorm.html">Brainstorm</a></div>
+
+<script> 
+$(function() { 
+ 
+$("#accordion").tabs("#accordion div.pane", {tabs: 'h4', effect: 'slide', initialIndex: null});
+});
+</script> <!-- Navigation scroll follow --> <script type="text/javascript">
+        $(window).scroll(function () { 
+            var scrollPos = $(window).scrollTop();
+            if (scrollPos > 330) {
+                $(".leftul").addClass("stickToTop");
+            } else {
+                $(".leftul").removeClass("stickToTop");
+            }
+     
+        });
+    </script></div>
+<!--accordion--></div>
+<!--leftul--></div>
+<!--leftulcontainer-->
+
+<div class="rightcontainer">
+<div id="styleA" class="frame">
+<div id="blue">
+<p></p>
+<h1>Protocol</h1>
+
+<div id="framecontent">
+<div id="importantcontainer">
+<div class="frame" id="important">
+<div class="bgcolors" id="round">
+<h1>Biofilm Formation</h1></div>
+<!--bgcolors--></div>
+<!--important--></div>
+<!--importantcontainer-->
+<div class="block" id="nsheet">
+<p>Biofilm Formation Protocol with common lab equipment:</p>
+<a style="display: block; margin: 20px;"
+	href="http://ung.igem.org/wiki/images/b/b1/Biofilm_protocol.pdf"><img
+	src="http://ung.igem.org/wiki/images/1/1b/Adobe_Reader_Logo.jpg"
+	width="40" height="40" />download PDF version</a>
+<p style="clear: both;"></p>
+
+</div>
+<div id="page2">
+<div id="importantcontainer">
+<div class="frame" id="important">
+<div class="bgcolors" id="round">
+<h1>Basic Protocols</h1></div>
+<!--bgcolors--></div>
+<!--important--></div>
+<!--importantcontainer-->
+<div class="block" id="nsheet">
+<p>AxyPrep™ Plasmid Miniprep Kit</p>
+<hr />
+<a style="display: block; margin: 20px;"
+	href="http://static0.jadedpixel.com/s/files/1/0001/7488/files/axyprep_plasmid_mini_protocol.pdf"><img
+	src="http://ung.igem.org/wiki/images/1/1b/Adobe_Reader_Logo.jpg"
+	width="40" height="40" />download PDF version</a>
+<p>AxyPrep™ PCR Cleanup Kit</p>
+<hr />
+<a style="display: block; margin: 20px;"
+	href="http://static3.jadedpixel.com/s/files/1/0001/7488/files/axyprep_pcr_cleanup_protocol.pdf"><img
+	src="http://ung.igem.org/wiki/images/1/1b/Adobe_Reader_Logo.jpg"
+	width="40" height="40" />download PDF version</a>
+<p>TaKaRa Agarose Gel DNA Purification Kit Ver.2.0</p>
+<hr />
+<a style="display: block; margin: 20px;"
+	href="http://www.takara.com.cn/explain/D/DV805A.pdf"><img
+	src="http://ung.igem.org/wiki/images/1/1b/Adobe_Reader_Logo.jpg"
+	width="40" height="40" />download PDF version</a>
+<p>Chemically competent E.coli preparation.</p>
+<hr />
+<a style="display: block; margin: 20px;"
+	href="http://www.openwetware.org/wiki/Preparing_chemically_competent_cells">See
+official protocol</a>
+<p>Transformation</p>
+<hr />
+<a style="display: block; margin: 20px;"
+	href="http://www.openwetware.org/wiki/Transforming_chemically_competent_cells_%28Inoue%29">See
+official protocol</a>
+<p>Colony PCR:</p>
+<hr />
+<a style="display: block; margin: 20px;"
+	href="http://www.openwetware.org/wiki/Endy:Colony_PCR">See official
+protocol</a>
+<p>Agarose gel electrophoresis</p>
+<hr />
+<a style="display: block; margin: 20px;"
+	href="http://www.openwetware.org/wiki/Agarose_gel_electrophoresis">See
+official protocol</a></div>
+</div>
+<script type="text/javascript"> 
+document.getElementById('bb').onclick= function(){
+document.getElementById('page2').style.display='none'
+ document.getElementById('page1').style.display='block'}
+ 
+document.getElementById('bf').onclick= function(){
+	
+document.getElementById('page1').style.display='none'
+ document.getElementById('pgae2').style.display='block'}
+</script>
+<p style="clear: both"></p>
+</div>
+<!--framecontent-->
+
+<div class="frame" id="rightnav" style="display: none;">
+<div class="bgcolors" id="round">
+<p><a name="jumptop" id="bb">&nbsp; Biobrick Group&nbsp;</a>|<a
+	id="bf">&nbsp;Biofilm Group &nbsp;</a></p>
+</div>
+<!--bgcolors--></div>
+<!--rightnav--></div>
+<!--blue-->
+<div class="links"><a href="#top2">Top</a></div>
+</div>
+<!--frame--></div>
+<!--rightcontainer-->
+<p style="clear: both"></p>
+
+
+</div>
+<!--main-->
+<div class="footer" id="footer"><a href="http://2011.igem.org/">
+iGem 2011 Home Page</a> <a href="http://ung.igem.org/Special:Upload/">
+Upload Files</a> <a
+	href="http://2011.igem.org/wiki/index.php?title=Template:Zjucss_main&action=edit">Edit
+CSS</a> <a href="http://ung.igem.org/Team_Wikis?year=2011"> Team Wikis</a> <a
+	href="mailto:zjuigem@gmail.com?"><strong>Contact Us</strong></a></div>
+</div>
+<!--contentwrapper--></div>
+</body>
+</html>

@@ -1,0 +1,181 @@
+@charset "UTF-8";
+/* CSS Document */
+#table_m{
+	background-color:transparent;}
+.pagetitle{
+margin:5px;
+padding:0;
+margin-right:10px;
+background-color:white;
+position:relative;
+float:right;
+width:750px;
+
+-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+filter:alpha(opacity=80);
+	-moz-opacity:0.8;
+	-khtml-opacity: 0.8;
+	opacity: 0.8;
+padding-bottom:7px;
+}
+.pagetitle h3{
+font-size: 28pt;
+color:#f19226;
+margin-left:5px;
+}
+
+
+
+
+.stickToTop {
+    position: fixed;
+    top:5px;
+   }
+/*left bar!!!!!!!!!!!!!!!!!*/
+  /* root element for accordion. decorated with rounded borders and gradient background image */
+#accordion {
+	background:transparent;
+	width: 170px;
+
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+/* accordion header */
+#accordion h4 {
+display:block;
+	/*url(http://ung.igem.org/wiki/images/2/23/Zju-button.jpg)*/;
+	margin-bottom:2px;
+        padding-top:5px;
+padding-left:5px;
+height:30px;
+color:white;
+	font-weight:normal;
+	cursor:pointer;	
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+filter:alpha(opacity=50);
+	-moz-opacity:0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+font-size:19pt;	
+}
+
+/* currently active header */
+#accordion h4.current {
+	cursor:default;
+font-weight:bold;
+text-decoration:underline;
+	
+filter:alpha(opacity=100);
+	-moz-opacity:1.0;
+	-khtml-opacity: 1.0;
+	opacity: 1.0;
+*shadow!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+ box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15); /* for the Safari browser*/
+}
+
+/* accordion pane */
+#accordion .pane {
+	display:none;
+	height:90px;
+	padding:5px;
+	color:white;
+	font-size:18px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+background:white;
+}
+
+/* a title inside pane */
+#accordion .pane a {
+display:block;
+	font-weight:normal;
+	margin:4px;
+	font-size:18px;
+}
+#accordion .pane a:hover{	text-decoration:underline;}
+
+
+/*left bar end!!!!!!!!!!!!!!!!!!!!*/
+.bigblock{
+	margin:0;
+	float:right;
+	color:#333333;
+	font-size:12pt;
+	padding:0;
+	width:760px;
+	  font-family: 'Molengo', sans-serif;}
+.bigblock h3{
+	font-size:28px;
+	color:#f19226;
+	padding-left:15px;
+	padding-top:10px;
+	padding-bottom:10px;
+	}
+.bigblock p{
+	margin-top: 1px;
+	margin-right: 5px;
+	margin-bottom: 1px;
+	margin-left: 5px;
+	}
+.block hr{
+	
+	padding:0;
+	margin-left:10px;
+        margin-right:10px;}
+/*#m_biofilm{
+	display:none;}*/
+.block{
+float:right;
+		-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background-color: white;
+width:750px;
+margin:5px;
+padding:0;
+margin-right:10px;
+
+margin-bottom:15px;
+
+
+/*shadow!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+ box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15); /* for the Safari browser*/
+border: 1px solid #CCCCCC;
+	}
+#introduction{
+	width:750px;
+	background-color:#999}
+#mmodeling{
+width:770px;
+display:none;
+}
+
+#reference{width:770px;display:none;}
+#sr{
+width:770px;
+display:none;
+}
+#compartment{margin-left:14px;}
+#component{margin-left:14px;}
+#process{margin-left:14px;}
+
+.block p{
+	margin:20px;
+}
+#intro{
+	color:white;
+	
+}
+
+#model a{color:#333333;}
+	#model a:hover{
+		text-decoration:underline;}

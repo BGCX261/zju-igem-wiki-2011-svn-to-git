@@ -1,0 +1,747 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Rainbofilm Results</title>
+<link href='http://fonts.googleapis.com/css?family=Molengo'
+	rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Hammersmith+One'
+	rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Alice'
+	rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Ovo' rel='stylesheet'
+	type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Federo'
+	rel='stylesheet' type='text/css'>
+
+<link href="modeling.css" rel="stylesheet" type="text/css">
+<link href="global.css" rel="stylesheet" type="text/css">
+<link href="template2.css" rel="stylesheet" type="text/css"><!-- include the Tools -->
+<script src="http://cdn.jquerytools.org/1.2.6/full/jquery.tools.min.js">
+</script>
+<style type="text/css">
+#contentwrapper .main .leftulcontainer #leftul #accordion .pane a {
+	color: #ffcc99
+}
+
+#contentwrapper .main .leftulcontainer #leftul #accordion .pane a:hover
+	{
+	color: #ff9933
+}
+
+#banner {
+	position: relative;
+	left: 14%;
+	width: 513px;
+	height: 265px;
+	border: 1px solid #666;
+	overflow: hidden;
+}
+
+#banner_list img {
+	border: 0px;
+}
+
+#banner_bg {
+	position: absolute;
+	bottom: 31px;
+	background-color: #000;
+	height: 80px;
+	filter: Alpha(Opacity = 50);
+	opacity: 0.5;
+	z-index: 1000;
+	cursor: pointer;
+	width: 513px;
+}
+
+#banner_info {
+	position: absolute;
+	bottom: 25px;
+	left: 5px;
+	height: 80px;
+	color: #fff;
+	z-index: 1001;
+	cursor: pointer
+}
+
+#banner_text {
+	position: absolute;
+	width: 120px;
+	z-index: 1002;
+	right: 3px;
+	bottom: 3px;
+}
+
+#banner ul {
+	position: absolute;
+	list-style-type: none;
+	filter: Alpha(Opacity = 80);
+	opacity: 0.8;
+	border: 1px solid #fff;
+	z-index: 1002;
+	margin: 0;
+	padding: 0;
+	bottom: 3px;
+	right: 5px;
+}
+
+#banner ul li {
+	padding: 0px 8px;
+	float: left;
+	display: block;
+	color: #FFF;
+	border: #e5eaff 1px solid;
+	background: #6f4f67;
+	cursor: pointer
+}
+
+#banner ul li.on {
+	background: #900
+}
+
+#banner_list a {
+	position: absolute;
+}
+
+#banner1 {
+	position: relative;
+	left: 14%;
+	width: 513px;
+	height: 270px;
+	border: 1px solid #666;
+	overflow: hidden;
+}
+
+#banner_list1 img {
+	border: 0px;
+}
+
+#banner_info1 {
+	position: absolute;
+	bottom: 25px;
+	left: 5px;
+	height: 80px;
+	color: #fff;
+	z-index: 1001;
+	cursor: pointer
+}
+
+#banner1 ul {
+	position: absolute;
+	list-style-type: none;
+	filter: Alpha(Opacity = 80);
+	opacity: 0.8;
+	border: 1px solid #fff;
+	z-index: 1002;
+	margin: 0;
+	padding: 0;
+	bottom: 3px;
+	right: 5px;
+}
+
+#banner1 ul li {
+	padding: 0px 8px;
+	float: left;
+	display: block;
+	color: #FFF;
+	border: #e5eaff 1px solid;
+	background: #6f4f67;
+	cursor: pointer
+}
+
+#banner1 ul li.on {
+	background: #900
+}
+
+#banner_list1 a {
+	position: absolute;
+}
+
+#banner2 {
+	position: relative;
+	left: 14%;
+	width: 513px;
+	height: 265px;
+	border: 1px solid #666;
+	overflow: hidden;
+}
+
+#banner_list2 img {
+	border: 0px;
+}
+
+#banner_info2 {
+	position: absolute;
+	bottom: 25px;
+	left: 5px;
+	height: 80px;
+	color: #fff;
+	z-index: 1001;
+	cursor: pointer
+}
+
+#banner2 ul {
+	position: absolute;
+	list-style-type: none;
+	filter: Alpha(Opacity = 80);
+	opacity: 0.8;
+	border: 1px solid #fff;
+	z-index: 1002;
+	margin: 0;
+	padding: 0;
+	bottom: 3px;
+	right: 5px;
+}
+
+#banner2 ul li {
+	padding: 0px 8px;
+	float: left;
+	display: block;
+	color: #FFF;
+	border: #e5eaff 1px solid;
+	background: #6f4f67;
+	cursor: pointer
+}
+
+#banner2 ul li.on {
+	background: #900
+}
+
+#banner_list2 a {
+	position: absolute;
+}
+
+#banner3 {
+	position: relative;
+	left: 14%;
+	width: 513px;
+	height: 270px;
+	border: 1px solid #666;
+	overflow: hidden;
+}
+
+#banner_list3 img {
+	border: 0px;
+}
+
+#banner_info3 {
+	position: absolute;
+	bottom: 25px;
+	left: 5px;
+	height: 80px;
+	color: #fff;
+	z-index: 1001;
+	cursor: pointer
+}
+
+#banner3 ul {
+	position: absolute;
+	list-style-type: none;
+	filter: Alpha(Opacity = 80);
+	opacity: 0.8;
+	border: 1px solid #fff;
+	z-index: 1002;
+	margin: 0;
+	padding: 0;
+	bottom: 3px;
+	right: 5px;
+}
+
+#banner3 ul li {
+	padding: 0px 8px;
+	float: left;
+	display: block;
+	color: #FFF;
+	border: #e5eaff 1px solid;
+	background: #6f4f67;
+	cursor: pointer
+}
+
+#banner3 ul li.on {
+	background: #900
+}
+
+#banner_list3 a {
+	position: absolute;
+}
+
+#banner_bg2 {
+	position: absolute;
+	bottom: 29px;
+	background-color: #000;
+	height: 80px;
+	filter: Alpha(Opacity = 50);
+	opacity: 0.5;
+	z-index: 1000;
+	cursor: pointer;
+	width: 513px;
+}
+</style>
+</head>
+
+<body>
+<div class="global">
+<div class="header">
+<div class="bgimg"></div>
+<div class="bgpart1"></div>
+<div class="bgpart2"></div>
+
+
+<div class="banner">
+<div class="logo"><img
+	src="http://2011.igem.org/wiki/images/c/c9/Logo.png" width="200"
+	height="200" /></div>
+<div class="title"><img
+	src="http://ung.igem.org/wiki/images/b/b3/Title.png" width="603"
+	height="220" /></div>
+<div class="igemlogo"><a target="_blank"
+	href="http://2011.igem.org"><img
+	src="http://2011.igem.org/wiki/images/e/e2/Igemlogo.png" width="180"
+	height="150" /></a></div>
+</div>
+<!--banner-->
+<div class="nav">
+<ul id="topnav">
+	<li><a id="P_Home" href="http://zjuchina.tk/index.html">Home</a></li>
+
+	<li><a id="P_Project"
+		href="http://zjuchina.tk/Project.html">Project</a> <!--Subnav Starts Here-->
+
+
+	<!--Subnav Ends Here--></li>
+	<li><a id="P_Team" href="http://zjuchina.tk/Team.html">Team</a>
+
+	</li>
+	<li><a id="P_Notebook"
+		href="http://zjuchina.tk/Notebook.html">Notebook</a></li>
+	<li><a id="P_HumanPractice"
+		href="http://zjuchina.tk/Humanpractice.html">HumanPractice</a></li>
+	<li id="search">
+	<div id="searchbar">
+
+	<div>
+	<form action="http://www.google.com.hk/cse" id="cse-search-box"
+		target="_blank">
+	<div><input type="hidden" name="cx"
+		value="005438704919531788579:zbfi5n-q5du" /> <input type="hidden"
+		name="cof" value="FORID:10" /> <input type="hidden" name="ie"
+		value="UTF-8" /> <input type="text" name="q" size="15" /> <input
+		type="submit" name="sa" value="Search" /></div>
+	</form>
+	<script type="text/javascript"
+		src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script></div>
+	</div>
+	</li>
+</ul>
+</div>
+<!--navbar--> <script type="text/javascript">
+   document.getElementById('P_Team').onclick=function(){
+	   document.getElementById('P_Te').style.display='block'
+
+	    document.getElementById('P_Pr').style.display='none'
+		document.getElementById('P_No').style.display='none'
+		document.getElementById('P_Hu').style.display='none'
+		<!-- document.getElementById('P_Pr').style.display='none' -->
+	   };
+	    document.getElementById('P_Project').onclick=function(){
+	   document.getElementById('P_Pr').style.display='block'
+	    document.getElementById('P_Te').style.display='none'
+		document.getElementById('P_No').style.display='none'
+		document.getElementById('P_Hu').style.display='none'
+		<!-- document.getElementById('P_Pr').style.display='none' -->
+	   };
+	    document.getElementById('P_Notebook').onclick=function(){
+	   document.getElementById('P_No').style.display='block'
+	    document.getElementById('P_Pr').style.display='none'
+		document.getElementById('P_Te').style.display='none'
+		document.getElementById('P_Hu').style.display='none'
+		<!-- document.getElementById('P_Pr').style.display='none' -->
+	   };
+	    document.getElementById('P_HumanPractice').onclick=function(){
+	   document.getElementById('P_Hu').style.display='block'
+	    document.getElementById('P_Pr').style.display='none'
+		document.getElementById('P_No').style.display='none'
+		document.getElementById('P_Te').style.display='none'
+		<!-- document.getElementById('P_Pr').style.display='none' -->
+	   };
+	  
+</script></div>
+<!--header-->
+<div id="contentwrapper">
+<div class="main">
+	<div class="bgpart3"></div>
+<div class="leftulcontainer" id="orange">
+<div id="leftul" class="leftul">
+<div id="accordion">
+
+
+<h4 id="try">Biofilm</h4>
+
+<div class="pane"><a
+	href="http://zjuchina.tk/Project.html">Background</a> <a
+	href="http://zjuchina.tk/bio-Design.html">Design</a> <a
+	href="http://zjuchina.tk/bio-modeling.html">Modeling</a> <a
+	href="http://zjuchina.tk/bio-results.html">Results</a></div>
+
+<h4 class="current">Rainbofilm</h4>
+
+<div class="pane" style="display: block;"><a
+	href="http://zjuchina.tk/rainbo-Background.html">Background</a>
+<a href="http://zjuchina.tk/rainbo-Design.html">Design</a> <a
+	href="http://zjuchina.tk/rainbo-modeling-v1.html">Modeling</a> <a
+	href="http://zjuchina.tk/rainbo-Results.html">Results</a></div>
+
+<h4>Sugarfilm</h4>
+
+<div class="pane"><a
+	href="http://zjuchina.tk/Sugar-background.html">Background</a> <a
+	href="http://zjuchina.tk/Sugar-Design.html">Design</a> <a
+	href="http://zjuchina.tk/Sugar-Modeling.html">Modeling</a> <a
+	href="http://zjuchina.tk/Sugar-Future.html">Future</a></div>
+<h4>Parts</h4>
+
+<div class="pane" ><a
+	href="http://zjuchina.tk/BBa_I13602.html">BBa_I13602</a> <a
+	href="http://zjuchina.tk/BBa_K561000.html">BBa_K561000</a> <a
+	href="http://zjuchina.tk/BBa_K561002.html">BBa_K561002</a> <a
+	href="http://zjuchina.tk/BBa_K561003.html">BBa_K561003</a></div>
+<h4>Achievements</h4>
+<div class="pane"><a href="http://zjuchina.tk/data.html">Data
+Page</a> <a href="http://zjuchina.tk/judging.html">Judging Form</a> <a
+	href="http://zjuchina.tk/attribution.html">Attribution and
+Contributions</a></div>
+<h4>Tools</h4>
+
+<div class="pane"><a href="http://zjuchina.tk/Tools.html">Tools</a>
+</div>
+
+<script> 
+$(function() { 
+ 
+$("#accordion").tabs("#accordion div.pane", {tabs: 'h4', effect: 'slide', initialIndex: null});
+});
+</script> <!-- Navigation scroll follow --> <script type="text/javascript">
+        $(window).scroll(function () { 
+            var scrollPos = $(window).scrollTop();
+            if (scrollPos > 330) {
+                $(".leftul").addClass("stickToTop");
+            } else {
+                $(".leftul").removeClass("stickToTop");
+            }
+     
+        });
+    </script></div>
+<!--accordion--></div>
+<!--leftul--></div>
+<!--leftulcontainer-->
+
+<div class="rightcontainer">
+<div id="styleA" class="frame">
+<div id="orange">
+<p></p>
+<h1>Results</h1>
+<p>We make different plasmid constructions to form biofilm: 1. CFP
+and YFP+tetR on the same plasmid, 2. CFP and RFP+tetR on the same
+plasmid, 3. Mixed combination RFP bacteria and YFP bacteria, 4. CFP,
+YFP+tetR and RFP+tetR on the same plasmid.</p>
+<p>&nbsp;</p>
+<div id="importantcontainer">
+<div class="frame" id="important">
+<div class="bgcolors" id="round">
+<h1>Blue and Yellow</h1>
+</div>
+</div>
+</div>
+
+<div id="framecontent">
+<p>When transformed with the plasmid of CFP and YFP+tetR, the
+biofilm exhibits a three-layer structure in blue-yellow-blue (Fig.1 C).
+Around the aerobic surface and the anaerobic bottom of the biofilm, the
+micro-aerobic promoter failed to work. Neither YFP nor tetR is
+expressed. These lead to the expression of CFP in the surface and the
+bottom (Fig.1 A). While in the middle of the biofilm, a micro-oxygen
+condition, YFP and tetR are expressed (Fig.1 B), and latter inhibits the
+constitutive CFP expression in the middle layer(Fig. 1 A). Fig.1 D shows
+the fluorescence analysis histogram of different dep</p>
+<div id="banner">
+<div id="banner_bg2"></div>
+<div id="banner_info"></div>
+<ul>
+	<li class="on">1</li>
+	<li>2</li>
+	<li>3</li>
+</ul>
+<div id="banner_list"><a href="#" target="_blank"><img
+	src="zju-C(CY)small.png" title=""
+	alt="Fluorescent image of the biofilm under Zeiss LSM 710NLO confocal laser scanning microscope using a 20X objective, showing the constitutive expressed CFP.
+" /></a>
+<a href="#" target="_blank"><img src="zju-Y(CY)short.png
+" title=""
+	alt="Growth Rate under aerobic conditions" /></a> <a href="#"
+	target="_blank"><img src="zju-CYmerge(CY)short.png" title=""
+	alt="Merged fluorescent biofilm picture of CFP (aerobic condition induced) and YFP(micro-aerobic condition induced) under Zeiss LSM 710NLO confocal laser scanning microscope, using a 20X objective. " /></a>
+</div>
+</div>
+<p>th, indicating a shift from the blue in the surface to the yellow
+in the middle, but no significant change from the yellow in the middle
+to the blue in the bottom as showed in the Fig.1 C.</p>
+<p>
+<script type="text/javascript">
+	var t = n = 0, count;
+	$(document).ready(function(){	
+		count=$("#banner_list a").length;
+		$("#banner_list a:not(:first-child)").hide();
+		$("#banner_info").html($("#banner_list a:first-child").find("img").attr('alt'));
+		$("#banner_info").click(function(){window.open($("#banner_list a:first-child").attr('href'), "_blank")});
+		$("#banner li").click(function() {
+			var i = $(this).text() - 1;//获取Li元素内的值，即1，2，3，4
+			n = i;
+			if (i >= count) return;
+			$("#banner_info").html($("#banner_list a").eq(i).find("img").attr('alt'));
+			$("#banner_info").unbind().click(function(){window.open($("#banner_list a").eq(i).attr('href'), "_blank")})
+			$("#banner_list a").filter(":visible").fadeOut(500).parent().children().eq(i).fadeIn(1000);
+			document.getElementById("banner").style.background="";
+			$(this).toggleClass("on");
+			$(this).siblings().removeAttr("class");
+		});
+		
+	})
+	
+</script>
+</div>
+
+
+<p style="text-align: center"><embed src="CY.mov" width="520"
+	height="400" /></embed></p>
+<p style="text-align: center"><img src="ZJU-CY.gif" width="520"
+	height="400"><br /></p>
+
+</idv>
+</p>
+<div id="importantcontainer">
+<div class="frame" id="important">
+<div class="bgcolors" id="round">
+<h1>Blue and Red</h1>
+</div>
+</div>
+</div>
+<div id="framecontent">
+<p>The biofilm formed with CFP+RFP+tetR plasmid gives more sharp
+change from blue to red (Fig 2. D 9 um to 10.5 um). The CFP is expressed
+within the upper part of the biofilm and inhibited in the lower part of
+the biofilm (Fig. 2 A). Interestingly, the RFP is found both the upper
+and lower part (Fig2. B), and its intensity reaches the highest point in
+the 12 um depth (Fig. 2 D 12 um). The permissive expression of the RFP
+in the upper layer and the overlap of CFP and RFP(Fig 2. C) maybe
+resulted from 1. the complex microenvironment of the biofilm, 2. the
+leaking promoter.</p>
+<p>&nbsp;</p>
+
+<script type="text/javascript">
+	var t = n = 0, count;
+	$(document).ready(function(){	
+		count=$("#banner_list1 a").length;
+		$("#banner_list1 a:not(:first-child)").hide();
+		$("#banner_info1").html($("#banner_list1 a:first-child").find("img").attr('alt'));
+		$("#banner_info1").click(function(){window.open($("#banner_list1 a:first-child").attr('href'), "_blank")});
+		$("#banner1 li").click(function() {
+			var i = $(this).text() - 1;//获取Li元素内的值，即1，2，3，4
+			n = i;
+			if (i >= count) return;
+			$("#banner_info1").html($("#banner_list1 a").eq(i).find("img").attr('alt'));
+			$("#banner_info1").unbind().click(function(){window.open($("#banner_list1 a").eq(i).attr('href'), "_blank")})
+			$("#banner_list1 a").filter(":visible").fadeOut(500).parent().children().eq(i).fadeIn(1000);
+			document.getElementById("banner1").style.background="";
+			$(this).toggleClass("on");
+			$(this).siblings().removeAttr("class");
+		});
+	
+	})
+	
+	
+</script>
+<div id="banner1">
+<div id="banner_bg"></div>
+<div id="banner_info1"></div>
+<ul>
+	<li class="on">1</li>
+	<li>2</li>
+	<li>3</li>
+</ul>
+<div id="banner_list1"><a href="#" target="_blank"><img
+	src="zju-C(RC)long.png" title=""
+	alt="Fluorescent image of the biofilm under Zeiss LSM510 Meta confocal laser scanning microscope, using a 63X oil-immersion objective, showing the constitutive expressed CFP. 
+" /></a>
+<a href="#" target="_blank"><img src="zju-R(RC)long.png" title=""
+	alt="Fluorescent image of the biofilm under Zeiss LSM510 Meta confocal laser scanning microscope using a 63X oil-immersion objective, showing  the anaerobically induced RFP. 
+" /></a>
+<a href="#" target="_blank"><img src="zju-merged(RC)long.png"
+	title=""
+	alt="Merged fluorescent biofilm picture of CFP (aerobic condition induced) and RFP(anaerobic condition induced) under Zeiss LSM510 Meta confocal laser scanning microscope, using a 63X oil-immersion objective. 
+" /></a>
+</div>
+</div>
+
+<p style="text-align: center"><embed src="RC.mov" width="520"
+	height="400" /></embed></p>
+
+<p style="text-align: center"><img src="zju-RC.gif" width="600"
+	height="400"></p>
+<p>&nbsp;</p>
+</div>
+<div id="importantcontainer">
+<div class="frame" id="important">
+<div class="bgcolors" id="round">
+<h1>Yellow and Red</h1>
+</div>
+</div>
+</div>
+<div id="framecontent">
+<p>The mixed culture of RFP bacteria and YFP bacteria forms a very
+blur stratification in their biofilm (Fig 3. C). We can barely see some
+reddish yellow in the upper edge and some yellowish red in the bottom of
+the biofilm. And the histogram analysis gives the similar results (Fig.
+3 D).</p>
+<p>&nbsp;</p>
+
+<script type="text/javascript">
+	var t = n = 0, count;
+	$(document).ready(function(){	
+		count=$("#banner_list2 a").length;
+		$("#banner_list2 a:not(:first-child)").hide();
+		$("#banner_info2").html($("#banner_list2 a:first-child").find("img").attr('alt'));
+		$("#banner_info2").click(function(){window.open($("#banner_list2 a:first-child").attr('href'), "_blank")});
+		$("#banner2 li").click(function() {
+			var i = $(this).text() - 1;//获取Li元素内的值，即1，2，3，4
+			n = i;
+			if (i >= count) return;
+			$("#banner_info2").html($("#banner_list2 a").eq(i).find("img").attr('alt'));
+			$("#banner_info2").unbind().click(function(){window.open($("#banner_list2 a").eq(i).attr('href'), "_blank")})
+			$("#banner_list2 a").filter(":visible").fadeOut(500).parent().children().eq(i).fadeIn(1000);
+			document.getElementById("banner2").style.background="";
+			$(this).toggleClass("on");
+			$(this).siblings().removeAttr("class");
+		});
+	
+	})
+	
+
+</script>
+<div id="banner2">
+<div id="banner_bg"></div>
+<div id="banner_info2"></div>
+<ul>
+	<li class="on">1</li>
+	<li>2</li>
+	<li>3</li>
+</ul>
+<div id="banner_list2"><a href="#" target="_blank"><img
+	src="zju-R(RY)short.png" title=""
+	alt="Fluorescent image of the biofilm under Zeiss LSM 710NLO confocal laser scanning microscope, using a 20X objective, showing  the anaerobically induced RFP. 
+" /></a>
+<a href="#" target="_blank"><img src="zju-Y(RY)short.png" title=""
+	alt="Fluorescent image of the biofilm under Zeiss LSM 710NLO confocal laser scanning microscope using a 20X objective, showing the micro-aerobic condition induced YFP.
+" /></a>
+<a href="#" target="_blank"><img src="zju-RYmerge(RY)short.png"
+	title=""
+	alt="Merged fluorescent biofilm picture of RFP (anaerobic condition induced) and YFP(micro-aerobic condition induced) under Zeiss LSM 710NLO confocal laser scanning microscope, using a 20X objective. 
+" /></a>
+</div>
+</div>
+<p style="text-align: center"><embed src="YR.mov" width="520"
+	height="400" /></embed></p>
+<p style="text-align: center"><img src="zju-RY.gif" width="561"
+	height="420"><br /></p>
+<p>&nbsp;</p>
+
+<div id="importantcontainer">
+<div class="frame" id="important">
+<div class="bgcolors" id="round">
+<h1>Rainbow</h1>
+</div>
+</div>
+</div>
+<div id="framecontent">
+
+<p>The rainbofilm system, CFP, YFP+tetR and RFP+tetR on the same
+plasmid, successfully forms a stratified biofilm as we expected. We can
+clearly see three layers of blue, yellow and red (Fig. 4 D). There is
+one thing we need to point out that the separation of blue and yellow is
+not very clear. Only in some area of the biofilm, the distribution of
+the YFP is deeper than the CFP. And when compared within three colors,
+the histogram analysis indicates a little differences through the depth
+of the biofilm (data not shown).</p>
+<p>&nbsp;</p>
+
+<script type="text/javascript">
+	var t = n = 0, count;
+	$(document).ready(function(){	
+		count=$("#banner_list3 a").length;
+		$("#banner_list3 a:not(:first-child)").hide();
+		$("#banner_info3").html($("#banner_list3 a:first-child").find("img").attr('alt'));
+		$("#banner_info3").click(function(){window.open($("#banner_list3 a:first-child").attr('href'), "_blank")});
+		$("#banner3 li").click(function() {
+			var i = $(this).text() - 1;
+			n = i;
+			if (i >= count) return;
+			$("#banner_info3").html($("#banner_list3 a").eq(i).find("img").attr('alt'));
+			$("#banner_info3").unbind().click(function(){window.open($("#banner_list3 a").eq(i).attr('href'), "_blank")})
+			$("#banner_list3 a").filter(":visible").fadeOut(500).parent().children().eq(i).fadeIn(1000);
+			document.getElementById("banner3").style.background="";
+			$(this).toggleClass("on");
+			$(this).siblings().removeAttr("class");
+		});
+	
+	})
+
+</script>
+<div id="banner3">
+<div id="banner_bg"></div>
+<div id="banner_info3"></div>
+<ul>
+	<li class="on">1</li>
+	<li>2</li>
+	<li>3</li>
+	<li>4</li>
+</ul>
+<div id="banner_list3"><a href="#" target="_blank"><img
+	src="zju-C(CYR)long.png" title=""
+	alt="Fluorescent image of the biofilm under Zeiss LSM510 Meta confocal laser scanning microscope, using a 63X oil-immersion objective, showing the constitutive expressed CFP. 
+" /></a>
+<a href="#" target="_blank"><img src="zju-R(CYR)long.png" title=""
+	alt="Fluorescent image of the biofilm under Zeiss LSM510 Meta confocal laser scanning microscope using a 63X oil-immersion objective, showing  the anaerobically induced RFP. 
+" /></a>
+<a href="#" target="_blank"><img src="zju-YCYR)long.png" title=""
+	alt="Fluorescence image of the biofilm under Zeiss LSM510 Meta confocal laser scanning microscope using a 63X oil-immersion objective, showing micro-aerobic condition induced YFP. 
+" /></a>
+<a href="#" target="_blank"><img src="zju-merge(CYR)long.png"
+	title=""
+	alt="Merged fluorescent biofilm picture of CFP (aerobic condition induced) YFP (micro-aerobic condition induced) and RFP (anaerobic condition induced) under Zeiss LSM510 Meta confocal laser scanning microscope, using a 63X oil-immersion objective. 
+" /></a>
+</div>
+</div>
+<p style="text-align: center"><embed src="CYR.mov" width="520"
+	height="400" /></p>
+<p>&nbsp; </p>
+</div>
+</div>
+<!--framecontent--><!--rightnav--> <!--rightnav--></div>
+<!--orange--></div>
+<!--frame--></div>
+<!--rightcontainer-->
+<p style="clear: both"></p>
+</div>
+<!--main-->
+<p style="clear: both"></p>
+<div class="footer" id="footer"><a href="http://2011.igem.org/">
+iGem 2011 Home Page</a> <a href="http://ung.igem.org/Special:Upload/">
+Upload Files</a> <a
+	href="http://2011.igem.org/wiki/index.php?title=Template:Zjucss_main&action=edit">Edit
+CSS</a> <a href="http://ung.igem.org/Team_Wikis?year=2011"> Team Wikis</a> <a
+	href="mailto:zjuigem@gmail.com?"><strong>Contact Us</strong></a></div>
+</div>
+<!--contentwrapper-->
+</div>
+</body>
+</html>
+

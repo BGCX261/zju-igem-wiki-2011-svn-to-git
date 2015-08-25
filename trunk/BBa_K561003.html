@@ -1,0 +1,293 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Parts-BBa_I13602</title>
+<link href='http://fonts.googleapis.com/css?family=Molengo' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Hammersmith+One' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Alice' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Ovo' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Federo' rel='stylesheet' type='text/css'>
+
+<link href="modeling.css" rel="stylesheet" type="text/css">
+<link href="global.css" rel="stylesheet" type="text/css">
+<link href="template2.css" rel="stylesheet" type="text/css">
+<!-- include the Tools --> 
+<script src="http://cdn.jquerytools.org/1.2.6/full/jquery.tools.min.js"></script> 
+<style type="text/css">
+#contentwrapper .main .leftulcontainer #leftul #accordion .pane a{
+color:#ffcc99
+}
+#contentwrapper .main .leftulcontainer #leftul #accordion .pane a:hover{
+color:#ff9933
+}
+</style>
+
+<style type="text/css">
+
+#banner {position:relative; left:10%;width:561px; height:485px; border:1px solid #666; overflow:hidden;}
+#banner_list img {border:0px;}
+#banner_bg {position:absolute; bottom:20px;background-color:#000;height:44px;filter: Alpha(Opacity=50);opacity:0.5;z-index:1000;cursor:pointer; width:561px; }
+#banner_info{position:absolute; bottom:20px; left:5px;height:44px;color:#fff;z-index:1001;cursor:pointer}
+#banner_text {position:absolute;width:120px;z-index:1002; right:3px; bottom:3px;}
+#banner ul {position:absolute;list-style-type:none;filter: Alpha(Opacity=80);opacity:0.8; border:1px solid #fff;z-index:1002;
+			margin:0; padding:0; bottom:3px; right:5px;}
+#banner ul li { padding:0px 8px;float:left;display:block;color:#FFF;border:#e5eaff 1px solid;background:#6f4f67;cursor:pointer}
+#banner ul li.on { background:#900}
+#banner_list a{position:absolute;}
+
+
+#banner1 {position:relative; left:10%;width:561px; height:485px; border:1px solid #666; overflow:hidden;}
+#banner_list1 img {border:0px;}
+#banner_info1 {position:absolute; bottom:20px; left:5px;height:44px;color:#fff;z-index:1001;cursor:pointer}
+#banner1 ul {position:absolute;list-style-type:none;filter: Alpha(Opacity=80);opacity:0.8; border:1px solid #fff;z-index:1002;
+			margin:0; padding:0; bottom:3px; right:5px;}
+#banner1 ul li { padding:0px 8px;float:left;display:block;color:#FFF;border:#e5eaff 1px solid;background:#6f4f67;cursor:pointer}
+#banner1 ul li.on { background:#900}
+#banner_list1 a{position:absolute;}
+
+</style>
+
+
+</head>
+
+<body>
+<div class="global">
+<div class="header">
+	<div class="bgimg"></div>
+	<div class="bgpart1"></div>
+	<div class="bgpart2"></div>
+    
+    
+    <div class="banner">
+                    <div class="logo"><img src="http://2011.igem.org/wiki/images/c/c9/Logo.png" width="200" height="200" /></div>
+                    <div class="title"><img src="http://ung.igem.org/wiki/images/b/b3/Title.png" width="603" height="220" /></div>
+                    <div class="igemlogo"><a  target="_blank" href="http://2011.igem.org"><img src="http://2011.igem.org/wiki/images/e/e2/Igemlogo.png" width="180" height="150" /></a></div>
+	 </div><!--banner-->
+     <div class="nav">
+                  <ul id="topnav">
+   <li ><a id="P_Home" href="http://zjuchina.tk/index.html">Home</a></li>
+
+    <li >
+        <a id="P_Project"href="http://zjuchina.tk/Project.html">Project</a>
+        <!--Subnav Starts Here-->
+        
+            
+        <!--Subnav Ends Here-->
+    </li>
+    <li ><a id="P_Team"href="http://zjuchina.tk/Team.html">Team</a>
+
+    </li>
+    <li ><a id="P_Notebook"href="http://zjuchina.tk/Notebook.html">Notebook</a>
+    </li><li ><a id="P_HumanPractice" href="http://zjuchina.tk/Notebook.html">HumanPractice</a>
+    </li>
+<li id="search"><div id="searchbar">
+  
+  <div>
+  <form action="http://www.google.com.hk/cse" id="cse-search-box" target="_blank" >
+  <div>
+    <input type="hidden" name="cx" value="005438704919531788579:zbfi5n-q5du" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" size="15" />
+    <input type="submit" name="sa" value="Search" />
+    
+  </div>
+</form>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script></div></div></li>
+</ul>
+</div><!--navbar-->
+<script type="text/javascript">
+   document.getElementById('P_Team').onclick=function(){
+	   document.getElementById('P_Te').style.display='block'
+
+	    document.getElementById('P_Pr').style.display='none'
+		document.getElementById('P_No').style.display='none'
+		document.getElementById('P_Hu').style.display='none'
+		<!-- document.getElementById('P_Pr').style.display='none' -->
+	   };
+	    document.getElementById('P_Project').onclick=function(){
+	   document.getElementById('P_Pr').style.display='block'
+	    document.getElementById('P_Te').style.display='none'
+		document.getElementById('P_No').style.display='none'
+		document.getElementById('P_Hu').style.display='none'
+		<!-- document.getElementById('P_Pr').style.display='none' -->
+	   };
+	    document.getElementById('P_Notebook').onclick=function(){
+	   document.getElementById('P_No').style.display='block'
+	    document.getElementById('P_Pr').style.display='none'
+		document.getElementById('P_Te').style.display='none'
+		document.getElementById('P_Hu').style.display='none'
+		<!-- document.getElementById('P_Pr').style.display='none' -->
+	   };
+	    document.getElementById('P_HumanPractice').onclick=function(){
+	   document.getElementById('P_Hu').style.display='block'
+	    document.getElementById('P_Pr').style.display='none'
+		document.getElementById('P_No').style.display='none'
+		document.getElementById('P_Te').style.display='none'
+		<!-- document.getElementById('P_Pr').style.display='none' -->
+	   };
+	  
+</script>
+</div><!--header-->
+<div id="contentwrapper">
+  <div class="main">
+  	<div class="bgpart3"></div>
+    <div class="leftulcontainer" id="orange">
+  <div id="leftul" class="leftul">
+        		<div id="accordion"> 
+ 
+
+	<h4  id="try">Biofilm</h4>
+	 
+	<div class="pane" > 
+		<a href="http://zjuchina.tk/Project.html">Background</a>
+        <a href="http://zjuchina.tk/bio-Design.html">Design</a>
+        <a href="http://zjuchina.tk/bio-modeling.html">Modeling</a>
+        <a href="http://zjuchina.tk/bio-results.html">Results</a>
+	</div> 
+	
+	<h4 >Rainbofilm</h4> 
+	
+	<div class="pane" > 
+		<a href="http://zjuchina.tk/rainbo-Background.html">Background</a>
+        <a href="http://zjuchina.tk/rainbo-Design.html">Design</a>
+        <a href="http://zjuchina.tk/rainbo-modeling-v1.html">Modeling</a>
+        <a href="http://zjuchina.tk/rainbo-Results.html">Results</a>
+		
+		
+	</div> 
+ 
+	<h4 >Sugarfilm</h4> 
+	
+	<div class="pane" > 
+	<a href="http://zjuchina.tk/Sugar-background.html">Background</a>
+        <a href="http://zjuchina.tk/Sugar-Design.html">Design</a>
+        <a href="http://zjuchina.tk/Sugar-Modeling.html">Modeling</a>
+     
+              <a href="http://zjuchina.tk/Sugar-Future.html">Future</a>
+		
+	</div>
+   	<h4 class="current">Parts</h4> 
+	
+	<div class="pane" style="display:block;"><a href="http://zjuchina.tk/BBa_I13602.html">BBa_I13602</a>
+    <a href="http://zjuchina.tk/BBa_K561000.html">BBa_K561000</a>
+    <a href="http://zjuchina.tk/BBa_K561002.html">BBa_K561002</a>
+      <a href="http://zjuchina.tk/BBa_K561003.html">BBa_K561003</a>
+     </div>
+     	<h4>Achievements</h4> 
+	
+		<div class="pane" >  <a href="http://zjuchina.tk/data.html">Data Page</a>
+	<a href="http://zjuchina.tk/judging.html">Judging Form</a>
+    <a href="http://zjuchina.tk/attribution.html">Attribution and Contributions</a>
+     </div>
+     	<h4>Tools</h4> 
+	
+	<div class="pane" > <a href="http://zjuchina.tk/Tools.html">Tools</a> </div>
+            
+<script> 
+$(function() { 
+ 
+$("#accordion").tabs("#accordion div.pane", {tabs: 'h4', effect: 'slide', initialIndex: null});
+});
+</script> 
+<!-- Navigation scroll follow -->
+    <script type="text/javascript">
+        $(window).scroll(function () { 
+            var scrollPos = $(window).scrollTop();
+            if (scrollPos > 330) {
+                $(".leftul").addClass("stickToTop");
+            } else {
+                $(".leftul").removeClass("stickToTop");
+            }
+     
+        });
+    </script>
+	
+
+            	</div> <!--accordion-->        	</div><!--leftul-->
+        </div><!--leftulcontainer-->
+        
+		<div class="rightcontainer">
+        	<div id="styleA" class="frame" >
+              <div id="orange">
+              <p></p>
+<h1>BBa_K561003</h1>
+
+<div id="framecontent">
+  <div id="importantcontainer">
+    <div class="frame" id="important">
+				<div class="bgcolors" id="round">
+                <h1>Device</h1>
+              </div></div></div>
+              <div id="framecontent"><p>
+<img src="http://2011.igem.org/wiki/images/c/c1/BBa_I13602.jpg" style="width:190px;"/><img src="http://2011.igem.org/wiki/images/9/98/BBa_K561000.jpg" style="width:230px;"/><img src="http://2011.igem.org/wiki/images/6/68/BBa_K561002.jpg" style="width:230px;"/></p>
+<p>This device is constructed with BBa_I3602, BBa_K561000, BBa_K561002. Its expression is controlled by different promoters: Ptet, Pvgb and PfdhF under different oxygen concentrations.</p>
+</div>
+<div id="importantcontainer">
+<div class="frame" id="important">
+				<div class="bgcolors" id="round">
+                <h1>Characterization</h1>
+                </div></div></div>
+                <div id="framecontent">
+<p><strong>The expression of CFP repressed by tetR which is expressed by subpart of BBa_K561000 or BBa_K561002:</strong></p>
+
+<script type="text/javascript">
+	var t = n = 0, count;
+	$(document).ready(function(){	
+		count=$("#banner_list1 a").length;
+		$("#banner_list1 a:not(:first-child)").hide();
+		$("#banner_info1").html($("#banner_list1 a:first-child").find("img").attr('alt'));
+		$("#banner_info1").click(function(){window.open($("#banner_list1 a:first-child").attr('href'), "_blank")});
+		$("#banner1 li").click(function() {
+			var k = $(this).text() - 1;//获取Li元素内的值，即1，2，3，4
+			n = k;
+			if (k >= count) return;
+			$("#banner_info1").html($("#banner_list1 a").eq(k).find("img").attr('alt'));
+			$("#banner_info1").unbind().click(function(){window.open($("#banner_list1 a").eq(k).attr('href'), "_blank")})
+			$("#banner_list1 a").filter(":visible").fadeOut(500).parent().children().eq(k).fadeIn(1000);
+			document.getElementById("banner1").style.background="";
+			$(this).toggleClass("on");
+			$(this).siblings().removeAttr("class");
+		});
+		
+	})
+	
+	
+</script>
+
+<div id="banner1">    
+    <div id="banner_bg"></div>  
+    <div id="banner_info1"></div> 
+    <ul>
+        <li class="on">1</li>
+        <li>2</li>
+       
+    </ul>
+   <div id="banner_list1"><a href="#" target="_blank"><img src="http://2011.igem.org/wiki/images/e/e4/2.2zju-CFP_TetR_od.png" title="" alt="Growth Rate with the repression of tetR" /></a>
+        <a href="#" target="_blank"><img src="http://2011.igem.org/wiki/images/f/ff/2.1zju-CFP_TetR_fluorescence.png" title="" alt="Fluorescence intensity of CFP with the repression of tetR" /></a></p>
+       
+    </div>
+</div>
+<p>&nbsp; </p>
+<p>This device has the Ptet promoter, which can be repressed by tetR. Its expression is very low under micro-aerobic and anaerobic conditions when tetR was expressed. Its PoPS is 0.3542 /h.</p>
+                </div><!--framecontent-->
+                </div>
+              </div><!--orange-->
+		</div><!--frame-->
+        </div><!--rightcontainer-->
+        <p style="clear:both"></p>
+	</div><!--main-->
+     <p style="clear:both"></p>
+    <div class="footer" id="footer"><a href="http://2011.igem.org/"> iGem 2011 Home Page</a>
+          <a href="http://ung.igem.org/Special:Upload/"> Upload Files</a>
+          <a href="http://2011.igem.org/wiki/index.php?title=Template:Zjucss_main&action=edit">Edit CSS</a>
+          <a href="http://ung.igem.org/Team_Wikis?year=2011"> Team Wikis</a>
+          <a href="mailto:zjuigem@gmail.com?"><strong>Contact Us</strong></a>
+</div>
+</div><!--contentwrapper-->
+</div>
+</body>
+</html>
+
+

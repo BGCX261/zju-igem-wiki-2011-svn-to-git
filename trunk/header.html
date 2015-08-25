@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel='stylesheet' type='text/css' href='global.css' />
+</head>
+
+<body>
+
+	<div class="header">
+	<div class="bgimg"></div>
+	<div class="bgpart1"></div>
+	<div class="bgpart2"></div>
+    
+    <div class="banner">
+                    <div class="logo"><img src="http://2011.igem.org/wiki/images/c/c9/Logo.png" width="200" height="200" /></div>
+                    <div class="title"><img src="http://ung.igem.org/wiki/images/b/b3/Title.png" width="603" height="220" /></div>
+                    <div class="igemlogo"><a  target="_blank" href="http://2011.igem.org"><img src="http://2011.igem.org/wiki/images/e/e2/Igemlogo.png" width="180" height="150" /></a></div>
+	 </div><!--banner-->
+     <div class="nav">
+                  <ul id="topnav">
+   <li ><a id="P_Home" href="http://2011.igem.org/Team:ZJU-China">Home</a></li>
+
+    <li >
+        <a id="P_Project">Project</a>
+        <!--Subnav Starts Here-->
+        <span id="P_Pr">
+            <a id="pro" href="http://2011.igem.org/Team:ZJU-China/Project">Overview</a> |
+            <a href="http://2011.igem.org/Team:ZJU-China/Project/Stratifiedsystem">Background</a>|
+            <a href="http://2011.igem.org/Team:ZJU-China/Modeling">Modeling</a> |
+            <a href="http://2011.igem.org/Team:ZJU-China/Project/Result">Result</a>|
+            <a href="http://2011.igem.org/Team:ZJU-China/Datapage">Data Page</a>|
+            <a href="http://2011.igem.org/Team:ZJU-China/Parts">Parts</a>|
+            <a href="http://2011.igem.org/Team:ZJU-China/Project/Future">Future Application</a>
+            
+        </span>
+        <!--Subnav Ends Here-->
+    </li>
+    <li ><a id="P_Team">Team</a>
+    <span id="P_Te">
+            <a id="tea" href="http://2011.igem.org/Team:ZJU-China/Team">Meet our Team</a> |
+            <a href="">collaboration</a>|
+            <a href="http://2011.igem.org/Team:ZJU-China/Team/University">Our University</a>
+      </span>
+    </li>
+    <li ><a id="P_Notebook">Notebook</a>
+    <span id="P_No">
+   
+            <a id="not" href="http://2011.igem.org/Team:ZJU-China/Notebook">Labnote</a> |
+            <a href="http://2011.igem.org/Team:ZJU-China/Protocol">Protocol</a>  |
+                <a href="http://2011.igem.org/Team:ZJU-China/Notebook/Brainstorm">Brainstorm</a>
+      </span>
+    </li><li ><a id="P_HumanPractice">HumanPractice</a>
+    <span id="P_Hu">
+    <a id="hum" href="http://2011.igem.org/Team:ZJU-China/Humanpractice">Overview</a>|
+            <a href="http://2011.igem.org/Team:ZJU-China/Safety">Safety</a> |
+            <a href="http://2011.igem.org/Team:ZJU-China/Humanpractice/App">App</a> |
+            <a href="">Novel</a>|
+            <a href="">Funding Guide</a>
+         
+</span>
+    </li>
+<li id="search"><div id="searchbar">
+  
+  <div>
+  <form action="http://www.google.com.hk/cse" id="cse-search-box" target="_blank" >
+  <div>
+    <input type="hidden" name="cx" value="005438704919531788579:zbfi5n-q5du" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" size="15" />
+    <input type="submit" name="sa" value="Search" />
+    
+  </div>
+</form>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script></div></div></li>
+</ul>
+</div><!--navbar-->
+<script type="text/javascript">
+   document.getElementById('P_Team').onclick=function(){
+	   document.getElementById('P_Te').style.display='block'
+
+	    document.getElementById('P_Pr').style.display='none'
+		document.getElementById('P_No').style.display='none'
+		document.getElementById('P_Hu').style.display='none'
+		<!-- document.getElementById('P_Pr').style.display='none' -->
+	   };
+	    document.getElementById('P_Project').onclick=function(){
+	   document.getElementById('P_Pr').style.display='block'
+	    document.getElementById('P_Te').style.display='none'
+		document.getElementById('P_No').style.display='none'
+		document.getElementById('P_Hu').style.display='none'
+		<!-- document.getElementById('P_Pr').style.display='none' -->
+	   };
+	    document.getElementById('P_Notebook').onclick=function(){
+	   document.getElementById('P_No').style.display='block'
+	    document.getElementById('P_Pr').style.display='none'
+		document.getElementById('P_Te').style.display='none'
+		document.getElementById('P_Hu').style.display='none'
+		<!-- document.getElementById('P_Pr').style.display='none' -->
+	   };
+	    document.getElementById('P_HumanPractice').onclick=function(){
+	   document.getElementById('P_Hu').style.display='block'
+	    document.getElementById('P_Pr').style.display='none'
+		document.getElementById('P_No').style.display='none'
+		document.getElementById('P_Te').style.display='none'
+		<!-- document.getElementById('P_Pr').style.display='none' -->
+	   };
+	  
+</script>
+</div><!--header-->
+</body>
+</html>

@@ -1,0 +1,832 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Biofilm Modeling</title>
+<link href='http://fonts.googleapis.com/css?family=Molengo'
+	rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Hammersmith+One'
+	rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Alice'
+	rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Ovo' rel='stylesheet'
+	type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Federo'
+	rel='stylesheet' type='text/css'>
+<link
+	href='http://fonts.googleapis.com/css?family=Istok+Web:700italic,400,700,400italic'
+	rel='stylesheet' type='text/css'>
+
+<link href="modeling.css" rel="stylesheet" type="text/css">
+<link href="global.css" rel="stylesheet" type="text/css">
+<link href="template2.css" rel="stylesheet" type="text/css"><!-- include the Tools -->
+<script src="http://cdn.jquerytools.org/1.2.6/full/jquery.tools.min.js"></script>
+<style type="text/css">
+</style>
+<style>
+#p_intro {
+	color: white;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+#p_intro:hover {
+	
+}
+
+#p_model {
+	font-size: 20px;
+	cursor: pointer;
+	color: white;
+}
+
+#p_model:hover {
+	
+}
+
+#p_simul {
+	font-size: 20px;
+	cursor: pointer;
+	color: white;
+}
+
+#p_simul:hover {
+	
+}
+
+#p_refer {
+	font-size: 20px;
+	cursor: pointer;
+	color: white;
+}
+
+#p_refer:hover {
+	
+}
+</style>
+
+<style>
+#banner {position:relative; width:500px; height:400px; border:1px solid #666; overflow:hidden;}
+#banner_list img {border:0px;}
+#banner_bg {position:absolute; bottom:25px;background-color:#000;height:30px;filter: Alpha(Opacity=50);opacity:0.5;z-index:1000;cursor:pointer; width:513px; }
+#banner_info{position:absolute; bottom:25px; left:5px;height:30px;color:#fff;z-index:1001;cursor:pointer}
+#banner_text {position:absolute;width:120px;z-index:1002; right:3px; bottom:3px;}
+#banner ul {position:absolute;list-style-type:none;filter: Alpha(Opacity=80);opacity:0.8; border:1px solid #fff;z-index:1002;
+			margin:0; padding:0; bottom:3px; right:5px;}
+#banner ul li { padding:0px 8px;float:left;display:block;color:#FFF;border:#e5eaff 1px solid;background:#6f4f67;cursor:pointer}
+#banner ul li.on { background:#900}
+#banner_list a{position:absolute;}
+
+
+#banner1 {position:relative; width:500px; height:400px; border:1px solid #666; overflow:hidden;}
+#banner_list1 img {border:0px;}
+#banner_info1 {position:absolute; bottom:25px; left:5px;height:30px;color:#fff;z-index:1001;cursor:pointer}
+#banner1 ul {position:absolute;list-style-type:none;filter: Alpha(Opacity=80);opacity:0.8; border:1px solid #fff;z-index:1002;
+			margin:0; padding:0; bottom:3px; right:5px;}
+#banner1 ul li { padding:0px 8px;float:left;display:block;color:#FFF;border:#e5eaff 1px solid;background:#6f4f67;cursor:pointer}
+#banner1 ul li.on { background:#900}
+#banner_list1 a{position:absolute;}
+</style>
+
+
+</head>
+
+<body>
+<div class="global">
+<div class="header">
+<div class="bgimg"></div>
+<div class="bgpart1"></div>
+<div class="bgpart2"></div>
+
+
+<div class="banner">
+<div class="logo"><img
+	src="http://2011.igem.org/wiki/images/c/c9/Logo.png" width="200"
+	height="200" /></div>
+<div class="title"><img
+	src="http://ung.igem.org/wiki/images/b/b3/Title.png" width="603"
+	height="220" /></div>
+<div class="igemlogo"><a target="_blank"
+	href="http://2011.igem.org"><img
+	src="http://2011.igem.org/wiki/images/e/e2/Igemlogo.png" width="180"
+	height="150" /></a></div>
+</div>
+<!--banner-->
+<div class="nav">
+<ul id="topnav">
+	<li><a id="P_Home" href="http://zjuchina.tk/index.html">Home</a></li>
+
+	<li><a id="P_Project"
+		href="http://zjuchina.tk/Project.html">Project</a> <!--Subnav Starts Here-->
+
+
+	<!--Subnav Ends Here--></li>
+	<li><a id="P_Team" href="http://zjuchina.tk/Team.html">Team</a>
+
+	</li>
+	<li><a id="P_Notebook"
+		href="http://zjuchina.tk/Notebook.html">Notebook</a></li>
+	<li><a id="P_HumanPractice"
+		href="http://zjuchina.tk/Humanpractice.html">HumanPractice</a></li>
+	<li id="search">
+	<div id="searchbar">
+
+	<div>
+	<form action="http://www.google.com.hk/cse" id="cse-search-box"
+		target="_blank">
+	<div><input type="hidden" name="cx"
+		value="005438704919531788579:zbfi5n-q5du" /> <input type="hidden"
+		name="cof" value="FORID:10" /> <input type="hidden" name="ie"
+		value="UTF-8" /> <input type="text" name="q" size="15" /> <input
+		type="submit" name="sa" value="Search" /></div>
+	</form>
+	<script type="text/javascript"
+		src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script></div>
+	</div>
+	</li>
+</ul>
+</div>
+<!--navbar--> <script type="text/javascript">
+   document.getElementById('P_Team').onclick=function(){
+	   document.getElementById('P_Te').style.display='block'
+
+	    document.getElementById('P_Pr').style.display='none'
+		document.getElementById('P_No').style.display='none'
+		document.getElementById('P_Hu').style.display='none'
+		<!-- document.getElementById('P_Pr').style.display='none' -->
+	   };
+	    document.getElementById('P_Project').onclick=function(){
+	   document.getElementById('P_Pr').style.display='block'
+	    document.getElementById('P_Te').style.display='none'
+		document.getElementById('P_No').style.display='none'
+		document.getElementById('P_Hu').style.display='none'
+		<!-- document.getElementById('P_Pr').style.display='none' -->
+	   };
+	    document.getElementById('P_Notebook').onclick=function(){
+	   document.getElementById('P_No').style.display='block'
+	    document.getElementById('P_Pr').style.display='none'
+		document.getElementById('P_Te').style.display='none'
+		document.getElementById('P_Hu').style.display='none'
+		<!-- document.getElementById('P_Pr').style.display='none' -->
+	   };
+	    document.getElementById('P_HumanPractice').onclick=function(){
+	   document.getElementById('P_Hu').style.display='block'
+	    document.getElementById('P_Pr').style.display='none'
+		document.getElementById('P_No').style.display='none'
+		document.getElementById('P_Te').style.display='none'
+		<!-- document.getElementById('P_Pr').style.display='none' -->
+	   };
+	  
+</script></div>
+<!--header-->
+<div id="contentwrapper">
+<div class="main">
+<div class="bgpart3"></div>
+<div class="leftulcontainer" id="orange">
+<div id="leftul" class="leftul">
+<div id="accordion">
+
+<h4 class="current" id="try">Biofilm</h4>
+
+<div class="pane" style="display: block;"><a
+	href="http://zjuchina.tk/Project.html">Background</a> <a
+	href="http://zjuchina.tk/bio-Design.html">Design</a> <a
+	href="http://zjuchina.tk/bio-modeling.html">Modeling</a> <a
+	href="http://zjuchina.tk/bio-results.html">Results</a></div>
+
+<h4>Rainbofilm</h4>
+
+<div class="pane"><a
+	href="http://zjuchina.tk/rainbo-Background.html">Background</a>
+<a href="http://zjuchina.tk/rainbo-Design.html">Design</a> <a
+	href="http://zjuchina.tk/rainbo-modeling-v1.html">Modeling</a> <a
+	href="http://zjuchina.tk/rainbo-Results.html">Results</a></div>
+
+<h4>Sugarfilm</h4>
+
+<div class="pane"><a
+	href="http://zjuchina.tk/Sugar-background.html">Background</a> <a
+	href="http://zjuchina.tk/Sugar-Design.html">Design</a> <a
+	href="http://zjuchina.tk/Sugar-Modeling.html">Modeling</a> <a
+	href="http://zjuchina.tk/Sugar-Future.html">Future</a></div>
+<h4>Parts</h4>
+
+<div class="pane"><a
+	href="http://zjuchina.tk/BBa_I13602.html">BBa_I13602</a> <a
+	href="http://zjuchina.tk/BBa_K561000.html">BBa_K561000</a> <a
+	href="http://zjuchina.tk/Ba_K561002.html">BBa_K561002</a> <a
+	href="http://zjuchina.tk/Ba_K561003.html">BBa_K561003</a></div>
+<h4>Achievements</h4>
+<div class="pane"><a href="http://zjuchina.tk/data.html">Data
+Page</a> <a href="http://zjuchina.tk/judging.html">Judging Form</a> <a
+	href="http://zjuchina.tk/attribution.html">Attribution and
+Contributions</a></div>
+<h4>Tools</h4>
+
+<div class="pane"><a href="http://zjuchina.tk/Tools.html">Tools</a>
+</div>
+
+<script> 
+$(function() { 
+ 
+$("#accordion").tabs("#accordion div.pane", {tabs: 'h4', effect: 'slide', initialIndex: null});
+});
+</script> <!-- Navigation scroll follow --> <script type="text/javascript">
+        $(window).scroll(function () { 
+            var scrollPos = $(window).scrollTop();
+            if (scrollPos > 330) {
+                $(".leftul").addClass("stickToTop");
+            } else {
+                $(".leftul").removeClass("stickToTop");
+            }
+     
+        });
+    </script></div>
+<!--accordion--></div>
+<!--leftul--></div>
+<!--leftulcontainer-->
+
+<div class="rightcontainer">
+<div id="styleA" class="frame">
+<div id="orange">
+<h1>Modeling</h1>
+<p>This model is used for simulating biofilm formation and the
+stratification of concentration of oxygen</p>
+<div id="importantcontainer">
+<div class="frame" id="important">
+<div class="bgcolors" id="round">
+<h1>Introduction</h1>
+</div>
+</div>
+</div>
+<a name="Introdu">&nbsp;</a>
+<div id="framecontent">
+<p><strong>Compartment:</strong>The biofilm itself is distinguished
+from the overlying water and the substratum to which it is attached. A
+mass-transport boundary layer separates the biofilm from the overlying
+water.</p>
+<p>Within each compartment are<strong> components</strong>: include
+different types of biomass ,substrates , products. biomass is often
+divided into active microbial species, inert cells, and extracellular
+polymeric substances(EPS).</p>
+<p>The components can undergo transformation, transport, and
+transfer <strong>processes</strong>. For example, substrate is consumed,
+and this leads to the synthesis of new active biomass.</p>
+<p>All process affecting each component in each compartment are
+mathematically linked together into a<strong> mass balance
+equation</strong> that contains rate terms and parameters for each process.</p>
+<p><strong>Model Selection:</strong>Many kinds of Mathematics models
+have been founded to describe a system of biofilm. Models of different
+dimensions (1d, 2d, 3d) focus on different properties of a biofilm.
+Since we care most about the oxygen concentration gradients
+perpendicular to the substratum, <strong>numerical
+1-dimensional dynamic model(N1)</strong> would be a proper choice for us.</p>
+
+
+<h1>Compartment</h1>
+<p><strong>The biofilm:</strong> A biofilm is a gel-like aggregation
+of microorganisms and other particles embedded in extracellular
+polymeric substancs. A biofilm contains water inside it, but its main
+physical characteristic is that it is a solid phase. A biofilm normally
+is anchored to a solid surface called the substratum on one side and in
+contact with liquid on its other side. Frequently, a mass-transfer
+boundary layer is included between the bulk liquid and the biofilm
+itself. Thus, following figure illustrates a biofilm having four
+compartments: the substratum, the biofilm itself, the boundary layer,
+and the bulk liquid outside of the biofilm. While it is complex even for
+a homogeneous biofilm morphology, we assume the biofilm surface is flat
+and all material below the maximum biofilm thickness as part of the
+biofilm components, and they have a constant density.</p>
+<img src="http://igem.org/wiki/images/0/02/Modeling-biofilm.jpg"
+	alt="biofilm" width="541" height="317" />
+<p><strong>The mass-transport boundary layer: </strong>Experimental
+observations clearly indicate strong concentration gradients for solutes
+just outside the biofilm when these solutes are utilized or produced by
+the microorganisms in the biofilm. Consequently, the solute
+concentrations at the biofilm surface and in a completely mixed bulk
+liquid often are significantly different.So we introduce the
+mass-transport boundary layer,which is a hypothetical layer of liquid
+above the biofilm and in which all the resistance to mass transport of
+dissolved components outside the biofilm occurs.</p>
+<p><strong>The bulk liquid:</strong> In our experiments, the bulk
+liquid is large compared to the biofilm. So the simplest way seems to
+consider it as a boundary condition of the biofilm compartment and
+specify the concentrations of dissolved. However, dissolved components
+can exchange between the biofilm and the bulk liquid, and it has a
+profound impact on the concentrations in the bulk liquid. Thus we
+include the bulk liquid not only as a boundary condition, but also as a
+separate, completely mixed compartment, varying according to the inflow,
+outflow, and the exchanges with the biofilm.</p>
+<p><strong>The substratum:</strong> In our basic model, the
+substratum is a separate compartment and impermeable. So it does not
+have much effect on the biofilm system. However in some bioreactor, the
+substratum may be permeable, or include organic solids that are
+biodegraded by attached microorganisms.</p>
+<h1>Component</h1>
+<p><strong>Dissolved components:</strong> There are two kind of
+dissolved components in our model, one is oxygen, the other is
+substrates where nutrients are inside. They are expressed by inflow
+concentration of oxygen, inflow concentration of substrates and monod
+half saturation constant for substrates, monod half saturation constant
+for oxygen.Diffusion coefficient of oxygen and diffusion coefficient of
+substrate are also used to characterize the property of these
+components.</p>
+<p><strong>Particulate components:</strong> In our model, the
+particulate components are microbes and EPS. We assume that they are
+homogeneously mixed in the same proportion in all parts of the biofilm.
+So can use bacterial density to relate the amount of bacterial and the
+volume it takes up. And the volume fraction of EPS in Bacterial is
+specified by a constant.</p>
+
+<h1>Process</h1>
+<p><strong>Transformation processes</strong> usually are biochemical
+reactions that produce or consume one or more components: e.g.,
+consumption of substrate, production of metabolic end-products,
+microbial growth and decay, and production of EPS.</p>
+<p>The<strong> transport processes</strong> that regularly are
+considered in biofilm models are advection, molecular diffusion, and
+turbulent dispersion. In special cases, transport of charged components
+by migration in an electric field created is included. The general, 1d
+expression to model the specific mass flux of a component is calculuted
+in the direction z</p>
+<p><strong>Transfer processes</strong> exchange mass of dissolved or
+particulate components between two compartments. At the interface
+between the compartments, a continuity condition for the component
+concentration C and the specific flux j of the exchanged mass must be
+fulfilled. Continuity means that C and j are the same on both sides of
+the interface between the compartments. C and j can be calculated at
+each side of the interface from boundary conditions</p>
+</div>
+<a name="mModel">&nbsp;</a>
+<div id="importantcontainer">
+<div class="frame" id="important">
+<div class="bgcolors" id="round">
+
+<h1>Modeling</h1>
+</div>
+</div>
+</div>
+
+<a name="jumpmodeling">&nbsp;</a>
+<div id="framecontent">
+<h1>An introduction to N1 model</h1>
+<p>The core of the N1 model consists of a system of stiff,
+non-linear partial differential equations. Because of the stiffness of
+the equation system, integration methods tailored for stiff systems must
+be used, or the dissolved and the particulate components have to be
+treated differently. Furthermore, biofilm growth, i.e., the displacement
+of the interface between biofilm and bulk liquid, creates a so-called
+moving boundary problem (Kissel et al. 1984; Wanner and Gujer 1986).We
+performed simulations with the N1 model using the software package
+AQUASIM (Reichert 1998a, 1998b), since it can handle stiff systems and
+the moving boundary. The N1 model implemented in AQUASIM is described in
+next Section.</p>
+<p></p>
+<p><strong>The processes considered in the model include:</strong></p>
+<ul>
+	<li>Many transformation processes</li>
+	<li>Advection and diffusion of attached particulate components in
+	the biofilm solid matrix</li>
+	<li>Attachment and detachment of particulate components at the
+	biofilm surface and in the biofilm interior</li>
+	<li>Diffusion of suspended particulate and dissolved components in
+	the biofilm liquid phase and in the liquid boundary layer at the
+	biofilm surface</li>
+	<li>Complete mixing of suspended particulate and dissolved
+	components in the bulk liquid</li>
+</ul>
+<h1>Definitions and equations</h1>
+<p>As discussed above, biofilms are multiphase systems.
+Consequently, in the N1 model three different phases are distinguished.
+The solid attached phase is made up by the particulate components, which
+form the biofilm solid matrix. In the model of single species of
+bacteria, the particulate components are assumed to be uniform, defined
+as</p>
+<p><img src="http://ung.igem.org/wiki/images/0/02/Function1.png"
+	width="660" style="float: none;" alt="function1" /></p>
+<p>where<strong> X_M</strong> is the concentration of the attached
+component, <strong>ρ</strong> is its density , defined as the mass
+divided by the volume of the cell or particle, and<strong> ε</strong> is
+its volume fraction, defined as volume of the component per unit biofilm
+volume. The porosity or biofilm pore volume fraction<strong> θ
+</strong>is</p>
+<p><img src="http://ung.igem.org/wiki/images/c/cc/Function2.png"
+	width=660 style="float: none;" alt="function2" /></p>
+<p>The pore volume is formed by two phases: the phase of the
+suspended particulate components with concentrations<strong>
+X_P </strong>and the biofilm liquid phase, with the liquid phase volume fraction
+<strong>ε_liquid</strong>:</p>
+<p><img src="http://ung.igem.org/wiki/images/1/15/Function3.png"
+	width="660" style="float: one;" alt="function3" /></p>
+
+<h1>Mass balances in biobilm models</h1>
+<p>Conservation of mass of a component in a dynamic and open system
+states that:</p>
+<p><img
+	src="http://ung.igem.org/wiki/images/4/43/Function-massbalance.png"
+	width="600" style="float: none;" alt="massbalance" /></p>
+<p>The local mass balances are differential equations that express
+the variation of concentration of a component in time in a point in
+space as a result of transport and transformation processes.
+One-dimensional mass balance equations for attached particulate,
+suspended particulate, and dissolved components can be derived from the
+general mass balance if gradients are considered only in the direction
+of z, perpendicular to the substratum.</p>
+<p><img src="http://ung.igem.org/wiki/images/0/00/Function4.png"
+	width="660" style="float: none;" alt="function4" /></p>
+<p>where<strong> t </strong>is time;<strong> z </strong>is
+perpendicular coordinates ;<strong> S </strong>is the concentration;<strong>
+j </strong>is the mass flux along the perpendicular coordinates; and<strong>
+r </strong>is the net production rate of the component. For a dissolved substrate<strong>
+S_i</strong>, the specific mass flux<strong> j_i </strong>in the biofilm, can be
+modeled by Fick’s first law of diffusion as</p>
+<p><img src="http://ung.igem.org/wiki/images/c/cc/Function5.png"
+	width="660" style="float: none;" alt="function5" /></p>
+
+<p>Where<strong> D_i </strong>is the molecular diffusivity of
+substrate in the biofilm. Substituting this equation into the equation
+(1) yields a mass balance equation that describes the development in
+time and the spatial profile in the biofilm of the concentration<strong>
+S_i </strong>of a dissolved substrate as</p>
+<p><img src="http://ung.igem.org/wiki/images/d/da/Function6.png"
+	width="660" style="float: none;" alt="function6" /></p>
+
+<p>where<strong> r_i </strong>is the net production rate of<strong>
+S_i</strong>. Equation (3) has the boundary condition</p>
+<p><img src="http://ung.igem.org/wiki/images/7/78/Function7.png"
+	width="660" style="float: none;" alt="function7" /></p>
+<p>at the substratum (<strong>z=0</strong>) and</p>
+<p><img src="http://ung.igem.org/wiki/images/2/22/Function8.png"
+	width="660" style="float: none;" alt="function8" /></p>
+<p>at the biofilm–bulk liquid interface (<strong>z=LF</strong>),
+where LF is the biofilm thickness and <strong>S_LF</strong>, <strong>i</strong>
+is the substrate concentration at the biofilm surface. All terms in
+equation (6) are given as substrate mass per unit biofilm volume.
+Equations (6) to (8) also hold for suspended particulate components,
+i.e., for cells or particles which are suspended in the biofilm pore
+volume and have the concentration<strong> X_P</strong>.</p>
+<p>For attached particulate components, which form the biofilm solid
+matrix, transport is assumed to be the result of microbial growth and
+decay in the biofilm. Growing or shrinking cells lead to a volume
+expansion or contraction of the biofilm solid matrix, respectively, and
+to a displacement of neighboring cells (Wanner 1989). This displacement
+can be interpreted as advective transport and is formally described as a
+specific mass flux<strong> j_M </strong>by</p>
+<p><img src="http://ung.igem.org/wiki/images/7/77/Function9.png"
+	width="660" style="float: none;" alt="function9" /></p>
+
+<p>where<strong> u_F </strong>is the distance by which the cells are
+displaced per unit time. The displacement velocity<strong> u_F
+</strong>of a cell at the location z is equal to the added net specific mass
+production of the cells the biofilm matrix between the substratum and
+this location:</p>
+<p><img src="http://ung.igem.org/wiki/images/b/b0/Function10.png"
+	width="660" style="float: none;" alt="function10" /></p>
+
+<p>where<strong> r_M </strong>is the net production rate of a
+particulate component in the biofilm matrix. Based on equations (9),
+with<strong> u_F </strong>as defined in (10), a mass balance analogous
+to equation (6) can be derived and used to describe the development in
+time and the spatial profile in the biofilm of the attached particulate
+component:</p>
+<p><img src="http://ung.igem.org/wiki/images/9/98/Function11.png"
+	width="660" style="float: none;" alt="function11" /></p>
+
+<p>The boundary condition is no-flux condition:</p>
+<p><img src="http://ung.igem.org/wiki/images/2/23/Function12.png"
+	width="660" style="float: none;" alt="function12" /></p>
+
+<p>at the substratum. Equation (11) is used to calculate the
+relative abundance, spatial distribution, and development in time of
+microbial species and particles in the biofilm.</p>
+<p><img
+	src="http://2011.igem.org/wiki/images/2/20/Biofilm-formaiton.jpg"
+	width="660" style="float: none;" alt="biofilmformation" /></p>
+
+<p>The development of the biofilm thickness in time is the result of
+the net production of biomass in the biofilm, as described by equation
+(10), of the attachment at the biofilm surface of microbial cells and
+particles suspended in the bulk liquid, and of the detachment of
+microbial cells and particles from the biofilm surface to the bulk
+liquid. It is modeled as</p>
+<p><img src="http://ung.igem.org/wiki/images/9/9c/Function13.png"
+	style="float:none;s" width=660 margin-left=30px alt="function13" /></p>
+
+<p>where<strong> u_de </strong>and<strong> u_at </strong>are the
+detachment velocity and the attachment velocity, respectively. The
+velocity<strong> u_de </strong>yields a phenomenological description of
+the decrease of the biofilm thickness per unit time as result of the
+detachment process, i.e., erosion or sloughing.</p>
+<p>Attachment refers to the adsorption of microbial cells suspended
+in the bulk liquid to the biofilm surface and is modeled by an
+attachment velocity as</p>
+<p><img src="http://ung.igem.org/wiki/images/9/97/Function14.png"
+	width="660" style="float: none;" alt="function14" /></p>
+
+<p>where <strong>k</strong> is the attachment rate coefficient and <strong>X_L</strong>
+is the concentration at the bulk liquid side of the biofilm surface of
+the suspended particulate component.</p>
+<p>The environment of the biofilm is modeled as a completely mixed
+volume of water, termed bulk liquid. Conversion processes in the bulk
+liquid can be equally important as those that take place in the biofilm.
+For each dissolved and particulate component considered, an additional
+mass balance equation of the form</p>
+<p><img src="http://ung.igem.org/wiki/images/4/4c/Function15.png"
+	width="660" style="float: none;" alt="function15" /></p>
+
+<p>is needed, where <strong>C_in</strong>,<strong>i</strong> and <strong>C_B</strong>,<strong>
+i </strong>are the influent and bulk liquid concentrations, respectively, of the
+dissolved or suspended particulate component<strong> i</strong>,<strong>
+V_B </strong>is the bulk liquid volume,<strong> Q </strong>is the rate of flow
+through the bulk liquid,<strong> A_F </strong>is the biofilm surface
+area,<strong> j_F</strong>,i is the mass flux across the biofilm surface
+, and<strong> r_B</strong>,<strong>i</strong> is the production rate of
+the component.</p>
+<h1>Transformation processes</h1>
+<p>In modeling, the transformation processes are represented
+mathematically with rate expressions, or equations that tell how fast
+the component is produced or consumed. The rate is proportional to the
+concentrations of one or more of the components and one or more kinetic
+parameters. We describe the synthesis of microbial biomass with the
+Monod equation for one limiting substrate:</p>
+<p><img src="http://ung.igem.org/wiki/images/d/dc/Function16.png"
+	style="float: none;" alt="function16" /></p>
+
+<p>where<strong> μ </strong>is the specific growth rate, <strong>μ_max</strong>
+the maximum specific growth rate,<strong> S </strong>is the
+concentration of the rate-limiting substrate, and<strong> K_S </strong>is
+the concentration giving one-half the maximum rate.</p>
+<p>When multiple substrates are rate limiting, the Monod equation
+typically is extended to include the effects of each substrate
+influencing the rate of microbial synthesis. For instance, is the rate
+of microbial synthesis may be limited by the concentrations of the
+electron donor (S_1, e.g. COD) and the electron acceptor (<strong>S_2</strong>,
+e.g. Oxygen) then the specific growth rate can be described with a
+multiplicative-Monod expression (Bae and Rittmann 1996):</p>
+<p><img src="http://ung.igem.org/wiki/images/6/68/Function17.png"
+	width="660" style="float:none;"; alt="function17" /></p>
+
+<p>Synthesis is not the only transformation process relevant to
+microorganisms in a biofilm. Indeed, the microorganisms undergo a number
+of loss processes, including endogenous decay (or inactivation),
+predation, and detachment. The inactivation process is common in almost
+any biofilm and serves as a model for how to express a biomass-loss
+process.</p>
+<p>Synthesis is not the only transformation process relevant to
+microorganisms in a biofilm. Indeed, the microorganisms undergo a number
+of loss processes, including endogenous decay (or inactivation),
+predation, and detachment. The inactivation process is common in almost
+any biofilm and serves as a model for how to express a biomass-loss
+process.A simple and common means to represent inactivation/decay is
+with a first-order loss rate</p>
+<p><img src="http://ung.igem.org/wiki/images/9/95/Function18.png"
+	width="660" style="float: none;" alt="function18" /></p>
+
+<p>where<strong> r_in </strong>is the inactivation rate and b is the
+first-order inactivation rate constant. Because utilization of a
+substrate is what brings about biomass synthesis, the rate of substrate
+utilization is proportional to the growth rate of<strong> X</strong>:</p>
+<p><img src="http://ung.igem.org/wiki/images/a/a1/Function19.png"
+	width="660" style="float: none;" alt="function19" /></p>
+<p>where Y is the true-yield coefficient, or the ratio of biomass
+produced per unit of substrate consumed. Similar equations could be
+founded to describe rates in other processes. Following table summarizes
+the basic rate expressions for heterotrophic bacteria in a convenient
+and commonly used matrix format. The Monod half saturation constant for
+oxygen<strong> K </strong>in processes of growth and respiration are
+assumed to be equal.</p>
+<p><img src="http://ung.igem.org/wiki/images/a/a7/Functions.png"
+	width="660" alt="Functions"/></p>
+</div>
+
+<a name="mSimula">&nbsp;</a>
+<div id="importantcontainer">
+<div class="frame" id="important">
+<div class="bgcolors" id="round">
+<h1>Simulation</h1>
+</div>
+</div>
+</div>
+
+<div id="framecontent"><a name="jumpsimulation">&nbsp;</a>
+<p>Calculate growth and oxygen concentration gradient of a biofilm
+which consists of Heterotrophic bacteria. The water inflow at a constant
+rate contains substrates and Oxygen. Growth occurs with Monod-type rate
+laws. Respiration occurs with specific rate. <strong>A program
+variable LF</strong> referring to Biofilm Thickness and <strong>3
+dynamic volume state variables O_2, S, X</strong> referring to oxygen, substrates
+and the Heterotrophic bacteria are defined. All necessary constants and
+initial conditions are defined in following table. Some of their values
+are based on average results provided by IWA.</p>
+<p><img src="http://igem.org/wiki/images/d/d9/Zju-filmpara.png"
+	style="width: 660px;" alt="peremater"/></p>
+<h1>Definition of Process</h1>
+<p>Define a dynamic process for growth, a dynamic process for
+respiration, and a dynamic process for inactivation. The microbial
+stoichiometric numbers of the processes of S (referring to substrates)
+and O_2 (referring to Oxygen) and rate of the processes are shown in
+following table.</p>
+<p><img src="http://ung.igem.org/wiki/images/a/a7/Functions.png"
+	width="660" alt="Functions"/></p>
+<h1>Simulation results</h1>
+<p><strong>Definition of simulation</strong></p>
+<p>Define an active calculation with proper steps of 1 day.</p>
+
+<script type="text/javascript">
+	var t = n = 0, count;
+	$(document).ready(function(){	
+		count=$("#banner_list a").length;
+		$("#banner_list a:not(:first-child)").hide();
+		$("#banner_info").html($("#banner_list a:first-child").find("img").attr('alt'));
+		$("#banner_info").click(function(){window.open($("#banner_list a:first-child").attr('href'), "_blank")});
+		$("#banner li").click(function() {
+			var i = $(this).text() - 1;//获取Li元素内的值，即1，2，3，4
+			n = i;
+			if (i >= count) return;
+			$("#banner_info").html($("#banner_list a").eq(i).find("img").attr('alt'));
+			$("#banner_info").unbind().click(function(){window.open($("#banner_list a").eq(i).attr('href'), "_blank")})
+			$("#banner_list a").filter(":visible").fadeOut(500).parent().children().eq(i).fadeIn(1000);
+			document.getElementById("banner").style.background="";
+			$(this).toggleClass("on");
+			$(this).siblings().removeAttr("class");
+		});
+		 t = setInterval("showAuto()", 4000);
+        $("#banner").hover(function(){clearInterval(t)}, function(){t = setInterval("showAuto()", 4000);});
+	})
+	 function showAuto()
+    {
+        n = n >=(count - 1) ? 0 : ++n;
+        $("#banner li").eq(n).trigger('click');
+    }
+</script>    
+
+<div id="banner">    
+    <div id="banner_bg"></div>  
+    <div id="banner_info"></div> 
+    <ul>
+        <li class="on">1</li>
+        <li>2</li>
+   
+    </ul>
+   <div id="banner_list">
+        <a href="#" target="_blank"><img src="http://2011.igem.org/wiki/images/3/38/Zju-results1.png" title="" alt="Biofilm thickness within two days 
+" /></a>
+      
+        <a href="#" target="_blank"><img src="http://2011.igem.org/wiki/images/e/e5/Zju-results2.png" title="" alt="Biofilm thickness within six days" /></a>
+
+
+    </div>
+</div>
+<script type="text/javascript">
+
+	var t1 = n1 = 0, count;
+	$(document).ready(function(){	
+		count=$("#banner_list1 a").length;
+		$("#banner_list1 a:not(:first-child)").hide();
+		$("#banner_info1").html($("#banner_list1 a:first-child").find("img").attr('alt'));
+		$("#banner_info1").click(function(){window.open($("#banner_list1 a:first-child").attr('href'), "_blank")});
+		$("#banner1 li").click(function() {
+			var i = $(this).text() - 1;//获取Li元素内的值，即1，2，3，4
+			n1 = i;
+			if (i >= count) return;
+			$("#banner_info1").html($("#banner_list1 a").eq(i).find("img").attr('alt'));
+			$("#banner_info1").unbind().click(function(){window.open($("#banner_list1 a").eq(i).attr('href'), "_blank")})
+			$("#banner_list1 a").filter(":visible").fadeOut(500).parent().children().eq(i).fadeIn(1000);
+			document.getElementById("banner1").style.background="";
+			$(this).toggleClass("on");
+			$(this).siblings().removeAttr("class");
+		});
+	 t1 = setInterval("showAuto1()", 4000);
+     $("#banner1").hover(function(){clearInterval(t)}, function(){t1 = setInterval("showAuto1()", 4000);});
+	})
+	  function showAuto1()
+    {
+        n1 = n1 >=(count - 1) ? 0 : ++n1;
+        $("#banner1 li").eq(n1).trigger('click');
+    }
+	
+
+</script>
+<div id="banner1">    
+    <div id="banner_bg"></div>  
+    <div id="banner_info1"></div> 
+    <ul>
+        <li class="on">1</li>
+        <li>2</li>
+      
+    </ul>
+   <div id="banner_list1">
+        <a href="#" target="_blank"><img src="http://2011.igem.org/wiki/images/c/cb/Zju-results3.png" title="" alt="Oxygen concentration in day 1
+" /></a>
+        
+        <a href="#" target="_blank"><img src="http://2011.igem.org/wiki/images/8/80/Zju-results4.png" title="" alt="
+Oxygen concentration in day 2" /></a>
+    </div>
+</div>
+<!--
+<img src="http://2011.igem.org/wiki/images/3/38/Zju-results1.png"
+	alt="Results1"/> <img
+	src="http://2011.igem.org/wiki/images/e/e5/Zju-results2.png"
+	alt="Results2"/> <img
+	src="http://2011.igem.org/wiki/images/c/cb/Zju-results3.png"
+	alt="Results3"/> <img
+	src="http://2011.igem.org/wiki/images/8/80/Zju-results4.png"
+	alt="Results4"/> <img
+	src="http://2011.igem.org/wiki/images/9/97/Zju-results5.png"
+	alt="Results5"/>
+-->
+<p>Fit above graph into polynomial, we have:</p>
+<img src="http://igem.org/wiki/images/e/e5/Zju-results6.png.png"
+	alt="Results6"/>
+</div>
+<div id="importantcontainer">
+<div class="frame" id="important">
+<div class="bgcolors" id="round">
+<h1>Reference</h1>
+</div>
+</div>
+</div>
+<div id="framecontent"><a name="mRefer">&nbsp;</a>
+<table style="background-color: transparent;" width="0" border="0"
+	cellspacing="1" cellpadding="1">
+	<tr>
+		<td>[1]</td>
+		<td>O Wanner, H Eberl, E Morgenroth, D Noguera, C Picioreanu, B
+		Rittmann, M Loosdrecht. ”Mathematical Modeling of Biofilms, IWA Task
+		Group on Biofilm Modeling.”, Scientific and Technical Report, 2006.</td>
+	</tr>
+	<tr>
+		<td>[2]</td>
+		<td>P Reichert. “AQUASIM 2.0-Tutorial” Swiss Federal Institute
+		for Environmental Science and Technology, 1998.</td>
+	</tr>
+	<tr>
+		<td>[3]</td>
+		<td>P Reichert. “AQUASIM 2.0-User Manual” Swiss Federal Institute
+		for Environmental Science and Technology, 1998.</td>
+	</tr>
+	<tr>
+		<td>[4]</td>
+		<td>LI Tian-cheng, LI Xin-gang, ZHU Shen-lin.”Two-Dimension
+		Dynamic Simulations on Biofilm Forming and Developing”. Acta
+		Scientiarum Naturalium Universitatis Sunyatseni, 2005.</td>
+	</tr>
+</table>
+<p></p>
+</div>
+<!--framecontent-->
+<div class="frame" id="rightnav">
+<div class="bgcolors" id="round">
+<p><a name="jumptop" id="p_intro" href="#Introdu">&nbsp;Introduction&nbsp;</a>|<a
+	id="p_model" href="#mModel">&nbsp;Model&nbsp;</a>|<a id="p_simul"
+	href="#mSimula">&nbsp;Simulation&nbsp;</a>|<a id="p_refer"
+	href="#mRefer">Reference</a></p>
+<script type="text/javascript"> 
+document.getElementById('p_intro').onclick= function(){
+document.getElementById('introduction').style.display='block'
+document.getElementById('mmodeling').style.display='none'
+document.getElementById('reference').style.display='none'
+document.getElementById('sr').style.display='none'
+}
+
+document.getElementById('p_model').onclick= function(){
+ document.getElementById('mmodeling').style.display='block'
+document.getElementById('introduction').style.display='none'
+document.getElementById('reference').style.display='none'
+document.getElementById('sr').style.display='none'
+}
+
+document.getElementById('p_simul').onclick= function(){
+ document.getElementById('sr').style.display='block'
+document.getElementById('reference').style.display='none'
+document.getElementById('mmodeling').style.display='none'
+document.getElementById('introduction').style.display='none'
+}
+document.getElementById('p_refer').onclick= function(){
+document.getElementById('reference').style.display='block'
+document.getElementById('sr').style.display='none'
+document.getElementById('mmodeling').style.display='none'
+document.getElementById('introduction').style.display='none'}
+</script></div>
+<!--bgcolors--></div>
+<!--framecontent--> <!--rightnav--></div>
+<!--orange-->
+</div>
+<!--frame-->
+</div>
+<!--rightcontainer-->
+<p style="clear: both"></p>
+</div>
+<!--main-->
+<p style="clear: both"></p>
+<div class="footer" id="footer"><a href="http://2011.igem.org/">
+iGem 2011 Home Page</a> <a href="http://ung.igem.org/Special:Upload/">
+Upload Files</a> <a
+	href="http://2011.igem.org/wiki/index.php?title=Template:Zjucss_main&action=edit">Edit
+CSS</a> <a href="http://ung.igem.org/Team_Wikis?year=2011"> Team Wikis</a> <a
+	href="mailto:zjuigem@gmail.com?"><strong>Contact Us</strong></a></div>
+</div>
+<!--contentwrapper-->
+</div>
+</body>
+</html>

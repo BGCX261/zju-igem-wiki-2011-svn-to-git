@@ -1,0 +1,799 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Notebook - July</title>
+<link href='http://fonts.googleapis.com/css?family=Molengo'
+	rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Hammersmith+One'
+	rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Alice'
+	rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Ovo' rel='stylesheet'
+	type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Federo'
+	rel='stylesheet' type='text/css'>
+
+<link href="modeling.css" rel="stylesheet" type="text/css">
+
+<link href="global.css" rel="stylesheet" type="text/css">
+
+<link href="template2.css" rel="stylesheet" type="text/css"><!-- include the Tools -->
+<script src="http://cdn.jquerytools.org/1.2.6/full/jquery.tools.min.js"></script>
+
+<style type="text/css">
+</style>
+</head>
+
+<body>
+<div class="global">
+<div id=top2></div>
+<div class="header">
+<div class="bgimg"></div>
+<div class="bgpart1"></div>
+<div class="bgpart2"></div>
+
+<div class="banner">
+<div class="logo"><img
+	src="http://2011.igem.org/wiki/images/c/c9/Logo.png" width="200"
+	height="200" /></div>
+<div class="title"><img
+	src="http://ung.igem.org/wiki/images/b/b3/Title.png" width="603"
+	height="220" /></div>
+<div class="igemlogo"><a target="_blank"
+	href="http://2011.igem.org"><img
+	src="http://2011.igem.org/wiki/images/e/e2/Igemlogo.png" width="180"
+	height="150" /></a></div>
+</div>
+<!--banner-->
+<div class="nav">
+<ul id="topnav">
+	<li><a id="P_Home" href="http://zjuchina.tk/index.html">Home</a></li>
+
+	<li><a id="P_Project"
+		href="http://zjuchina.tk/Project.html">Project</a> <!--Subnav Starts Here-->
+
+
+	<!--Subnav Ends Here--></li>
+	<li><a id="P_Team" href="http://zjuchina.tk/Team.html">Team</a>
+
+	</li>
+	<li><a id="P_Notebook"
+		href="http://zjuchina.tk/Notebook.html">Notebook</a></li>
+	<li><a id="P_HumanPractice"
+		href="http://zjuchina.tk/Humanpractice.html">HumanPractice</a>
+	</li>
+	<li id="search">
+	<div id="searchbar">
+
+	<div>
+	<form action="http://www.google.com.hk/cse" id="cse-search-box"
+		target="_blank">
+	<div><input type="hidden" name="cx"
+		value="005438704919531788579:zbfi5n-q5du" /> <input type="hidden"
+		name="cof" value="FORID:10" /> <input type="hidden" name="ie"
+		value="UTF-8" /> <input type="text" name="q" size="15" /> <input
+		type="submit" name="sa" value="Search" /></div>
+	</form>
+	<script type="text/javascript"
+		src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script></div>
+	</div>
+	</li>
+</ul>
+</div>
+<!--navbar--> <script type="text/javascript">
+   document.getElementById('P_Team').onclick=function(){
+	   document.getElementById('P_Te').style.display='block'
+
+	    document.getElementById('P_Pr').style.display='none'
+		document.getElementById('P_No').style.display='none'
+		document.getElementById('P_Hu').style.display='none'
+		<!-- document.getElementById('P_Pr').style.display='none' -->
+	   };
+	    document.getElementById('P_Project').onclick=function(){
+	   document.getElementById('P_Pr').style.display='block'
+	    document.getElementById('P_Te').style.display='none'
+		document.getElementById('P_No').style.display='none'
+		document.getElementById('P_Hu').style.display='none'
+		<!-- document.getElementById('P_Pr').style.display='none' -->
+	   };
+	    document.getElementById('P_Notebook').onclick=function(){
+	   document.getElementById('P_No').style.display='block'
+	    document.getElementById('P_Pr').style.display='none'
+		document.getElementById('P_Te').style.display='none'
+		document.getElementById('P_Hu').style.display='none'
+		<!-- document.getElementById('P_Pr').style.display='none' -->
+	   };
+	    document.getElementById('P_HumanPractice').onclick=function(){
+	   document.getElementById('P_Hu').style.display='block'
+	    document.getElementById('P_Pr').style.display='none'
+		document.getElementById('P_No').style.display='none'
+		document.getElementById('P_Te').style.display='none'
+		<!-- document.getElementById('P_Pr').style.display='none' -->
+	   };
+	  
+</script></div>
+<!--header-->
+<div id="contentwrapper">
+
+<div class="main">
+<div class="bgpart3"></div>
+
+<div class="leftulcontainer" id="blue">
+<div id="leftul" class="leftul">
+<div id="accordion">
+
+<h4 class="current">Lab Notes</h4>
+
+<div class="pane" style="display: block;"><a
+	href="http://zjuchina.tk/Notebook.html">July</a> <a
+	href="http://zjuchina.tk/August.html">August<br />
+</a> <a href="http://zjuchina.tk/September.html">September<br />
+</a></div>
+
+<h4>Protocol</h4>
+
+<div class="pane"><a
+	href="http://zjuchina.tk/Protocol.html">Protocol</a></div>
+<h4><a>Brainstorm</a></h4>
+<div class="pane"><a
+	href="http://zjuchina.tk/Brainstorm.html">Brainstorm</a></div>
+<script> 
+$(function() { 
+ 
+$("#accordion").tabs("#accordion div.pane", {tabs: 'h4', effect: 'slide', initialIndex: null});
+});
+</script> <!-- Navigation scroll follow --> <script type="text/javascript">
+        $(window).scroll(function () { 
+            var scrollPos = $(window).scrollTop();
+            if (scrollPos > 330) {
+                $(".leftul").addClass("stickToTop");
+            } else {
+                $(".leftul").removeClass("stickToTop");
+            }
+     
+        });
+    </script></div>
+<!--accordion--></div>
+<!--leftul--></div>
+<!--leftulcontainer-->
+
+<div class="rightcontainer">
+<div id="styleA" class="frame">
+<div id="blue">
+<p></p>
+<h1>Lab Notes - July</h1>
+<!--importantcontainer-->
+
+<div id="framecontent">
+
+<div id="page1">
+
+<h1>Week1</h1>
+<table id="notesheet" width="650" border="1" cellspacing="0"
+	cellpadding="1" style="vertical-align: middle">
+	<tr>
+		<td width="76"><strong>Day</strong></td>
+		<td width="349"><strong>Note</strong></td>
+	</tr>
+
+	<tr>
+		<td id="sheetleft">Jul.4th Monday</td>
+		<td>
+		<table id="intable" width="328" border="0" cellspacing="0"
+			cellpadding="1">
+
+			<td width="128">• Aerobic cultivation of DH5α</td>
+
+
+			<td width="196">• Preparation of apparatus for the formation of
+			biofilm</td>
+
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td id="sheetleft">Jul 5th Tuesday</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td id="sheetleft">Jul.6th Wednesday</td>
+		<td>
+		<table width="217" border="0" cellspacing="0" cellpadding="1">
+			<tr>
+				<td width="215">•Receiving primers ordered previously</td>
+
+			</tr>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td id="sheetleft">Jul.7th Thursday</td>
+		<td>
+		<table width="238" border="0" cellspacing="0" cellpadding="1">
+			<tr>
+				<td width="200">• Preparation of the aliquot of the primers</td>
+				<td width="200">• Something wrong with a shaking incubator</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td id="sheetleft">Jul.8th Friday</td>
+		<td>
+		<table width="222" border="0" cellspacing="0" cellpadding="1">
+			<tr>
+				<td width="155">• Preparation of culture plates for the
+				transformations</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td id="sheetleft">Jul.9th Saturday</td>
+		<td>
+		<table width="313" border="0" cellspacing="0" cellpadding="1">
+			<tr>
+				<td width="127">• Preparation of culture plates for the
+				transformations</td>
+				<td width="182">• protocols of transformation</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td id="sheetleft">Jul.10th Sunday</td>
+		<td>
+		<table width="246" border="0" cellspacing="0" cellpadding="1">
+			<tr>
+				<td>• Several colonies were picked up and cultivated in 5mL LB
+				medium. •Cryosectioning of biofilm</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+
+</table>
+</p>
+<h1>Week2</h1>
+<table id="notesheet" width="650" border="1" cellspacing="0"
+	cellpadding="1">
+	<tr>
+		<td width="76"><strong>Day</strong></td>
+		<td width="349"><strong>Note</strong></td>
+	</tr>
+
+	<tr>
+		<td id="sheetleft">Jul.11th Monday</td>
+		<td>
+		<table id="intable" width="541" border="0" cellspacing="0"
+			cellpadding="1">
+
+			<td width="128">• Set up new LB culture plates with ampicillin
+			and kanamycin
+			</p>
+			</td>
+
+
+			<td width="196">• ·Sterilization of Glycerol and <br />
+			·Preparation of 25mg/mL kanamycin</td>
+			<td>•Transformation of the parts mentioned on Jul.9th for the
+			second time</td>
+			<td>•Observation the sections</td>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td id="sheetleft">Jul 12th Tuesday</td>
+		<td>
+		<table id="intable" width="560" border="0" cellspacing="0"
+			cellpadding="1">
+
+			<td width="128">• Pick two colonies of each parts and cultivate
+			them in LB medium</td>
+
+
+			<td width="203">•Transformation of three parts(20J,20H.22B from
+			Kit plates of 2011 Distribution ) which are related to the
+			degradation of Cellulose</td>
+			<td width="91">•·Mini prep to isolate 10I,12I and 22M</td>
+			<td width="130">•Conservation of 10I,12I,22M and 11P</td>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td id="sheetleft">Jul.13th Wednesday</td>
+		<td>
+		<table width="618" border="0" cellspacing="0" cellpadding="1">
+			<tr>
+				<td width="104">• Place the culture plate of 20J,20H and 22B in
+				the fridge.</td>
+				<td width="102">•Min prep to isolate 13K •Conservation of 13K</td>
+				<td width="163">•Restriction digest of the
+				parts(12I,10I,22M,13K) with EcoRI and PstI</td>
+				<td width="111">•Gel electrophoresis to analyse restriction
+				fragments</td>
+				<td width="128">•Test the Tm of Primers CP1&amp;CS,NP&amp;NS
+				with 13K. The result of Gel electrophoresis shows that 60.2℃ is the
+				Tm of NS and NP, and 57.4℃ is the Tm of CS and CP1.</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td id="sheetleft">Jul.14th Thursday</td>
+		<td>
+		<table width="618" border="0" cellspacing="0" cellpadding="1">
+			<tr>
+				<td>• Test the Tm of the YFP,RFP,tetR,Vgb and nirB primers.
+				The result of Gel electrophoresis shows that the Tm for the primers
+				of Vgb is 54℃ and the Tm for the primers of nirB is 55℃.The RCR of
+				YFP,RFP and tetR failed.</td>
+
+			</tr>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td id="sheetleft">Jul.15th Friday</td>
+		<td>
+		<table width="600" border="0" cellspacing="0" cellpadding="1">
+			<tr>
+				<td width="155">• PCR(Phusion)<br />
+				• Digest 10I, 22M, 13K • Used wrong cutter, digestion again.</td>
+				<td>• Run the results of PCR and the first digestion. The
+				annealing temperature of YFP needed change. The digestion results
+				confirmed</td>
+				<td>• Run the digestion results of second time. The bands are
+				confirmed.</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td id="sheetleft">Jul.16th Saturday</td>
+		<td>
+		<table width="620" border="0" cellspacing="0" cellpadding="1">
+			<tr>
+				<td width="127">• Cut the linearized pSB1k3 with E+P</td>
+				<td width="123">• Purify the digestion results of 22M, 13K, 10I</td>
+				<td width="133">• Confirm digestion of pSB1k3 by
+				electrophoresis, then purification</td>
+				<td width="113">• Test Tm of YFP<br />
+				• ligation: 22M+10I, 13K+10I</td>
+				<td width="114">• Tm of YFP is 54 degree • transform the
+				ligation results.</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td id="sheetleft">Jul.17th Sunday</td>
+		<td>
+		<table width="620" border="0" cellspacing="0" cellpadding="1">
+			<tr>
+				<td>• PCR 22M<br />
+				• purify Vgb, RFP, RFP-tetR, YFP-tetR. Gibson PCR.</td>
+				<td>• ligation the purified the fragments in yesterday.</td>
+				<td>• 22M PCR<br />
+				• Transform the ligation results.</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+
+</table>
+
+<p>&nbsp;</p>
+<h1>Week3</h1>
+<table id="notesheet" width="713" border="1" cellspacing="0"
+	cellpadding="1">
+	<tr>
+		<td width="87"><strong>Day</strong></td>
+		<td width="616"><strong>Note</strong></td>
+	</tr>
+	<tr>
+		<td id="sheetleft">Jul.18th Monday</td>
+		<td>
+		<table id="intable" width="541" border="0" cellspacing="0"
+			cellpadding="1">
+
+			<td width="128">• Genome extraction of E.coli</td>
+
+
+			<td width="196">• PCR of NirB<br />
+			• cut 10I with X+P, cut 22M, 13K with E+S, cut pSB1k3 with E+P</td>
+			<td>• Ligate: 10I+13K, 10I+22M <br />
+			• Repeat NirB PCR</td>
+			<td>
+			<p align="left">• Culture 11P<br />
+			• Miniprep 10I, 22M, 13K</p>
+			</td>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td id="sheetleft">Jul 19th Tuesday</td>
+		<td>
+		<table id="intable" width="615" border="0" cellspacing="0"
+			cellpadding="1">
+
+			<td width="140">• mini-prep: 10I+13K, 10I+22M</td>
+
+
+			<td width="213">•insert 10I+13K, 10I+22M into pSB1k3</td>
+			<td width="110">•transform: 5E, 3C, 7C, 1K, 1I from the
+			distribution plate</td>
+			<td width="144">•transform 10I+22M, 10I+13K</td>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td id="sheetleft">Jul.20th Wednesday</td>
+		<td>
+		<table width="610" border="0" cellspacing="0" cellpadding="1">
+			<tr>
+				<td width="170">•Colonies of 22M+10I, 13K+10I, 5E, 3C, 7C, 1K,
+				1I confirmed</td>
+				<td width="102">• Gibson PCR</td>
+				<td width="250">•Colony PCR 22M+10I, 13K+10I, 5E, 3C, 7C, 1K,
+				1I</td>
+				<td width="80">•PCR NirB</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td id="sheetleft">Jul.21th Thursday</td>
+		<td>
+		<table width="618" border="0" cellspacing="0" cellpadding="1">
+			<tr>
+				<td>•PCR verification of 22M+10I, 13K+10I, 5E, 3C, 7C, 1K, 1I
+				</td>
+				<td>• Gibson PCR • Run the results of PCR verification. Bands
+				confirmed.</td>
+				<td>• Culture the 22M+10I, 13K+10I, 5E, 3C, 7C, 1K, 1I •
+				Purification of Gibson PCR results</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td id="sheetleft">Jul.22th Friday</td>
+		<td>
+		<table width="618" border="0" cellspacing="0" cellpadding="1">
+			<tr>
+				<td width="117">• PCR amplification of Gibson assembly results
+				</td>
+				<td width="144">• Mini prep: 22M+10I, 22.Presever in -20<br />
+				• Medi prep: 1K,1I,3C,5E,7C<br />
+				• Gibson Assembly fail.</td>
+				<td width="164">• PCR NirB by Phusion<br />
+				•Repeat PCR by changing Pnibr to Gnirbr<br />
+				•Cut the mini and medi prep results with E</td>
+				<td width="185">•Run the results of PCR and digestion. Fail in
+				PCR of NirB, succeed in 10I+3K and 10I+22M ligation.</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td id="sheetleft">Jul.23th Saturday</td>
+		<td>
+		<table width="613" border="0" cellspacing="0" cellpadding="1">
+			<tr>
+				<td width="237">•Double digestion of 13K+10I, 22M+10I, pSB1c3
+
+				</td>
+				<td width="169">• Fail in purification of Medi prep</td>
+				<td width="201">• PCR NirB<br />
+				• Ligate NirB+13K+10I, Vgb+22M+10I</td>
+
+			</tr>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td id="sheetleft">Jul.24th Sunday</td>
+		<td>
+		<table width="608" border="0" cellspacing="0" cellpadding="1">
+			<tr>
+				<td width="244">• Gibson assembly: NirB+RFP+tetR<br />
+				• Cut results of Gibson assembly and pSB1c3.</td>
+				<td width="164">• Purify the ligation results in yesterday</td>
+				<td width="194">• ligate with backbone • Culture 1I, 1K, 3C,
+				5E, 7C, 11P</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+
+</table>
+<p>&nbsp;</p>
+<h1>Week4</h1>
+<table id="notesheet" width="691" border="1" cellspacing="0"
+	cellpadding="1">
+	<tr>
+		<td width="63"><strong>Day</strong></td>
+		<td width="630"><strong>Note</strong></td>
+	</tr>
+
+	<tr>
+		<td id="sheetleft">Jul.25th Monday</td>
+		<td>
+		<table id="intable" width="541" border="0" cellspacing="0"
+			cellpadding="1">
+
+			<td width="128">• Transform Pnirb+13k+10I+pSBK3-2</td>
+
+
+			<td>• Place the culture in 4 degree</td>
+			<td>• Medi-and mini-prep of five cultre</td>
+			<td>•Gibson Assembly confirmation by gel</td>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td id="sheetleft">Jul. 26th Tuesday</td>
+		<td>
+		<table id="intable" width="610" border="0" cellspacing="0"
+			cellpadding="1">
+
+			<td width="134">• Cut Pnirb, Pvgb,(E+S)<br />
+			• Cut 10I+13K, 10I+22M.(X+P)</td>
+
+
+			<td width="167">• Ligation: vgb+10I+22M, nirB+10I+13K,</td>
+			<td width="172">• Ligation: pSBK13+vgb+10I+22M,
+			pSBK13+nirB+10I+13K</td>
+			<td width="129">• Transform the ligation results.</td>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td id="sheetleft">Jul.27th Wednesday</td>
+		<td>
+		<table width="608" border="0" cellspacing="0" cellpadding="1">
+			<tr>
+				<td width="170">• No colony on the plate<br />
+				• Gibson assembly</td>
+				<td width="184">• Run the results of Gibson assembly</td>
+				<td width="248">• Excise the bands, the purify the DNA<br />
+				• Gibson Assenmly</td>
+
+			</tr>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td id="sheetleft">Jul.28th Thursday</td>
+		<td>
+		<table width="609" border="0" cellspacing="0" cellpadding="1">
+			<tr>
+				<td width="607">•2011 China Meet-up @ Hefei</td>
+
+			</tr>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td id="sheetleft">Jul.29th Friday</td>
+		<td>
+		<table width="607" border="0" cellspacing="0" cellpadding="1">
+			<tr>
+				<td>•2011 China Meet-up @ Hefei</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td id="sheetleft">Jul.30th Saturday</td>
+		<td>
+		<table width="620" border="0" cellspacing="0" cellpadding="1">
+			<tr>
+
+
+			</tr>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td id="sheetleft">Jul.31th Sunday</td>
+		<td>
+		<table width="600" border="0" cellspacing="0" cellpadding="1">
+			<tr>
+				<td width="368">• Culture 22M+10I, 13K+10I</td>
+				<td width="228">• Cut a0H, 20J, 22B</td>
+
+			</tr>
+		</table>
+		</td>
+	</tr>
+
+</table>
+<br />
+<br />
+</div>
+<!--page1-->
+<div id="importantcontainer">
+<div class="frame" id="important">
+<div class="bgcolors" id="round">
+<h1>Data/Protocol</h1>
+</div>
+</div>
+</div>
+<div id="framecontent">
+<h1>Jul.13th Wednesday</h1>
+
+<p><strong>Systems of restriction digestion with EcoRI and
+PstI</strong></p>
+<p>
+<table style="margin: 15px;" width="110" height="200" border="1"
+	cellspacing="0" cellpadding="1">
+	<tr>
+		<td>Plasmid</td>
+		<td>1μL (>100ng)</td>
+	</tr>
+	<tr>
+		<td>EcoRI</td>
+		<td>1μL</td>
+	</tr>
+	<tr>
+		<td>PstI</td>
+		<td>1μL</td>
+	</tr>
+	<tr>
+		<td>10×Buffer Tango</td>
+		<td>2μL</td>
+	</tr>
+	<tr>
+		<td>ddH2O</td>
+		<td>15μL</td>
+	</tr>
+</table>
+<img src="http://2011.igem.org/wiki/images/c/c3/0713program.png"
+	width="200" height="200" /></p>
+<p><strong>Temperature grad</strong><br />
+56℃,57.4℃,60.2℃,62.9℃,64.3℃,65.8℃</p>
+<div id="framecontent">
+<p>&nbsp;</p>
+
+<p><strong>PCR system (test the Tm of the primers
+CP1&amp;CS, NP&amp;NS)</strong></p>
+
+<table style="margin: 15px;" width="110" border="1" cellspacing="0"
+	cellpadding="1">
+	<tr>
+		<td>10×Buffer</td>
+		<td>2μL</td>
+	</tr>
+	<tr>
+		<td>dNTPs</td>
+		<td>0.5μL</td>
+	</tr>
+	<tr>
+		<td>primers CP1 (NP)</td>
+		<td>1μL</td>
+	</tr>
+	<tr>
+		<td>primers CS (NS)</td>
+		<td>1μL</td>
+	</tr>
+	<tr>
+		<td>Template</td>
+		<td>1μL</td>
+	</tr>
+	<tr>
+		<td>rTaq</td>
+		<td>0.2μL</td>
+	</tr>
+	<tr>
+		<td>H2O</td>
+		<td>14.5μL</td>
+	</tr>
+	<tr>
+		<td>Total</td>
+		<td>20μL</td>
+	</tr>
+</table>
+</p>
+<p>Within each compartment are<strong> components</strong>: include
+different types of biomass ,substrates , products. biomass is often
+divided into active microbial species, inert cells, and extracellular
+polymeric substances(EPS).</p>
+<p>The components can undergo transformation, transport, and
+transfer <strong>processes</strong>. For example, substrate is consumed,
+and this leads to the synthesis of new active biomass.</p>
+<p>All process affecting each component in each compartment are
+mathematically linked together into a<strong> mass balance
+equation</strong> that contains rate terms and parameters for each process.</p>
+<p><strong>Model Selection:</strong>Many kinds of Mathematics models
+have been founded to describe a system of biofilm. Models of different
+dimensions (1d, 2d, 3d) focus on different properties of a biofilm.
+Since we care most about the oxygen concentration gradients
+perpendicular to the substratum, <strong>numerical
+1-dimensional dynamic model(N1)</strong> would be a proper choice for us.</p>
+</div>
+<!--bgcolors--></div>
+<!--important--></div>
+<!--importantcontainer-->
+<p style="clear: both;"></p>
+<div id="page2">
+<div class="block" id="nsheet"><img
+	src="http://ung.igem.org/wiki/images/4/42/Biofilmcomp.png" width="640"
+	height="464" style="margin: 5px;" />
+<p>&nbsp;</p>
+</div>
+<div class="block" id="nsheet">
+<h1>Early July</h1>
+<p>Pre-experiments with biofilm formation with circular and non
+circular silicone tube, 24 well plate on different support including
+glass, paper, plastic film, rubber. The final material are used based on
+the easiness biofilm form on them and on the easiness to observe under
+microscope.</p>
+<img
+	src="http://2011.igem.org/wiki/images/b/be/20110711-3nP4100X0877.jpg"
+	width="400" style="margin-left: 20px;">
+<p>&nbsp;</p></div>
+<div class="block" id="nsheet">
+<h1>28th July</h1>
+<p>13.30: DH5ɑ 11p 5mlX4<br />
+23.00: silicone tube set at 37℃</p>
+</div>
+<div class="block" id="nsheet">
+<h1>29th July</h1>
+<p>13.00: LB culture 50ml with circular culture medium. LB culture
+50ml with noncircular culture medium.</p>
+
+</div>
+<div class="block" id="nsheet">
+<h1>31st July</h1>
+<p>13.00: -80℃ storing silicone tube. A thick white and loosely bond
+substance is seen on the inner wall of the 5mm silicone tube, and on the
+inner wall of the 1mm silicone tube a flatter and smoother white
+substance. Especially obvious where the tube turns. Possibly because the
+speed of culture flow is slower.</p>
+
+</div>
+</div>
+<!--page2--> <script type="text/javascript"> 
+document.getElementById('bb').onclick= function(){
+document.getElementById('page2').style.display='none'
+ document.getElementById('page1').style.display='block'}
+ 
+document.getElementById('bf').onclick= function(){
+	
+document.getElementById('page1').style.display='none'
+ document.getElementById('pgae2').style.display='block'}
+</script>
+<p style="clear: both"></p>
+</div>
+<!--framecontent-->
+
+<div style="display: none" class="frame" id="rightnav">
+<div class="bgcolors" id="round">
+<p><a name="jumptop" id="bb">&nbsp; Biobrick Group&nbsp;</a>|<a
+	id="bf">&nbsp;Biofilm Group &nbsp;</a></p>
+</div>
+<!--bgcolors--></div>
+<!--rightnav--></div>
+<!--blue-->
+<div class="links"><a href="#top2">Top</a></div>
+</div>
+<!--frame--> <!--rightcontainer-->
+<p style="clear: both"></p>
+
+</div>
+<!--main-->
+<div class="footer" id="footer"><a href="http://2011.igem.org/">
+iGem 2011 Home Page</a> <a href="http://ung.igem.org/Special:Upload/">
+Upload Files</a> <a
+	href="http://2011.igem.org/wiki/index.php?title=Template:Zjucss_main&action=edit">Edit
+CSS</a> <a href="http://ung.igem.org/Team_Wikis?year=2011"> Team Wikis</a> <a
+	href="mailto:zjuigem@gmail.com?"><strong>Contact Us</strong></a></div>
+</div>
+<!--contentwrapper--></div>
+<!--global-->
+</body>
+</html>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            

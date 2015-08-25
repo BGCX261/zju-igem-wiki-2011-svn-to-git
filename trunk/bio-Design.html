@@ -1,0 +1,440 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Biofilm Design</title>
+<link href='http://fonts.googleapis.com/css?family=Molengo'
+	rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Hammersmith+One'
+	rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Alice'
+	rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Ovo' rel='stylesheet'
+	type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Federo'
+	rel='stylesheet' type='text/css'>
+
+<link href="modeling.css" rel="stylesheet" type="text/css">
+<link href="global.css" rel="stylesheet" type="text/css">
+<link href="template2.css" rel="stylesheet" type="text/css"><!-- include the Tools -->
+<script src="http://cdn.jquerytools.org/1.2.6/full/jquery.tools.min.js"></script>
+<style type="text/css">
+#contentwrapper .main .leftulcontainer #leftul #accordion .pane a {
+	color: #ffcc99
+}
+
+#contentwrapper .main .leftulcontainer #leftul #accordion .pane a:hover
+	{
+	color: #ff9933
+}
+</style>
+</head>
+
+<body>
+<div class="global">
+<div class="header">
+<div class="bgimg"></div>
+<div class="bgpart1"></div>
+<div class="bgpart2"></div>
+
+
+<div class="banner">
+<div class="logo"><img
+	src="http://2011.igem.org/wiki/images/c/c9/Logo.png" width="200"
+	height="200" /></div>
+<div class="title"><img
+	src="http://ung.igem.org/wiki/images/b/b3/Title.png" width="603"
+	height="220" /></div>
+<div class="igemlogo"><a target="_blank"
+	href="http://2011.igem.org"><img
+	src="http://2011.igem.org/wiki/images/e/e2/Igemlogo.png" width="180"
+	height="150" /></a></div>
+</div>
+<!--banner-->
+<div class="nav">
+<ul id="topnav">
+	<li><a id="P_Home" href="http://zjuchina.tk/index.html">Home</a></li>
+
+	<li><a id="P_Project"
+		href="http://zjuchina.tk/Project.html">Project</a> <!--Subnav Starts Here-->
+
+
+	<!--Subnav Ends Here--></li>
+	<li><a id="P_Team" href="http://zjuchina.tk/Team.html">Team</a>
+
+	</li>
+	<li><a id="P_Notebook"
+		href="http://zjuchina.tk/Notebook.html">Notebook</a></li>
+	<li><a id="P_HumanPractice"
+		href="http://zjuchina.tk/Humanpractice.html">HumanPractice</a></li>
+	<li id="search">
+	<div id="searchbar">
+
+	<div>
+	<form action="http://www.google.com.hk/cse" id="cse-search-box"
+		target="_blank">
+	<div><input type="hidden" name="cx"
+		value="005438704919531788579:zbfi5n-q5du" /> <input type="hidden"
+		name="cof" value="FORID:10" /> <input type="hidden" name="ie"
+		value="UTF-8" /> <input type="text" name="q" size="15" /> <input
+		type="submit" name="sa" value="Search" /></div>
+	</form>
+	<script type="text/javascript"
+		src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script></div>
+	</div>
+	</li>
+</ul>
+</div>
+<!--navbar--> <script type="text/javascript">
+   document.getElementById('P_Team').onclick=function(){
+	   document.getElementById('P_Te').style.display='block'
+
+	    document.getElementById('P_Pr').style.display='none'
+		document.getElementById('P_No').style.display='none'
+		document.getElementById('P_Hu').style.display='none'
+		<!-- document.getElementById('P_Pr').style.display='none' -->
+	   };
+	    document.getElementById('P_Project').onclick=function(){
+	   document.getElementById('P_Pr').style.display='block'
+	    document.getElementById('P_Te').style.display='none'
+		document.getElementById('P_No').style.display='none'
+		document.getElementById('P_Hu').style.display='none'
+		<!-- document.getElementById('P_Pr').style.display='none' -->
+	   };
+	    document.getElementById('P_Notebook').onclick=function(){
+	   document.getElementById('P_No').style.display='block'
+	    document.getElementById('P_Pr').style.display='none'
+		document.getElementById('P_Te').style.display='none'
+		document.getElementById('P_Hu').style.display='none'
+		<!-- document.getElementById('P_Pr').style.display='none' -->
+	   };
+	    document.getElementById('P_HumanPractice').onclick=function(){
+	   document.getElementById('P_Hu').style.display='block'
+	    document.getElementById('P_Pr').style.display='none'
+		document.getElementById('P_No').style.display='none'
+		document.getElementById('P_Te').style.display='none'
+		<!-- document.getElementById('P_Pr').style.display='none' -->
+	   };
+	  
+</script></div>
+<!--header-->
+<div id="contentwrapper">
+<div class="main">
+<div class="bgpart3"></div>
+<div class="leftulcontainer" id="orange">
+<div id="leftul" class="leftul">
+<div id="accordion">
+
+
+<h4 class="current" id="try">Biofilm</h4>
+
+<div class="pane" style="display: block;"><a
+	href="http://zjuchina.tk/Project.html">Background</a> <a
+	href="http://zjuchina.tk/bio-Design.html">Design</a> <a
+	href="http://zjuchina.tk/bio-modeling.html">Modeling</a> <a
+	href="http://zjuchina.tk/bio-results.html">Results</a></div>
+
+<h4>Rainbofilm</h4>
+
+<div class="pane"><a
+	href="http://zjuchina.tk/rainbo-Background.html">Background</a>
+<a href="http://zjuchina.tk/rainbo-Design.html">Design</a> <a
+	href="http://zjuchina.tk/rainbo-modeling-v1.html">Modeling</a> <a
+	href="http://zjuchina.tk/rainbo-Results.html">Results</a></div>
+
+<h4>Sugarfilm</h4>
+
+<div class="pane"><a
+	href="http://zjuchina.tk/Sugar-background.html">Background</a> <a
+	href="http://zjuchina.tk/Sugar-Design.html">Design</a> <a
+	href="http://zjuchina.tk/Sugar-Modeling.html">Modeling</a> <a
+	href="http://zjuchina.tk/Sugar-Future.html">Future</a></div>
+<h4>Parts</h4>
+
+<div class="pane"><a
+	href="http://zjuchina.tk/BBa_I13602.html">BBa_I13602</a> <a
+	href="http://zjuchina.tk/BBa_K561000.html">BBa_K561000</a> <a
+	href="http://zjuchina.tk/BBa_K561002.html">BBa_K561002</a> <a
+	href="http://zjuchina.tk/BBa_K561003.html">BBa_K561003</a></div>
+<h4>Achievements</h4>
+<div class="pane"><a href="http://zjuchina.tk/data.html">Data
+Page</a> <a href="http://zjuchina.tk/judging.html">Judging Form</a> <a
+	href="http://zjuchina.tk/attribution.html">Attribution and
+Contributions</a></div>
+<h4>Tools</h4>
+
+<div class="pane"><a href="http://zjuchina.tk/Tools.html">Tools</a>
+</div>
+
+<script> 
+$(function() { 
+ 
+$("#accordion").tabs("#accordion div.pane", {tabs: 'h4', effect: 'slide', initialIndex: null});
+});
+</script> <!-- Navigation scroll follow --> <script type="text/javascript">
+        $(window).scroll(function () { 
+            var scrollPos = $(window).scrollTop();
+            if (scrollPos > 330) {
+                $(".leftul").addClass("stickToTop");
+            } else {
+                $(".leftul").removeClass("stickToTop");
+            }
+     
+        });
+    </script></div>
+<!--accordion--></div>
+<!--leftul--></div>
+<!--leftulcontainer-->
+
+<div class="rightcontainer">
+<div id="styleA" class="frame">
+<div id="orange">
+<p></p>
+<h1>Design</h1>
+<p></p>
+<div id="importantcontainer">
+<div class="frame" id="important">
+<div class="bgcolors" id="round">
+<h1>Bubbling Method</h1>
+</div>
+</div>
+</div>
+<p><img
+	src="http://2011.igem.org/wiki/images/9/92/Zju-biofilm03.jpg"
+	style="width: 350px; float: right"/>First we inoculated 1%
+overnight cultured E.coli DH5α in 60ml LB (depends on the volume of tube
+used). Then we placed a glass slide inside the tube, leaving a short end
+outside the liquid. With a common air pump for aquarium, an ultrafilter
+membrane and rubber tubes we constructed a bubble supply system. And air
+bubbles were pumped into the culture medium. We placed the set in a
+clean bench to prevent contamination since the tube was not strictly
+isolated. The formation can take place at about 27℃. Biofilm was
+generally formed in 72 hours. It was usually small clusters of bacteria
+clinging to the glass slide. We used a blank slide, placed it in the
+culture and compared with the other one to see whether the bacteria
+simply clung to the glass slide or they had formed biofilm on it. </p>
+<p></p>
+<div id="importantcontainer">
+<div class="frame" id="important">
+<div class="bgcolors" id="round">
+<h1>Rubber Tube Method</h1>
+</div>
+</div>
+</div>
+<p><img
+	src="http://2011.igem.org/wiki/images/1/11/Zju-biofilm01.jpg"
+	style="width: 350px; float: right" />We used a glass ware with two
+opening at the bottom to attach rubber tube and used rubber tube of
+2mm*4mm(inside diameter*outside diameter) and 1mm*2mm to make a
+circulating flowing incubator. We then sealed all connecting locations
+with parafilm. The set was inoculated with 1% overnight cultured DH5ɑ in
+and sealed with parafilm. We then placed it in 37℃ for 3 hours for
+E.coli to attach. We used a mounted pump to create a liquid flow of
+culture medium. The flowing speed should be about 60ml per 24 hours.
+Biofilm was formed in about 48 hours and white substance was visible in
+the inner tube. We cut them with scissors from the long tube at two ends
+at the same time and cut open along the long axis. This prevented the
+sudden flow of water from destroying the structure of biofilm. Then we
+sliced the tube with frozen tissue slicer to into pieces of 50μm and
+observed under regular microscopy for vertical structure.</p>
+<p></p>
+<div id="importantcontainer">
+<div class="frame" id="important">
+<div class="bgcolors" id="round">
+<h1>Cell Culture Plate Method</h1>
+</div>
+</div>
+</div>
+<p><strong>Microbial inoculation</strong><br />
+<img src="http://2011.igem.org/wiki/images/8/85/Zju-biofilm04.jpg"
+	style="width: 350px; float: right;" /> For every experiment, the cells
+(modified Escherichia.coli, DH5alpha) were cultured in Lysogeny broth
+(LB) medium overnight (14-18 hours) at 37 C, 200 rpm. The initial
+culture was 100* diluted into new LB medium next morning and cultured in
+the same conditions until the cells grew to OD600 0.5-0.7.</p>
+<p><strong>Biofilm formation</strong><br />
+20 L of the cell culture of OD600 0.5-0.7 were then added into each well
+of a 6-well plate or 24-well cell culture plate (Costar, Corning
+Incorporated, USA) containing 2 mL LB medium and small pieces of glass
+(cover slip), Polyethylene terephthalate (PETE) and PC (poly carbonate).
+The cell culture plates were placed in the incubator at 37 C for 24
+hours, 48 hours and 72 hours. Glass, PETE and PC coupons were taken out
+from the culture afterwards w/ or w/o washing in distilled water.</p>
+<p><strong>Confocal laser scanning microscopy</strong><br />
+The CLSM images of biofilm were obtained with Zeiss LSM 710NLO confocal
+laser scanning microscope using a 20⨉ water-immersion objective, or a
+63X oil-immersion objective, or with Zeiss LSM510 Meta confocal laser
+scanning microscope using a 63X oil-immersion objective. The
+mono-florescence images, multichannel simulated fluorescence projection
+images and vertical cross sections of the biofilm were obtained by
+utilizing the software ZEN.</p>
+<p><strong>Using AI-2 as biofilm formation accelerator</strong><br />
+Quorum sensing plays an important role in biofilm formation. In many
+Gram-negative bacteria, quorum-sensing systems respond to N-acyl
+homoserine lactones (AHLs), which were proved to be essential for the
+architecture of biofilm (Dickschat JS, 2010; Lopez D, Vlamakis H and
+Kolter R, 2010). In addition, there has been study indicated the
+universal quorum sensing signaling molecule autoinducer 2 (AI-2) can
+increase E.Coli’s biofilm biomass 30-folds (Gonzalez Barrios AF, 2006).
+Thus we co-transformed our device along with BBa_K091191, a device
+capable of sending out AI-2 molecules under the control of a pBAD
+promoter that can be induced with arabinose. We also did
+co-transformation with our device and another device from the registry
+consisting of LuxI under the control of a lacI repressible promoter.</p>
+<p></p>
+<div id="importantcontainer">
+<div class="frame" id="important">
+<div class="bgcolors" id="round">
+<h1>How to set up a biofilm reactor in your lab: Shopping list</h1>
+</div>
+</div>
+</div>
+<p id="framet1">Bubbling method</p>
+<table width="0" border="1" cellspacing="1" cellpadding="1">
+	<tr>
+		<td>
+		<p>Large test tubes with plug</p>
+		<a href="http://item.taobao.com/item.htm?id=12269690038">http://item.taobao.com/item.htm?id=12269690038</a></td>
+		<td>
+		<p>$0.43</p>
+		</td>
+	</tr>
+	<tr>
+		<td>
+		<p>Rubber tube</p>
+		<a href="http://item.taobao.com/item.htm?id=12473511203">http://item.taobao.com/item.htm?id=12473511203</a></td>
+		<td>
+		<p>$0.32/meter (mailing cost not included) 0.4 meter per usage</p>
+		</td>
+	</tr>
+	<tr>
+		<td>
+		<p>Glass slide</p>
+		<a href="http://item.taobao.com/item.htm?id=8877150757">http://item.taobao.com/item.htm?id=8877150757</a></td>
+		<td>
+		<p>$0.94 for 50 slides</p>
+		</td>
+	</tr>
+	<tr>
+		<td>
+		<p>Common lab ware: (Test tubes, a shaker, an incubator, pipettes
+		and culturing medium)</p>
+		</td>
+		<td>We believe you already have them</td>
+	</tr>
+	<tr>
+		<td>
+		<p>Total cost</p>
+		</td>
+		<td>
+		<p>$0.58 per set</p>
+		</td>
+	</tr>
+</table>
+<p></p>
+<p id="framet1">Rubber Tube method</p>
+<table width="0" border="1" cellspacing="1" cellpadding="1">
+	<tr>
+		<td>
+		<p>Silicon tube</p>
+		<a href="http://item.taobao.com/item.htm?id=10401921234&">http://item.taobao.com/item.htm?id=10401921234&</a></td>
+		<td>
+		<p>$0.32/meter (mailing cost not included) 0.6 meter per usage</p>
+		</td>
+	</tr>
+	<tr>
+		<td>
+		<p>Glassware</p>
+		</td>
+		<td>
+		<p>Need to be made to order, prize may vary</p>
+		</td>
+	</tr>
+	<tr>
+		<td>
+		<p>Wriggle pump</p>
+		<a href="http://item.taobao.com/item.htm?id=1484983763">http://item.taobao.com/item.htm?id=1484983763</a></td>
+		<td>
+		<p>$217 (mailing cost not included) can be used on two sets of
+		experiments at the same time</p>
+		</td>
+	</tr>
+	<tr>
+		<td>
+		<p>Common lab ware: <br />
+		(Test tubes, a shaker, an incubator, pipettes and culturing medium)</p>
+		</td>
+		<td>
+		<p>We believe you already have them</p>
+		</td>
+	</tr>
+	<tr>
+		<td>
+		<p>Total cost</p>
+		</td>
+		<td>
+		<p>$218 per 2 sets</p>
+		</td>
+	</tr>
+</table>
+<p></p>
+<p id="framet1">For Cell Culture Plate Method</p>
+
+<table width="0" border="1" cellspacing="1" cellpadding="1">
+	<tr>
+		<td>
+		<p>A 24 well, flat bottom Corning? Costar? cell culture plate;Or a
+		6 well, flat bottom Corning? Costar? cell culture plates</p>
+		</td>
+		<td>
+		<p>$3</p>
+		</td>
+	</tr>
+	<tr>
+		<td>
+		<p>10 cover slips</p>
+		</td>
+		<td>
+		<p>$0.5</p>
+		</td>
+	</tr>
+	<tr>
+		<td>
+		<p>Common lab ware: <br />
+		(Test tubes, a shaker, an incubator, pipettes and culturing medium)</p>
+		</td>
+		<td>
+		<p>We believe you already have them</p>
+		</td>
+	</tr>
+	<tr>
+		<td>
+		<p>Total cost</p>
+		</td>
+		<td>
+		<p>$3.5 per set!</p>
+		</td>
+	</tr>
+</table>
+
+
+</div>
+<!--orange--></div>
+<!--frame--></div>
+<!--rightcontainer-->
+<p style="clear: both"></p>
+</div>
+<!--main-->
+<p style="clear: both"></p>
+<div class="footer" id="footer"><a href="http://2011.igem.org/">
+iGem 2011 Home Page</a> <a href="http://ung.igem.org/Special:Upload/">
+Upload Files</a> <a
+	href="http://2011.igem.org/wiki/index.php?title=Template:Zjucss_main&action=edit">Edit
+CSS</a> <a href="http://ung.igem.org/Team_Wikis?year=2011"> Team Wikis</a> <a
+	href="mailto:zjuigem@gmail.com?"><strong>Contact Us</strong></a></div>
+</div>
+<!--contentwrapper-->
+</div>
+</body>
+</html>
+

@@ -1,0 +1,1046 @@
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<title>Rainbofilm modeling</title> 
+<link href='http://fonts.googleapis.com/css?family=Molengo'
+	rel='stylesheet' type='text/css'> 
+<link href='http://fonts.googleapis.com/css?family=Hammersmith+One'
+	rel='stylesheet' type='text/css'> 
+<link href='http://fonts.googleapis.com/css?family=Alice'
+	rel='stylesheet' type='text/css'> 
+<link href='http://fonts.googleapis.com/css?family=Ovo' rel='stylesheet'
+	type='text/css'> 
+<link href='http://fonts.googleapis.com/css?family=Federo'
+	rel='stylesheet' type='text/css'> 
+ 
+<link href="modeling.css" rel="stylesheet" type="text/css"> 
+<link href="global.css" rel="stylesheet" type="text/css"> 
+<link href="template2.css" rel="stylesheet" type="text/css"><!-- include the Tools --> 
+<script src="http://cdn.jquerytools.org/1.2.6/full/jquery.tools.min.js"></script> 
+<style> 
+#banner {
+	position: relative;
+	width: 560px;
+	height: 485px;
+	border: 1px solid #666;
+	overflow: hidden;
+}
+ 
+#banner_list img {
+	border: 0px;
+}
+ 
+#banner_bg {
+	position: absolute;
+	bottom: 20px;
+	background-color: #000;
+	height: 24px;
+	filter: Alpha(Opacity = 50);
+	opacity: 0.5;
+	z-index: 1000;
+	cursor: pointer;
+	width: 560px;
+}
+ 
+#banner_info {
+	position: absolute;
+	bottom: 20px;
+	left: 5px;
+	height: 24px;
+	color: #fff;
+	z-index: 1001;
+	cursor: pointer
+}
+ 
+#banner_text {
+	position: absolute;
+	width: 120px;
+	z-index: 1002;
+	right: 3px;
+	bottom: 3px;
+}
+ 
+#banner ul {
+	position: absolute;
+	list-style-type: none;
+	filter: Alpha(Opacity = 80);
+	opacity: 0.8;
+	border: 1px solid #fff;
+	z-index: 1002;
+	margin: 0;
+	padding: 0;
+	bottom: 3px;
+	right: 5px;
+}
+ 
+#banner ul li {
+	padding: 0px 8px;
+	float: left;
+	display: block;
+	color: #FFF;
+	border: #e5eaff 1px solid;
+	background: #6f4f67;
+	cursor: pointer
+}
+ 
+#banner ul li.on {
+	background: #900
+}
+ 
+#banner_list a {
+	position: absolute;
+}
+ 
+#banner1 {
+	position: relative;
+	width: 560px;
+	height: 485px;
+	border: 1px solid #666;
+	overflow: hidden;
+}
+ 
+#banner_list1 img {
+	border: 0px;
+}
+ 
+#banner_info1 {
+	position: absolute;
+	bottom: 20px;
+	left: 5px;
+	height: 24px;
+	color: #fff;
+	z-index: 1001;
+	cursor: pointer
+}
+ 
+#banner1 ul {
+	position: absolute;
+	list-style-type: none;
+	filter: Alpha(Opacity = 80);
+	opacity: 0.8;
+	border: 1px solid #fff;
+	z-index: 1002;
+	margin: 0;
+	padding: 0;
+	bottom: 3px;
+	right: 5px;
+}
+ 
+#banner1 ul li {
+	padding: 0px 8px;
+	float: left;
+	display: block;
+	color: #FFF;
+	border: #e5eaff 1px solid;
+	background: #6f4f67;
+	cursor: pointer
+}
+ 
+#banner1 ul li.on {
+	background: #900
+}
+ 
+#banner_list1 a {
+	position: absolute;
+}
+ 
+#banner2 {
+	position: relative;
+	width: 560px;
+	height: 485px;
+	border: 1px solid #666;
+	overflow: hidden;
+}
+ 
+#banner_list2 img {
+	border: 0px;
+}
+ 
+#banner_info2 {
+	position: absolute;
+	bottom: 20px;
+	left: 5px;
+	height: 24px;
+	color: #fff;
+	z-index: 1001;
+	cursor: pointer
+}
+ 
+#banner2 ul {
+	position: absolute;
+	list-style-type: none;
+	filter: Alpha(Opacity = 80);
+	opacity: 0.8;
+	border: 1px solid #fff;
+	z-index: 1002;
+	margin: 0;
+	padding: 0;
+	bottom: 3px;
+	right: 5px;
+}
+ 
+#banner2 ul li {
+	padding: 0px 8px;
+	float: left;
+	display: block;
+	color: #FFF;
+	border: #e5eaff 1px solid;
+	background: #6f4f67;
+	cursor: pointer
+}
+ 
+#banner2 ul li.on {
+	background: #900
+}
+ 
+#banner_list2 a {
+	position: absolute;
+}
+ 
+#banner3 {
+	position: relative;
+	left: 10%;
+	width: 560px;
+	height: 485px;
+	border: 1px solid #666;
+	overflow: hidden;
+}
+ 
+#banner_list3 img {
+	border: 0px;
+}
+ 
+#banner_info3 {
+	position: absolute;
+	bottom: 20px;
+	left: 5px;
+	height: 24px;
+	color: #fff;
+	z-index: 1001;
+	cursor: pointer
+}
+ 
+#banner3 ul {
+	position: absolute;
+	list-style-type: none;
+	filter: Alpha(Opacity = 80);
+	opacity: 0.8;
+	border: 1px solid #fff;
+	z-index: 1002;
+	margin: 0;
+	padding: 0;
+	bottom: 3px;
+	right: 5px;
+}
+ 
+#banner3 ul li {
+	padding: 0px 8px;
+	float: left;
+	display: block;
+	color: #FFF;
+	border: #e5eaff 1px solid;
+	background: #6f4f67;
+	cursor: pointer
+}
+ 
+#banner3 ul li.on {
+	background: #900
+}
+ 
+#banner_list3 a {
+	position: absolute;
+}
+ 
+#banner4 {
+	position: relative;
+	left: 10%;
+	width: 560px;
+	height: 485px;
+	border: 1px solid #666;
+	overflow: hidden;
+}
+ 
+#banner_list4 img {
+	border: 0px;
+}
+ 
+#banner_info4 {
+	position: absolute;
+	bottom: 20px;
+	left: 5px;
+	height: 24px;
+	color: #fff;
+	z-index: 1001;
+	cursor: pointer
+}
+ 
+#banner4 ul {
+	position: absolute;
+	list-style-type: none;
+	filter: Alpha(Opacity = 80);
+	opacity: 0.8;
+	border: 1px solid #fff;
+	z-index: 1002;
+	margin: 0;
+	padding: 0;
+	bottom: 3px;
+	right: 5px;
+}
+ 
+#banner4 ul li {
+	padding: 0px 8px;
+	float: left;
+	display: block;
+	color: #FFF;
+	border: #e5eaff 1px solid;
+	background: #6f4f67;
+	cursor: pointer
+}
+ 
+#banner4 ul li.on {
+	background: #900
+}
+ 
+#banner_list4 a {
+	position: absolute;
+}
+ 
+#banner5 {
+	position: relative;
+	left: 10%;
+	width: 560px;
+	height: 485px;
+	border: 1px solid #666;
+	overflow: hidden;
+}
+ 
+#banner_list5 img {
+	border: 0px;
+}
+ 
+#banner_info5 {
+	position: absolute;
+	bottom: 20px;
+	left: 5px;
+	height: 24px;
+	color: #fff;
+	z-index: 1001;
+	cursor: pointer
+}
+ 
+#banner5 ul {
+	position: absolute;
+	list-style-type: none;
+	filter: Alpha(Opacity = 80);
+	opacity: 0.8;
+	border: 1px solid #fff;
+	z-index: 1002;
+	margin: 0;
+	padding: 0;
+	bottom: 3px;
+	right: 5px;
+}
+ 
+#banner5 ul li {
+	padding: 0px 8px;
+	float: left;
+	display: block;
+	color: #FFF;
+	border: #e5eaff 1px solid;
+	background: #6f4f67;
+	cursor: pointer
+}
+ 
+#banner5 ul li.on {
+	background: #900
+}
+ 
+#banner_list5 a {
+	position: absolute;
+}
+ 
+#banner6 {
+	position: relative;
+	left: 10%;
+	width: 560px;
+	height: 485px;
+	border: 1px solid #666;
+	overflow: hidden;
+}
+ 
+#banner_list6 img {
+	border: 0px;
+}
+ 
+#banner_info6 {
+	position: absolute;
+	bottom: 20px;
+	left: 5px;
+	height: 24px;
+	color: #fff;
+	z-index: 1001;
+	cursor: pointer
+}
+ 
+#banner6 ul {
+	position: absolute;
+	list-style-type: none;
+	filter: Alpha(Opacity = 80);
+	opacity: 0.8;
+	border: 1px solid #fff;
+	z-index: 1002;
+	margin: 0;
+	padding: 0;
+	bottom: 3px;
+	right: 5px;
+}
+ 
+#banner6 ul li {
+	padding: 0px 8px;
+	float: left;
+	display: block;
+	color: #FFF;
+	border: #e5eaff 1px solid;
+	background: #6f4f67;
+	cursor: pointer
+}
+ 
+#banner6 ul li.on {
+	background: #900
+}
+ 
+#banner_list6 a {
+	position: absolute;
+}
+</style> 
+</head> 
+ 
+<body> 
+<div class="global"> 
+<div class="header"> 
+<div class="bgimg"></div> 
+<div class="bgpart1"></div> 
+<div class="bgpart2"></div> 
+ 
+ 
+<div class="banner"> 
+<div class="logo"><img 
+	src="http://2011.igem.org/wiki/images/c/c9/Logo.png" width="200"
+	height="200" /></div> 
+<div class="title"><img 
+	src="http://ung.igem.org/wiki/images/b/b3/Title.png" width="603"
+	height="220" /></div> 
+<div class="igemlogo"><a target="_blank"
+	href="http://2011.igem.org"><img 
+	src="http://2011.igem.org/wiki/images/e/e2/Igemlogo.png" width="180"
+	height="150" /></a></div> 
+</div> 
+<!--banner--> 
+<div class="nav"> 
+<ul id="topnav"> 
+	<li><a id="P_Home" href="http://zjuchina.tk/index.html">Home</a></li> 
+ 
+	<li><a id="P_Project"
+		href="http://zjuchina.tk/Project.html">Project</a> <!--Subnav Starts Here--> 
+ 
+ 
+	<!--Subnav Ends Here--></li> 
+	<li><a id="P_Team" href="http://zjuchina.tk/Team.html">Team</a> 
+ 
+	</li> 
+	<li><a id="P_Notebook"
+		href="http://zjuchina.tk/Notebook.html">Notebook</a></li> 
+	<li><a id="P_HumanPractice"
+		href="http://zjuchina.tk/Humanpractice.html">HumanPractice</a></li> 
+	<li id="search"> 
+	<div id="searchbar"> 
+ 
+	<div> 
+	<form action="http://www.google.com.hk/cse" id="cse-search-box"
+		target="_blank"> 
+	<div><input type="hidden" name="cx"
+		value="005438704919531788579:zbfi5n-q5du" /> <input type="hidden"
+		name="cof" value="FORID:10" /> <input type="hidden" name="ie"
+		value="UTF-8" /> <input type="text" name="q" size="15" /> <input 
+		type="submit" name="sa" value="Search" /></div> 
+	</form> 
+	<script type="text/javascript"
+		src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script></div> 
+	</div> 
+	</li> 
+</ul> 
+</div> 
+<!--navbar--> <script type="text/javascript"> 
+   document.getElementById('P_Team').onclick=function(){
+	   document.getElementById('P_Te').style.display='block'
+ 
+	    document.getElementById('P_Pr').style.display='none'
+		document.getElementById('P_No').style.display='none'
+		document.getElementById('P_Hu').style.display='none'
+		<!-- document.getElementById('P_Pr').style.display='none' -->
+	   };
+	    document.getElementById('P_Project').onclick=function(){
+	   document.getElementById('P_Pr').style.display='block'
+	    document.getElementById('P_Te').style.display='none'
+		document.getElementById('P_No').style.display='none'
+		document.getElementById('P_Hu').style.display='none'
+		<!-- document.getElementById('P_Pr').style.display='none' -->
+	   };
+	    document.getElementById('P_Notebook').onclick=function(){
+	   document.getElementById('P_No').style.display='block'
+	    document.getElementById('P_Pr').style.display='none'
+		document.getElementById('P_Te').style.display='none'
+		document.getElementById('P_Hu').style.display='none'
+		<!-- document.getElementById('P_Pr').style.display='none' -->
+	   };
+	    document.getElementById('P_HumanPractice').onclick=function(){
+	   document.getElementById('P_Hu').style.display='block'
+	    document.getElementById('P_Pr').style.display='none'
+		document.getElementById('P_No').style.display='none'
+		document.getElementById('P_Te').style.display='none'
+		<!-- document.getElementById('P_Pr').style.display='none' -->
+	   };
+	  
+</script></div> 
+<!--header--> 
+<div id="contentwrapper"> 
+<div class="main"> 
+	<div class="bgpart3"></div> 
+<div class="leftulcontainer" id="orange"> 
+<div id="leftul" class="leftul"> 
+<div id="accordion"> 
+ 
+<h4 id="try">Biofilm</h4> 
+ 
+<div class="pane"><a 
+	href="http://zjuchina.tk/Project.html">Background</a> <a 
+	href="http://zjuchina.tk/bio-Design.html">Design</a> <a 
+	href="http://zjuchina.tk/bio-modeling.html">Modeling</a> <a 
+	href="http://zjuchina.tk/bio-results.html">Results</a></div> 
+ 
+<h4 class="current">Rainbofilm</h4> 
+ 
+<div class="pane" style="display: block;"><a 
+	href="http://zjuchina.tk/rainbo-Background.html">Background</a> 
+<a href="http://zjuchina.tk/rainbo-Design.html">Design</a> <a 
+	href="http://zjuchina.tk/rainbo-modeling-v1.html">Modeling</a> <a 
+	href="http://zjuchina.tk/rainbo-Results.html">Results</a></div> 
+ 
+<h4>Sugarfilm</h4> 
+ 
+<div class="pane"><a 
+	href="http://zjuchina.tk/Sugar-background.html">Background</a> <a 
+	href="http://zjuchina.tk/Sugar-Design.html">Design</a> <a 
+	href="http://zjuchina.tk/Sugar-Modeling.html">Modeling</a> <a 
+	href="http://zjuchina.tk/Sugar-Future.html">Future</a></div> 
+<h4>Parts</h4> 
+ 
+<div class="pane"><a 
+	href="http://zjuchina.tk/BBa_I13602.html">BBa_I13602</a> <a 
+	href="http://zjuchina.tk/BBa_K561000.html">BBa_K561000</a> <a 
+	href="http://zjuchina.tk/BBa_K561002.html">BBa_K561002</a> <a 
+	href="http://zjuchina.tk/BBa_K561003.html">BBa_K561003</a></div> 
+<h4>Achievements</h4> 
+ 
+<div class="pane"><a href="http://zjuchina.tk/data.html">Data
+Page</a> <a href="http://zjuchina.tk/judging.html">Judging Form</a> <a 
+	href="http://zjuchina.tk/attribution.html">Attribution and
+Contributions</a></div> 
+<h4>Tools</h4> 
+ 
+<div class="pane"><a href="http://zjuchina.tk/Tools.html">Tools</a> 
+</div> 
+ 
+<script> 
+$(function() { 
+ 
+$("#accordion").tabs("#accordion div.pane", {tabs: 'h4', effect: 'slide', initialIndex: null});
+});
+</script> <!-- Navigation scroll follow --> <script type="text/javascript"> 
+        $(window).scroll(function () { 
+            var scrollPos = $(window).scrollTop();
+            if (scrollPos > 330) {
+                $(".leftul").addClass("stickToTop");
+            } else {
+                $(".leftul").removeClass("stickToTop");
+            }
+     
+        });
+    </script></div> 
+<!--accordion--></div> 
+<!--leftul--></div> 
+<!--leftulcontainer--> 
+ 
+<div class="rightcontainer"> 
+<div id="styleA" class="frame"> 
+<div id="orange"> 
+<h1>Modeling</h1> 
+<p>This model is used for simulating the behavior of our genetic
+circuits</p> 
+<!--importantcontainer--> <a name="introd"></a> 
+<div id="importantcontainer"> 
+<div class="frame" id="important"> 
+<div class="bgcolors" id="round"> 
+<h1>Abstract</h1> 
+</div> 
+</div> 
+</div> 
+<div id="framecontent"> 
+ 
+<p>We will model our gene regulatory networks using
+Michaelis-Menten enzymatic kinetics,together with the usual rules of
+reaction kinetics. The resulting models, when spatial effects are
+neglected, are given in terms of ordinary differential equations
+describing the rate of change of the concentrations of gene products and
+proteins. A key component of all these models is the Hill function, used
+to describe the transcription phase. The presence of this highly
+nonlinear function, whilst accurately modeling the network, inevitably
+leads to restrictions on the analytical tools available to understand
+and predict the dynamics.</p> 
+<a name="mModel">&nbsp;</a> 
+<div id="importantcontainer"> 
+<div class="frame" id="important"> 
+<div class="bgcolors" id="round"> 
+<h1>Model</h1> 
+</div> 
+</div> 
+</div> 
+<div id="framecontent"> 
+<h1>Basic concepts and assumptions</h1> 
+<p>The ODE formalism models the concentrations of RNAs, proteins,
+and other molecules by time-dependent variables with values contained in
+the set of nonnegative real numbers. Regulatory interactions take the
+form of functional and differential relations between the concentration
+variables. For a typical transcription-translation process, the ODEs
+modeling approach associates two ODEs with any given gene<strong> 
+i</strong>; one modeling the rate of change of the concentration of the
+transcribed mRNA<strong> r_i</strong>, and the other describing the rate
+of change of the concentration of its corresponding translated protein<strong> 
+p_i</strong>. Thus for our network with 3 genes we have:</p> 
+<p><img 
+	src="http://2011.igem.org/wiki/images/e/e7/Zju_function1-2.png"
+	alt="function1-2" width="668" style="float: none;" /></p> 
+<p>Where (1) describes transcription, (2) describes translation, and i = 1,…,N. The functions<strong> R_i</strong>(<strong>p_j</strong>)
+  describe the dependence of mRNA concentration on protein concentration<strong> p_j</strong> (If protein<strong> p_j </strong>has
+  no effect on mRNA<strong> r_i</strong>, then correspond function is set to zero.) The functional F(·) in (1) is
+  defined in terms of sums and products of functions <strong>R_i</strong>. Function <strong>P_i</strong> in (2) describes the
+  translation of the mRNA<strong> r_i </strong>into a protein<strong> p_i</strong>. Parameters<strong> γ_i</strong>, <strong>δ_i</strong> (i = 1,…,N), represent the
+  degradation parameters of the mRNAs and proteins produced by gene<strong> i</strong>. As is common, we shall
+  assume that the degradation of proteins or mRNAs is not regulated, namely that it does not
+  depend on the concentrations of other molecules in the cell. Function <strong>R_i</strong> is assumed to be in the
+  form of Hill function as usual (since our cases are all inhibitors, we shall denote the Hill function
+  <strong>h</strong>-(p,K,n)), and the function <strong>P_i</strong> is taken to be a linear term proportional to the concentration of
+  mRNA <strong>r_i</strong>.
+</p> 
+<p><img 
+	src="http://2011.igem.org/wiki/images/8/89/Zju_function3.png"
+	style="float: none;" alt="function3" /></p> 
+<p>where<strong> K_i </strong>is the microscopic dissociation
+constant, and<strong> n_i </strong>is Hill coefficient, describing
+cooperativity.</p> 
+<p style="text-align: center"><img 
+	src="http://2011.igem.org/wiki/images/d/d4/Zju_parts-toge.png"
+	alt="Biobrick" /></p> 
+<p style="text-align: center">&nbsp;</p> 
+<h1>Equations & Parameters</h1> 
+<p>Based on the above, our model could be founded with following
+ODEs:</p> 
+<p style="text-align: center"><img 
+	src="http://2011.igem.org/wiki/images/9/91/Zju_function4-10.png"
+	alt="function4-10" width="660" /></p> 
+ 
+<p>Where</p> 
+<p style="text-align: center"><img 
+	src="http://2011.igem.org/wiki/images/1/13/Zju_function11.png"
+	alt="function11" width="671" /></p> 
+<p style="text-align: center">&nbsp;</p> 
+<h1>Parameters</h1> 
+<p>Variables are defined in following table.</p> 
+<img src="http://2011.igem.org/wiki/images/4/48/Zju-para1.png"
+	style="width: 700px;" alt="parameters1" /> <img 
+	src="http://2011.igem.org/wiki/images/c/ce/Zju-para2.png"
+	style="width: 700px;" alt="parameters2" /> 
+<p>We should note that<strong> α </strong>and<strong> β </strong>are
+two functions of the oxygen concentration, which are determined by the
+properties of corresponding promoter. For a certain depth of the
+biofilm, the concentration of oxygen is a constant in our model, so are
+and . Therefore we could solve these equations at different oxygen
+concentration and combine all the results to show how this system work.</p> 
+<p>Because of the nonlinearity of the Hill functions, the solutions
+of a system of ordinary differential equations of a network of many
+genes cannot generally be determined by analytical means.</p> 
+</div> 
+<a name="mSimula"></a> 
+<div id="importantcontainer"> 
+<div class="frame" id="important"> 
+<div class="bgcolors" id="round"> 
+<h1>Simulation</h1> 
+</div> 
+</div> 
+</div> 
+<div id="framecontent"> 
+<h1>Equilibrium analysis</h1> 
+ 
+<p>Notice that we care more about the final state of the bacteria in
+different depth of the biofilm(thus in different oxygen condition), we
+assume that the system has reached a steady state. We could calculus
+this steady state by setting all derivatives with respect to time to
+zero. That is, let</p> 
+<p><img 
+	src="http://2011.igem.org/wiki/images/3/3d/Zju_function12.png"
+	style="float: right;" alt="function12" /></p> 
+<p>&nbsp;</p> 
+<p>&nbsp;</p> 
+<p>With (4)-(10), we have:</p> 
+<p><img 
+	src="http://2011.igem.org/wiki/images/5/53/Zju_function13-18.png"
+	style="float: none;" alt="function13" /></p> 
+<p>&nbsp;</p> 
+<p>Clearly, the behavior of this system is determined by the two
+functions, thus determined by the behavior of promoter vgb & promoter
+fdhF. On the other hand, the solutions of equations The two functions <strong>α</strong>and <strong>β</strong> are hard to determine precisely, but their behavior
+could be illustrated in follow graph qualitatively.</p> 
+</div> 
+<div><img 
+	src="http://2011.igem.org/wiki/images/f/f8/Zju-parts-v2.1.jpg" style=""
+	alt="case1" /> 
+<p>First case, When the expression of promoter vgb and fdhF could be
+neglected, that is, we could set<strong>α</strong>and<strong>β</strong>to
+be both zero. The ODEs system become</p> 
+<p><img 
+	src="http://2011.igem.org/wiki/images/6/68/Zju_function20-23.png"
+	alt="function20-23" /></p> 
+<p>The results are shown as follows</p> 
+ 
+<script type="text/javascript"> 
+	var t = n = 0, count;
+	$(document).ready(function(){	
+		count=$("#banner_list a").length;
+		$("#banner_list a:not(:first-child)").hide();
+		$("#banner_info").html($("#banner_list a:first-child").find("img").attr('alt'));
+		$("#banner_info").click(function(){window.open($("#banner_list a:first-child").attr('href'), "_blank")});
+		$("#banner li").click(function() {
+			var i = $(this).text() - 1;//��ȡLiԪ���ڵ�ֵ����1��2��3��4
+			n = i;
+			if (i >= count) return;
+			$("#banner_info").html($("#banner_list a").eq(i).find("img").attr('alt'));
+			$("#banner_info").unbind().click(function(){window.open($("#banner_list a").eq(i).attr('href'), "_blank")})
+			$("#banner_list a").filter(":visible").fadeOut(500).parent().children().eq(i).fadeIn(1000);
+			document.getElementById("banner").style.background="";
+			$(this).toggleClass("on");
+			$(this).siblings().removeAttr("class");
+		});
+		
+	})
+	
+ 
+</script> 
+ 
+<div id="banner"> 
+<div id="banner_bg"></div> 
+<div id="banner_info"></div> 
+<ul> 
+	<li class="on">1</li> 
+	<li>2</li> 
+ 
+</ul> 
+<div id="banner_list"><a href="#" target="_blank"><img 
+	src="http://2011.igem.org/wiki/images/b/b8/Zju-parts-simu1.1.png"
+	 title="" alt="" /></a> <a href="#" target="_blank"><img 
+	src="http://2011.igem.org/wiki/images/e/e9/Zju-parts-simu1.2.png"
+	 title="" alt="" /></a></div> 
+</div> 
+<p>&nbsp;</p> 
+</div> 
+<div><img 
+	src="http://2011.igem.org/wiki/images/2/2d/Zju-parts-v2.3.jpg" style=""
+	alt="case2" /> 
+<p>Secondly,in the anaerobic condition, that is, when the expression
+of promoter vgb could be neglected, we set<strong>α</strong>to be zero,
+and set<strong>β</strong>to be bigger than the dissociation constant in
+(13). Then we have
+<p><img 
+	src="http://2011.igem.org/wiki/images/4/4e/Zju_function24-29.png"
+	style="float: none;" alt="function24-29" /> 
+ 
+<p>The results are shown as follow</p> 
+ <script type="text/javascript">
+	var t = n = 0, countx;
+	$(document).ready(function(){	
+		countx=$("#banner_list1 a").length;
+		$("#banner_list1 a:not(:first-child)").hide();
+		$("#banner_info1").html($("#banner_list1 a:first-child").find("img").attr('alt'));
+		$("#banner_info1").click(function(){window.open($("#banner_list1 a:first-child").attr('href'), "_blank")});
+		$("#banner1 li").click(function() {
+			var i = $(this).text() - 1;//��ȡLiԪ���ڵ�ֵ����1��2��3��4
+			n = i;
+			if (i >= countx) return;
+			$("#banner_info1").html($("#banner_list1 a").eq(i).find("img").attr('alt'));
+			$("#banner_info1").unbind().click(function(){window.open($("#banner_list1 a").eq(i).attr('href'), "_blank")})
+			$("#banner_list1 a").filter(":visible").fadeOut(500).parent().children().eq(i).fadeIn(1000);
+			document.getElementById("banner1").style.background="";
+			$(this).toggleClass("on");
+			$(this).siblings().removeAttr("class");
+		});
+	
+	})
+	
+	
+</script>
+
+<div id="banner1"> 
+<div id="banner_bg"></div> 
+<div id="banner_info1"></div> 
+<ul> 
+	<li class="on">1</li> 
+	<li>2</li> 
+	<li>3</li> 
+</ul> 
+<div id="banner_list1"><a href="#" target="_blank"><img 
+	src="http://2011.igem.org/wiki/images/3/36/Zju-parts-simu2.1.png"
+	 title="" alt="" /></a> <a href="#" target="_blank"><img 
+	src="http://2011.igem.org/wiki/images/6/6b/Zju-parts-simu2.2.png"
+	 title="" alt="" /></a> <a href="#" target="_blank"><img 
+	src="http://2011.igem.org/wiki/images/e/e1/Zju-parts-simu2.3.png"
+	 title="" alt="" /></a></div> 
+</div> 
+<p></p> 
+</p> 
+</div> 
+<div><img 
+	src="http://2011.igem.org/wiki/images/8/86/Zju-parts-v2.2.jpg" style=""
+	alt="case3" /> 
+<p>Thirdly, since our ODEs model are symmetric respect to YFP & CFP
+in some sense, therefore the case of microaerobic (where we could set<strong>β</strong>to
+be zero) would be the same(symmetric) as in second case.</p> 
+<p><img 
+	src="http://2011.igem.org/wiki/images/6/6f/Zju_function30-35.png"
+	style="float: none;" alt="function30-35" /></p> 
+<h1>Results</h1> 
+ <script type="text/javascript">
+	var t = n = 0, count;
+	$(document).ready(function(){	
+		count=$("#banner_list2 a").length;
+		$("#banner_list2 a:not(:first-child)").hide();
+		$("#banner_info2").html($("#banner_list2 a:first-child").find("img").attr('alt'));
+		$("#banner_info2").click(function(){window.open($("#banner_list2 a:first-child").attr('href'), "_blank")});
+		$("#banner2 li").click(function() {
+			var i = $(this).text() - 1;//��ȡLiԪ���ڵ�ֵ����1��2��3��4
+			n = i;
+			if (i >= count) return;
+			$("#banner_info2").html($("#banner_list2 a").eq(i).find("img").attr('alt'));
+			$("#banner_info2").unbind().click(function(){window.open($("#banner_list2 a").eq(i).attr('href'), "_blank")})
+			$("#banner_list2 a").filter(":visible").fadeOut(500).parent().children().eq(i).fadeIn(1000);
+			document.getElementById("banner2").style.background="";
+			$(this).toggleClass("on");
+			$(this).siblings().removeAttr("class");
+		});
+	
+	})
+	
+
+</script>
+
+<div id="banner2"> 
+<div id="banner_bg"></div> 
+<div id="banner_info2"></div> 
+<ul> 
+	<li class="on">1</li> 
+	<li>2</li> 
+	<li>3</li> 
+</ul> 
+<div id="banner_list2"><a href="#" target="_blank"><img 
+	src="http://2011.igem.org/wiki/images/3/36/Zju-parts-simu2.1.png"
+	 title="" alt="" /></a> <a href="#" target="_blank"><img 
+	src="http://2011.igem.org/wiki/images/6/6d/Zju-parts-simu3.2.png"
+	 title="" alt="" /></a> <a href="#" target="_blank"><img 
+	src="http://2011.igem.org/wiki/images/e/ea/Zju-parts-simu3.3.png"
+	 title="" alt="" /></a></div> 
+</div> 
+<p>&nbsp;</p> 
+</div> 
+<h1>Robustness analysis</h1> 
+<p>Robustness is very important to a genetic circuit. Scientists
+hope their artificial system have high tolerance to the variety of
+environment or system parameters. In our genetic circuit, and are
+directly represent the properties of Vgb and Fdhf, so we are interested
+in to what degree these two parameters could influence the behavior of
+Ptet.</p> 
+<p>We could show the contribution of the two parameters and by fix
+one of them, and let the other one varies linearly. When fix at 1e-9,
+and changing from 0 to 1e-7 continuously, the production of each protein
+is shown in following graphs.</p> 
+ 
+<script type="text/javascript"> 
+	var t = n = 0, count;
+	$(document).ready(function(){	
+		count=$("#banner_list3 a").length;
+		$("#banner_list3 a:not(:first-child)").hide();
+		$("#banner_info3").html($("#banner_list3 a:first-child").find("img").attr('alt'));
+		$("#banner_info3").click(function(){window.open($("#banner_list3 a:first-child").attr('href'), "_blank")});
+		$("#banner3 li").click(function() {
+			var i = $(this).text() - 1;
+			n = i;
+			if (i >= count) return;
+			$("#banner_info3").html($("#banner_list3 a").eq(i).find("img").attr('alt'));
+			$("#banner_info3").unbind().click(function(){window.open($("#banner_list3 a").eq(i).attr('href'), "_blank")})
+			$("#banner_list3 a").filter(":visible").fadeOut(500).parent().children().eq(i).fadeIn(1000);
+			document.getElementById("banner3").style.background="";
+			$(this).toggleClass("on");
+			$(this).siblings().removeAttr("class");
+		});
+	
+	})
+ 
+</script> 
+<div id="banner3"> 
+<div id="banner_bg"></div> 
+<div id="banner_info3"></div> 
+<ul> 
+	<li class="on">1</li> 
+	<li>2</li> 
+	<li>3</li> 
+</ul> 
+<div id="banner_list3"><a href="#" target="_blank"><img 
+	src="http://2011.igem.org/wiki/images/7/74/Zju-robust1.png" title=""
+	alt="Cfp.figure" /></a> <a href="#" target="_blank"><img 
+	src="http://2011.igem.org/wiki/images/c/c4/Zju-robust2.png" title=""
+	alt="Yfp.figure" /></a> <a href="#" target="_blank"><img 
+	src="http://2011.igem.org/wiki/images/4/44/Zju-robust3.png" title=""
+	alt="Rfp.figure" /></a></div> 
+</div> 
+<p style="text-align: center">&nbsp;</p> 
+<p>Also, we could let both and to vary linearly (from 0 to 1e-11) to
+see how protein CFP changes. The actual curve with respect to depth of
+biofilm for CFP production is a curve on this surface.</p> 
+<p style="text-align: center"><img 
+	src="http://2011.igem.org/wiki/images/9/9c/Zju-robust4.png" style=""
+	alt="robust4" /></p> 
+<h1>&nbsp;</h1> 
+<h1>Results</h1> 
+<p>Combine Data acquired in part characterization and modeling of
+biofilm and biobrick, we can get the relationship between distribution
+of oxygen in the biofilm and the expression rate of CFP RFP YFP as
+follow:</p> 
+<img src="http://2011.igem.org/wiki/images/5/5d/Zjusimu-end.png"
+	 /> 
+<p>YFP:</p> 
+<img src="http://2011.igem.org/wiki/images/9/9f/Zju-modeling1.1.png"
+	 /> 
+<p>RFP:</p> 
+<img src="http://2011.igem.org/wiki/images/8/8b/Zju-modeling1.2.png"
+	 /> 
+<p>From the fitting results we know that: The PoPS of YFP could be
+regard as zero since PPO of 10%, and approximately linearly increasing
+from 0% to 2.5%, and decreasing from 2.5% to 10%. The PoPS of RFP could
+be regard as zero since PPO of 2%, and approximately linear from 0% to
+2%. Together with the results of former modeling sections, we could show
+the stratified biofilm in following graph.</p> 
+<p style="text-align: center"><img 
+	src="http://2011.igem.org/wiki/images/1/13/Zjustra-simu.jpg"
+	width="700"></p> 
+<p>&nbsp;</p> 
+</div> 
+ 
+ 
+<a name="mRefer"> </a> 
+<div id="importantcontainer"> 
+ 
+<div class="frame" id="important"> 
+<div class="bgcolors" id="round"> 
+<h1>Reference</h1> 
+</div> 
+</div> 
+</div> 
+<div id="framecontent"> 
+<table style="background-color: transparent;" width="0" border="0"
+	cellspacing="1" cellpadding="1"> 
+	<tr> 
+		<td> 
+		<p>[1]</p> 
+		</td> 
+		<td> 
+		<p>J.B. Andersen et al., &quot;New Unstable Variants of Green Fluorescent Protein for Studies of Transient Gene Expression in Bacteria,&quot; Applied and Environmental Microbiology, vol. 64, Jun. 1998, pp. 2240–2246.</p> 
+		</td> 
+	</tr> 
+	<tr> 
+		<td> 
+		<p>[2]</p> 
+		</td> 
+		<td> 
+		<p>Goryachev, A.B., D.J. Toh and T. Lee. &quot;System analysis of a quorum sensing network: Design constraints imposed by the functional requirements, network topology and kinetic constant.&quot; BioSystems 2006: 83, 178-187.</p> 
+		</td> 
+	</tr> 
+	<tr> 
+		<td> 
+		<p>[3]</p> 
+		</td> 
+		<td> 
+		<p>Alon, Uri. &quot;An Introduction to Systems Biology Design Principles of Biological Circiuts.&quot; London: Chapman &amp; Hall/CRC, 2007.</p> 
+		</td> 
+	</tr> 
+	<tr> 
+		<td> 
+		<p>[4]</p> 
+		</td> 
+		<td> 
+		<p>David Braun et al. Parameter estimation for two synthetic gene networks: A case study. IEEE 2005.</p> 
+		</td> 
+	</tr> 
+	<tr> 
+		<td> 
+		<p>[5]</p> 
+		</td> 
+		<td> 
+		<p>Aberdeen_Scotland 2009. &quot;Modeling Parameters&quot; iGEM wiki.</p> 
+		</td> 
+	</tr> 
+	<tr> 
+		<td> 
+		<p>[6]</p> 
+		</td> 
+		<td> 
+		<p>Wilfried Weber, Markus Rimann, Manuela Spielmann, Bettina Keller, Marie Daoud-El Baba, Dominique Aubel, Cornelia C Weber &amp; Martin Fussenegger, Gas-inducible transgene expression in mammalian cells and mice, Nature Biotechnology, volume 22, number 11, November 2004</p> 
+		</td> 
+	</tr> 
+</table> 
+</div> 
+<!--framecontent--> 
+<div class="frame" id="rightnav"> 
+<div class="bgcolors" id="round"> 
+<p><a name="jumptop" id="p_intro" href="#introd">&nbsp;Abstract&nbsp;</a>|<a 
+	id="p_model" href="#mModel">&nbsp;Model&nbsp;</a>|<a id="p_simul"
+	href="#mSimula">&nbsp;Simulation&nbsp;</a>|<a id="p_simul"
+	href="#mRefer">&nbsp;Reference&nbsp;</a></p> 
+</div> 
+<!--bgcolors--></div> 
+<!--rightnav--></div> 
+<!--orange--></div> 
+<!--frame--></div> 
+<!--rightcontainer--> 
+<p style="clear: both"></p> 
+</div> 
+<!--main--> 
+<p style="clear: both"></p> 
+<div class="footer" id="footer"><a href="http://2011.igem.org/"> 
+iGem 2011 Home Page</a> <a href="http://ung.igem.org/Special:Upload/"> 
+Upload Files</a> <a 
+	href="http://2011.igem.org/wiki/index.php?title=Template:Zjucss_main&action=edit">Edit
+CSS</a> <a href="http://ung.igem.org/Team_Wikis?year=2011"> Team Wikis</a> <a 
+	href="mailto:zjuigem@gmail.com?"><strong>Contact Us</strong></a></div> 
+</div> 
+<!--contentwrapper--> 
+</div> 
+</body> 
+</noscript> 
+<div style="text-align: center;"><div style="position:relative; top:0; margin-right:auto;margin-left:auto; z-index:99999"> 
+<!-- Website Analytics Code --> 
+ <script type="text/javascript" language="javascript" src="http://analytics.hosting24.com/do.php"></script> 
+ <noscript> 
+ <a href="http://www.hosting24.com/" target="_blank"><img src="http://analytics.hosting24.com/do.php" alt="web hosting" border="0"></a> 
+ </noscript> 
+ <!-- End of Website Analytics Code --> 
+</div></div> 
+</html> 
+ 
+ 

@@ -1,0 +1,731 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>ZJU-China iGEM 2011</title>
+<link href='http://fonts.googleapis.com/css?family=Molengo'
+	rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Hammersmith+One'
+	rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Alice'
+	rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Ovo' rel='stylesheet'
+	type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Federo'
+	rel='stylesheet' type='text/css'>
+
+<link href="modeling.css" rel="stylesheet" type="text/css">
+<link href="global.css" rel="stylesheet" type="text/css">
+<link href="template2.css" rel="stylesheet" type="text/css"><!-- include the Tools -->
+<script src="http://cdn.jquerytools.org/1.2.6/full/jquery.tools.min.js"></script>
+<style type="text/css">
+#contentwrapper .main .leftulcontainer #leftul #accordion .pane a {
+	color: #ffcc99
+}
+
+
+#contentwrapper .main .leftulcontainer #leftul #accordion .pane a:hover
+	{
+	color: #ff9933
+}
+</style>
+
+<style type="text/css">
+@charset "UTF-8";
+
+/* CSS Document */
+a:hover {
+	text-decoration: none;
+}
+
+.block {
+	margin: 10px;
+	float: left;
+	color: #333333;
+	font-size: 12pt;
+	padding: 0;
+	width: 660px;
+}
+
+.block h1 {
+	font-size: 36pt;
+}
+
+.block a {
+	color: #ff3333;
+}
+
+.block p {
+	margin: 20px;
+}
+
+.block h1,h2 {
+	border-bottom: none;
+	padding-left: 10px;
+	padding-bottom: 0;
+	padding-top: 0;
+}
+
+.block a {
+	color: #666666;
+}
+
+.block hr {
+	height: 2px;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.blocktop,.blockbottom {
+	width: 100%;
+	height: 10px;
+}
+
+.blocktop {
+	background-image: url(http://ung.igem.org/wiki/images/1/17/Blocktop.png)
+		;
+	background-repeat: no-repeat;
+}
+
+.blockbottom {
+	background-image:
+		url(http://ung.igem.org/wiki/images/1/16/Blockbottom.png);
+	background-repeat: no-repeat;
+}
+
+.blockcontent {
+	padding: 10px;
+	background-color: white;
+}
+
+.links {
+	background-color: white;
+	text-align: right;
+	padding-right: 24px;
+	font-size: 16px;
+}
+
+.links a:hover {
+	cursor: pointer;
+}
+
+.sidebar {
+	float: right;
+	width: 250px;
+}
+
+.sidebartop {
+	height: 10px;
+	background-image:
+		url(http://ung.igem.org/wiki/images/9/9f/Sidebartop.png);
+	background-repeat: no-repeat;
+}
+
+.sidebarbottom {
+	height: 10px;
+	background-image:
+		url(http://ung.igem.org/wiki/images/7/79/Sidebarbottom.png);
+	background-repeat: : no-repeat;
+}
+
+.main {
+	background-color: #transparent;
+	position: static;
+	top: auto;
+	height: auto;
+	padding: 10px;
+	padding-top: 0px;
+	padding-right: 10px;
+}
+
+div #flash1 {
+	width: auto;
+	height: auto;
+	margin-left: 20px;
+	background-color: transparent;
+	filter: alpha(opacity = 80);
+	-moz-opacity: 0.8;
+	-khtml-opacity: 0.8;
+	opacity: 0.8;
+}
+
+div #part0 {
+	float: right;
+	width: 250px;
+	height: 270px;
+	filter: alpha(opacity = 50);
+	-moz-opacity: 0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+	background-color: transparent;
+	color: white;
+}
+
+div #part0 .blockcontent {
+	background-color: black;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	height: 250px;
+}
+
+div #part0 h1 {
+	color: white;
+	font-size: 30px;
+}
+
+div .countdown {
+	padding: 5px;
+	padding-left: 6px;
+	margin: 5px;
+}
+
+div #part0 .links {
+	background-color: black;
+}
+
+div #part0 .sidebartop {
+	background: url(blocktop3.png) transparent;
+}
+
+div #part0 .sidebarbottom {
+	background: url(blockbottom3.png) transparent;
+}
+
+#welcome {
+	width: 660px;
+	vertical-align: middle;
+}
+
+#welcome h1 {
+	color: #f8b4ae;
+}
+
+#welcome hr {
+	background-color: #f8b4ae;
+}
+
+#welcome a {
+	color: #f8b4ae;
+}
+
+#welcome a:hover {
+	color: red;
+	text-decoration: none;
+}
+
+#note {
+	float: right;
+	width: 250px;
+}
+
+#note h1 {
+	color: #7fb3d8
+}
+
+#note hr {
+	background-color: #7fb3d8;
+}
+
+#note a {
+	color: #7fb3d8;
+}
+
+#note a:hover {
+	color: #006699;
+	text-decoration: none;
+}
+
+#project {
+	width: 660px;
+}
+
+#project h1 {
+	color: #ffcc99;
+}
+
+#project hr {
+	background-color: #ffcc99;
+}
+
+#project a {
+	color: #ffcc99;
+}
+
+#project a:hover {
+	color: #ff9933;
+	text-decoration: none;
+}
+
+#twitter {
+	
+}
+
+#twitter h1 {
+	color: #3399ff;
+}
+
+#twitter hr {
+	background-color: #3399ff;
+}
+
+#twitter a {
+	color: #3399ff;
+}
+
+#twitter a:hover {
+	color: #0066ff text-decoration : none;
+}
+
+#visits {
+	
+}
+
+#visits h1 {
+	color: #666666;
+}
+
+#visits hr {
+	background-color: #666666;
+}
+
+#visits a {
+	color: #666666;
+}
+
+#visits a:hover {
+	color: #333333;
+	text-decoration: none;
+}
+
+#visits div #clustrmaps-widget {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#team {
+	float: left;
+	width: 660px;
+}
+
+#team h1 {
+	color: #aadba5;
+}
+
+#team hr {
+	background-color: #aadba5;
+}
+
+#team a {
+	color: #aadba5;
+}
+
+#team a:hover {
+	color: #56b74c;
+	text-decoration: none;
+}
+
+#flickr {
+	
+}
+
+#flickr .blockcontent #player {
+	padding-left: 80px;
+}
+
+#flickr h1 {
+	color: #ff66cc;
+}
+
+#flickr hr {
+	background-color: #ff66cc;
+}
+
+#flickr a {
+	color: #ff66cc;
+}
+
+#flickr a:hover {
+	color: #ff0099;
+	text-decoration: none;
+}
+
+#sponsors {
+	float: right;
+	width: 250px;
+}
+
+#sponsors a {
+	color: black;
+}
+
+#sponsors a:hover {
+	color: #999;
+}
+
+#sponsors .blocktop {
+	background-image:
+		url(http://ung.igem.org/wiki/images/b/b7/Blocktop2.png);
+	background-repeat: no-repeat;
+}
+
+#sponsors .blockbottom {
+	background-image:
+		url(http://ung.igem.org/wiki/images/c/c5/Blockbottom2.png);
+	background-repeat: no-repeat;
+}
+
+#hp h1 {
+	color: #9966cc;
+	font-size: 30px;
+}
+
+#hp hr {
+	background-color: #9966cc;
+}
+
+#hp a {
+	color: #9966cc;
+}
+
+#hp a:hover {
+	color: #4700b1;
+	text-decoration: none;
+}
+
+.footer {
+	background-color: #666666;
+	padding: 10px;
+	text-align: center;
+}
+
+.footer a {
+	color: #cccccc;
+	margin: 10px;
+	text-decoration: none;
+}
+
+.footer a:hover {
+	color: #FFF;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#banner {
+	position: relative;
+	width: 930px;
+	height: 325px;
+	border: 1px solid #666;
+	overflow: hidden;
+}
+
+#banner_list img {
+	border: 0px;
+	width: 930px;
+	height: 325px;
+}
+
+#banner ul {
+	position: absolute;
+	list-style-type: none;
+	filter: Alpha(Opacity = 80);
+	opacity: 0.8;
+	border: 1px solid #fff;
+	z-index: 1002;
+	margin: 0;
+	padding: 0;
+	bottom: 5px;
+	right: 3px;
+	width: 103px;
+	height: 31px;
+}
+
+#banner ul li {
+	padding: 4px;
+	float: left;
+	display: block;
+	color: #FFF;
+	border: #e5eaff 1px solid;
+	background: #6f4f67;
+	cursor: pointer
+}
+
+#banner ul li.on {
+	background: #900
+}
+
+#banner_list a {
+	position: absolute;
+	left: 1px;
+	top: 0px;
+	height: 240px;
+}
+a{
+	text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+<div class="global">
+<div class="header">
+<div class="bgimg"></div>
+<div class="bgpart1"></div>
+<div class="bgpart2"></div>
+
+
+<div class="banner">
+<div class="logo"><img
+	src="http://2011.igem.org/wiki/images/c/c9/Logo.png" width="200"
+	height="200" /></div>
+<div class="title"><img
+	src="http://ung.igem.org/wiki/images/b/b3/Title.png" width="603"
+	height="220" /></div>
+<div class="igemlogo"><a target="_blank"
+	href="http://2011.igem.org"><img
+	src="http://2011.igem.org/wiki/images/e/e2/Igemlogo.png" width="180"
+	height="150" /></a></div>
+</div>
+<!--banner-->
+<div class="nav">
+<ul id="topnav">
+	<li><a id="P_Home" href="http://zjuchina.tk/index.html">Home</a></li>
+
+	<li><a id="P_Project"
+		href="http://zjuchina.tk/Project.html">Project</a> <!--Subnav Starts Here-->
+
+
+	<!--Subnav Ends Here--></li>
+	<li><a id="P_Team" href="http://zjuchina.tk/Team.html">Team</a>
+
+	</li>
+	<li><a id="P_Notebook"
+		href="http://zjuchina.tk/Notebook.html">Notebook</a></li>
+	<li><a id="P_HumanPractice"
+		href="http://zjuchina.tk/Humanpractice.html">HumanPractice</a></li>
+	<li id="search">
+	<div id="searchbar">
+
+	<div>
+	<form action="http://www.google.com.hk/cse" id="cse-search-box"
+		target="_blank">
+	<div><input type="hidden" name="cx"
+		value="005438704919531788579:zbfi5n-q5du" /> <input type="hidden"
+		name="cof" value="FORID:10" /> <input type="hidden" name="ie"
+		value="UTF-8" /> <input type="text" name="q" size="15" /> <input
+		type="submit" name="sa" value="Search" /></div>
+	</form>
+	<script type="text/javascript"
+		src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script></div>
+	</div>
+	</li>
+</ul>
+</div>
+<!--navbar--> <script type="text/javascript">
+   document.getElementById('P_Team').onclick=function(){
+	   document.getElementById('P_Te').style.display='block'
+
+	    document.getElementById('P_Pr').style.display='none'
+		document.getElementById('P_No').style.display='none'
+		document.getElementById('P_Hu').style.display='none'
+		<!-- document.getElementById('P_Pr').style.display='none' -->
+	   };
+	    document.getElementById('P_Project').onclick=function(){
+	   document.getElementById('P_Pr').style.display='block'
+	    document.getElementById('P_Te').style.display='none'
+		document.getElementById('P_No').style.display='none'
+		document.getElementById('P_Hu').style.display='none'
+		<!-- document.getElementById('P_Pr').style.display='none' -->
+	   };
+	    document.getElementById('P_Notebook').onclick=function(){
+	   document.getElementById('P_No').style.display='block'
+	    document.getElementById('P_Pr').style.display='none'
+		document.getElementById('P_Te').style.display='none'
+		document.getElementById('P_Hu').style.display='none'
+		<!-- document.getElementById('P_Pr').style.display='none' -->
+	   };
+	    document.getElementById('P_HumanPractice').onclick=function(){
+	   document.getElementById('P_Hu').style.display='block'
+	    document.getElementById('P_Pr').style.display='none'
+		document.getElementById('P_No').style.display='none'
+		document.getElementById('P_Te').style.display='none'
+		<!-- document.getElementById('P_Pr').style.display='none' -->
+	   };
+	  
+</script></div>
+<!--header-->
+<div id="contentwrapper">
+<div class="main">
+<div class="bgpart3"></div>
+<div class="block" id="flash1" style="margin-left: 0; padding-left: 0;">
+<script type="text/javascript">
+    var t = n = 0, count;
+    $(document).ready(function(){    
+        count=$("#banner_list a").length;
+        $("#banner_list a:not(:first-child)").hide();
+        $("#banner_info").html($("#banner_list a:first-child").find("img").attr('alt'));
+        $("#banner_info").click(function(){window.open($("#banner_list a:first-child").attr('href'), "_blank")});
+        $("#banner li").click(function() {
+            var i = $(this).text() - 1;//获取Li元素内的值，即1，2，3，4
+            n = i;
+            if (i >= count) return;
+            $("#banner_info").html($("#banner_list a").eq(i).find("img").attr('alt'));
+            $("#banner_info").unbind().click(function(){window.open($("#banner_list a").eq(i).attr('href'), "_blank")})
+            $("#banner_list a").filter(":visible").fadeOut(500).parent().children().eq(i).fadeIn(1000);
+            document.getElementById("banner").style.background="";
+            $(this).toggleClass("on");
+            $(this).siblings().removeAttr("class");
+        });
+        t = setInterval("showAuto()", 4000);
+        $("#banner").hover(function(){clearInterval(t)}, function(){t = setInterval("showAuto()", 4000);});
+    })
+    
+    function showAuto()
+    {
+        n = n >=(count - 1) ? 0 : ++n;
+        $("#banner li").eq(n).trigger('click');
+    }
+</script>
+<div id="banner" style="margin-left: 0; padding-left: 0;">
+<div id="banner_bg"></div>
+<!--标题背景-->
+<div id="banner_info"></div>
+<!--标题-->
+<ul>
+	<li class="on">1</li>
+	<li>2</li>
+	<li>3</li>
+	<li>4</li>
+	<li>5</li>
+
+</ul>
+<div id="banner_list"><a href="#" target="_blank"><img
+	src="http://2011.igem.org/wiki/images/e/e2/Zju-h1.jpg" title="" alt="" /></a>
+<a href="#" target="_blank"><img
+	src="http://2011.igem.org/wiki/images/0/00/Zju-h2.jpg" title="" alt="" /></a>
+<a href="#" target="_blank"><img
+	src="http://2011.igem.org/wiki/images/5/54/Zju-h3.jpg" title="" alt="" /></a>
+<a href="#" target="_blank"><img
+	src="http://2011.igem.org/wiki/images/7/7f/Zju-h4.jpg" title="" alt="" /></a>
+<a href="#" target="_blank"><img
+	src="http://2011.igem.org/wiki/images/8/86/Zju-h5.jpg" title="" alt="" /></a>
+<!-- <a href="#" target="_blank"><img src="http://2011.igem.org/wiki/images/7/76/Zju-h6.jpg" title="" alt="" /></a>-->
+</div>
+</div>
+</div>
+
+<!----------main-------------->
+
+
+
+<div class="block" style="margin-left: 1px; padding-left: 1px"
+	id="project">
+<div class="blocktop"></div>
+<div class="blockcontent">
+<h1>Project</h1>
+<hr />
+<p>&nbsp;&nbsp; Rainbofilm is a stratified expression system in
+biofilm, a self-organized module extensible for various needs.
+Researchers found a vertical oxygen gradient establishes in the biofilm.
+Such property allows us to use oxygen sensitive promoters to
+artificially induce differentiated functions through the spatial
+distribution of cells. Thus, the multi-step reaction can be processed
+within the different layers of the biofilm.<br />
+&nbsp;&nbsp; The biofilm and its layered structure form spontaneously.
+Also biofilm has the natural resistance to high levels of toxin. These
+two properties render the Rainbofilm a convenient stable system for
+bio-production and bio-sensor. The system can cater to different needs
+simply by changing downstream genes. One possible application is ethanol
+production. The cellulose is degraded to monose from the bottom to the
+middle layer, and the ethanol is produced and secreted in the surface to
+minimize the toxicity to the inner cells.</p>
+</div>
+<div class="links"><a href="#top">Top</a> · <a
+	href="http://zjuchina.tk/Project.html">Project page</a></div>
+<div class="blockbottom"></div>
+</div>
+<div class="block sidebar" style="margin-right: 1px; padding-right: 1px"
+	id="hp">
+<div class="sidebartop"></div>
+<div class="blockcontent">
+<h1>Human Practice</h1>
+<hr />
+<p><a
+	href="http://zjuchina.tk/Fundingreport.html">
+Funding Guide </a></p>
+<p><a
+	href="http://zjuchina.tk/Fundingreport.html"><img src="guide10.jpg" width="191" height="145" /> </a></p>
+<p><a href="http://zjuchina.tk/App.html">
+  App</a></p>
+<p><a href="http://zjuchina.tk/App.html"><img src="app.png" width="190" height="180" /></a></p>
+<p><a
+	href="http://zjuchina.tk/Novel.html">Novel</a></p>
+<p><a
+	href="http://zjuchina.tk/Novel.html"><img src="http://2011.igem.org/wiki/images/7/73/Zju-novel4.jpg" width="190" /></a></p>
+<p><a href="http://zjuchina.tk/Safety.html"> Safety
+</a></p>
+</div>
+<div class="links"><a href="#top">Top</a> · <a
+	href="http://zjuchina.tk/Humanpractice.html">Human Practice page</a></div>
+<div class="sidebarbottom"></div>
+</div>
+<div class="block" style="margin-left: 1px; padding-left: 1px" id="team">
+<div class="blocktop"></div>
+<div class="blockcontent">
+<h1>Team</h1>
+<hr />
+<p>We are a young and happy team of 13 scientists and
+  engineers from very diverse backgrounds.Although this is our first year
+  working on a wet lab project and biofilm experiments are new to us,
+  we're currently taking great efforts to build the whole system for
+  experiments.Our team progress and more info will be frequently updated
+  so that our iGEM experience could be shared as much as possible along
+  the way. We truly welcome you to contact us for any cooperation or
+  suggestion.</p>
+<p ><div id="Player" style="text-align:center"><object width="600" height="450">
+	<param name="flashvars"
+		value="offsite=true&lang=en-us&page_show_url=%2Fphotos%2Fzjuigem%2Fsets%2F72157627144127353%2Fshow%2F&page_show_back_url=%2Fphotos%2Fzjuigem%2Fsets%2F72157627144127353%2F&set_id=72157627144127353&jump_to="></param>
+	<param name="movie"
+		value="http://www.flickr.com/apps/slideshow/show.swf?v=104087"></param>
+	<param name="allowFullScreen" value="true"></param>
+	<embed type="application/x-shockwave-flash"
+		src="http://www.flickr.com/apps/slideshow/show.swf?v=104087"
+		allowFullScreen="true"
+		flashvars="offsite=true&lang=en-us&page_show_url=%2Fphotos%2Fzjuigem%2Fsets%2F72157627144127353%2Fshow%2F&page_show_back_url=%2Fphotos%2Fzjuigem%2Fsets%2F72157627144127353%2F&set_id=72157627144127353&jump_to="
+		width="600" height="450"></embed></object></div></p>
+</div>
+<div class="links"><a href="#top">Top</a> · <a
+	href="http://zjuchina.tk/Team.html">Team page</a></div>
+<div class="blockbottom"></div>
+</div>
+<div class="block sidebar" id="note"
+	style="margin-right: 1px; padding-right: 1px">
+<div class="sidebartop"></div>
+<div class="blockcontent">
+<h1 style="font-size: 30px;">Sponsors</h1>
+<hr />
+<p><a href="http://ugrs.zju.edu.cn/english/" target="_blank"><img
+	src="http://igem.org/wiki/images/6/69/Bksy.gif" width="188" height="62" /></a></p>
+<p><a href="http://www.zuef.zju.edu.cn/en/web" target="_blank"><img
+	src="http://igem.org/wiki/images/8/80/Jyjjh.png" width="188"
+	height="66" /></a></p>
+<p><a href="http://www.zjubiolab.zju.edu.cn/page/" target="_blank"><img
+	src="http://igem.org/wiki/images/b/ba/Swsyzx.jpg" width="188"
+	height="59" /></a></p>
+</div>
+
+<div class="sidebarbottom"></div>
+</div>
+<p style="clear: both"></p>
+
+</div>
+<div class="footer" id="footer"><a href="http://2011.igem.org/">
+iGem 2011 Home Page</a> <a href="http://ung.igem.org/Special:Upload/">
+Upload Files</a> <a
+	href="http://2011.igem.org/wiki/index.php?title=Template:Zjucss_main&action=edit">Edit
+CSS</a> <a href="http://ung.igem.org/Team_Wikis?year=2011"> Team Wikis</a> <a
+	href="mailto:zjuigem@gmail.com?"><strong>Contact Us</strong></a></div>
+</div>
+<!--contentwrapper--></div>
+</body>
+</html>

@@ -1,0 +1,624 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Parts-BBa_K561002</title>
+<link href='http://fonts.googleapis.com/css?family=Molengo'
+	rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Hammersmith+One'
+	rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Alice'
+	rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Ovo' rel='stylesheet'
+	type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Federo'
+	rel='stylesheet' type='text/css'>
+
+<link href="modeling.css" rel="stylesheet" type="text/css">
+<link href="global.css" rel="stylesheet" type="text/css">
+<link href="template2.css" rel="stylesheet" type="text/css"><!-- include the Tools -->
+<script src="http://cdn.jquerytools.org/1.2.6/full/jquery.tools.min.js"></script>
+<style type="text/css">
+#contentwrapper .main .leftulcontainer #leftul #accordion .pane a {
+	color: #ffcc99
+}
+
+#contentwrapper .main .leftulcontainer #leftul #accordion .pane a:hover
+	{
+	color: #ff9933
+}
+</style>
+
+<style>
+#banner {
+	position: relative;
+	left: 10%;
+	width: 561px;
+	height: 485px;
+	border: 1px solid #666;
+	overflow: hidden;
+}
+
+#banner_list img {
+	border: 0px;
+}
+
+#banner_bg {
+	position: absolute;
+	bottom: 20px;
+	background-color: #000;
+	height: 44px;
+	filter: Alpha(Opacity = 50);
+	opacity: 0.5;
+	z-index: 1000;
+	cursor: pointer;
+	width: 561px;
+}
+
+#banner_info {
+	position: absolute;
+	bottom: 20px;
+	left: 5px;
+	height: 44px;
+	color: #fff;
+	z-index: 1001;
+	cursor: pointer
+}
+
+#banner_text {
+	position: absolute;
+	width: 120px;
+	z-index: 1002;
+	right: 3px;
+	bottom: 3px;
+}
+
+#banner ul {
+	position: absolute;
+	list-style-type: none;
+	filter: Alpha(Opacity = 80);
+	opacity: 0.8;
+	border: 1px solid #fff;
+	z-index: 1002;
+	margin: 0;
+	padding: 0;
+	bottom: 3px;
+	right: 5px;
+}
+
+#banner ul li {
+	padding: 0px 8px;
+	float: left;
+	display: block;
+	color: #FFF;
+	border: #e5eaff 1px solid;
+	background: #6f4f67;
+	cursor: pointer
+}
+
+#banner ul li.on {
+	background: #900
+}
+
+#banner_list a {
+	position: absolute;
+}
+
+#banner1 {
+	position: relative;
+	left: 10%;
+	width: 561px;
+	height: 485px;
+	border: 1px solid #666;
+	overflow: hidden;
+}
+
+#banner_list1 img {
+	border: 0px;
+}
+
+#banner_info1 {
+	position: absolute;
+	bottom: 20px;
+	left: 5px;
+	height: 44px;
+	color: #fff;
+	z-index: 1001;
+	cursor: pointer
+}
+
+#banner1 ul {
+	position: absolute;
+	list-style-type: none;
+	filter: Alpha(Opacity = 80);
+	opacity: 0.8;
+	border: 1px solid #fff;
+	z-index: 1002;
+	margin: 0;
+	padding: 0;
+	bottom: 3px;
+	right: 5px;
+}
+
+#banner1 ul li {
+	padding: 0px 8px;
+	float: left;
+	display: block;
+	color: #FFF;
+	border: #e5eaff 1px solid;
+	background: #6f4f67;
+	cursor: pointer
+}
+
+#banner1 ul li.on {
+	background: #900
+}
+
+#banner_list1 a {
+	position: absolute;
+}
+
+#banner2 {
+	position: relative;
+	left: 10%;
+	width: 561px;
+	height: 485px;
+	border: 1px solid #666;
+	overflow: hidden;
+}
+
+#banner_list2 img {
+	border: 0px;
+}
+
+#banner_info2 {
+	position: absolute;
+	bottom: 20px;
+	left: 5px;
+	height: 44px;
+	color: #fff;
+	z-index: 1001;
+	cursor: pointer
+}
+
+#banner2 ul {
+	position: absolute;
+	list-style-type: none;
+	filter: Alpha(Opacity = 80);
+	opacity: 0.8;
+	border: 1px solid #fff;
+	z-index: 1002;
+	margin: 0;
+	padding: 0;
+	bottom: 3px;
+	right: 5px;
+}
+
+#banner2 ul li {
+	padding: 0px 8px;
+	float: left;
+	display: block;
+	color: #FFF;
+	border: #e5eaff 1px solid;
+	background: #6f4f67;
+	cursor: pointer
+}
+
+#banner2 ul li.on {
+	background: #900
+}
+
+#banner_list2 a {
+	position: absolute;
+}
+
+#banner3 {
+	position: relative;
+	vwidth: 561px;
+	height: 485px;
+	border: 1px solid #666;
+	overflow: hidden;
+}
+
+#banner_list3 img {
+	border: 0px;
+}
+
+#banner_info3 {
+	position: absolute;
+	bottom: 20px;
+	left: 5px;
+	height: 44px;
+	color: #fff;
+	z-index: 1001;
+	cursor: pointer
+}
+
+#banner3 ul {
+	position: absolute;
+	list-style-type: none;
+	filter: Alpha(Opacity = 80);
+	opacity: 0.8;
+	border: 1px solid #fff;
+	z-index: 1002;
+	margin: 0;
+	padding: 0;
+	bottom: 3px;
+	right: 5px;
+}
+
+#banner3 ul li {
+	padding: 0px 8px;
+	float: left;
+	display: block;
+	color: #FFF;
+	border: #e5eaff 1px solid;
+	background: #6f4f67;
+	cursor: pointer
+}
+
+#banner3 ul li.on {
+	background: #900
+}
+
+#banner_list3 a {
+	position: absolute;
+}
+</style>
+</head>
+
+<body>
+<div class="global">
+<div class="header">
+<div class="bgimg"></div>
+<div class="bgpart1"></div>
+<div class="bgpart2"></div>
+
+
+<div class="banner">
+<div class="logo"><img
+	src="http://2011.igem.org/wiki/images/c/c9/Logo.png" width="200"
+	height="200" /></div>
+<div class="title"><img
+	src="http://ung.igem.org/wiki/images/b/b3/Title.png" width="603"
+	height="220" /></div>
+<div class="igemlogo"><a target="_blank"
+	href="http://2011.igem.org"><img
+	src="http://2011.igem.org/wiki/images/e/e2/Igemlogo.png" width="180"
+	height="150" /></a></div>
+</div>
+<!--banner-->
+<div class="nav">
+<ul id="topnav">
+	<li><a id="P_Home" href="http://zjuchina.tk/index.html">Home</a></li>
+
+	<li><a id="P_Project"
+		href="http://zjuchina.tk/Project.html">Project</a> <!--Subnav Starts Here-->
+
+
+	<!--Subnav Ends Here--></li>
+	<li><a id="P_Team" href="http://zjuchina.tk/Team.html">Team</a>
+
+	</li>
+	<li><a id="P_Notebook"
+		href="http://zjuchina.tk/Notebook.html">Notebook</a></li>
+	<li><a id="P_HumanPractice"
+		href="http://zjuchina.tk/Humanpractice.html">HumanPractice</a></li>
+	<li id="search">
+	<div id="searchbar">
+
+	<div>
+	<form action="http://www.google.com.hk/cse" id="cse-search-box"
+		target="_blank">
+	<div><input type="hidden" name="cx"
+		value="005438704919531788579:zbfi5n-q5du" /> <input type="hidden"
+		name="cof" value="FORID:10" /> <input type="hidden" name="ie"
+		value="UTF-8" /> <input type="text" name="q" size="15" /> <input
+		type="submit" name="sa" value="Search" /></div>
+	</form>
+	<script type="text/javascript"
+		src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script></div>
+	</div>
+	</li>
+</ul>
+</div>
+<!--navbar--> <script type="text/javascript">
+   document.getElementById('P_Team').onclick=function(){
+	   document.getElementById('P_Te').style.display='block'
+
+	    document.getElementById('P_Pr').style.display='none'
+		document.getElementById('P_No').style.display='none'
+		document.getElementById('P_Hu').style.display='none'
+		<!-- document.getElementById('P_Pr').style.display='none' -->
+	   };
+	    document.getElementById('P_Project').onclick=function(){
+	   document.getElementById('P_Pr').style.display='block'
+	    document.getElementById('P_Te').style.display='none'
+		document.getElementById('P_No').style.display='none'
+		document.getElementById('P_Hu').style.display='none'
+		<!-- document.getElementById('P_Pr').style.display='none' -->
+	   };
+	    document.getElementById('P_Notebook').onclick=function(){
+	   document.getElementById('P_No').style.display='block'
+	    document.getElementById('P_Pr').style.display='none'
+		document.getElementById('P_Te').style.display='none'
+		document.getElementById('P_Hu').style.display='none'
+		<!-- document.getElementById('P_Pr').style.display='none' -->
+	   };
+	    document.getElementById('P_HumanPractice').onclick=function(){
+	   document.getElementById('P_Hu').style.display='block'
+	    document.getElementById('P_Pr').style.display='none'
+		document.getElementById('P_No').style.display='none'
+		document.getElementById('P_Te').style.display='none'
+		<!-- document.getElementById('P_Pr').style.display='none' -->
+	   };
+	  
+</script></div>
+<!--header-->
+<div id="contentwrapper">
+<div class="main">
+<div class="bgpart3"></div>
+<div class="leftulcontainer" id="orange">
+<div id="leftul" class="leftul">
+<div id="accordion">
+
+
+<h4 id="try">Biofilm</h4>
+
+<div class="pane"><a
+	href="http://zjuchina.tk/Project.html">Background</a> <a
+	href="http://zjuchina.tk/bio-Design.html">Design</a> <a
+	href="http://zjuchina.tk/bio-modeling.html">Modeling</a> <a
+	href="http://zjuchina.tk/bio-results.html">Results</a></div>
+
+<h4>Rainbofilm</h4>
+
+<div class="pane"><a
+	href="http://zjuchina.tk/rainbo-Background.html">Background</a>
+<a href="http://zjuchina.tk/rainbo-Design.html">Design</a> <a
+	href="http://zjuchina.tk/rainbo-modeling-v1.html">Modeling</a> <a
+	href="http://zjuchina.tk/rainbo-Results.html">Results</a></div>
+
+<h4>Sugarfilm</h4>
+
+<div class="pane"><a
+	href="http://zjuchina.tk/Sugar-background.html">Background</a> <a
+	href="http://zjuchina.tk/Sugar-Design.html">Design</a> <a
+	href="http://zjuchina.tk/Sugar-Modeling.html">Modeling</a> <a
+	href="http://zjuchina.tk/Sugar-Future.html">Future</a></div>
+<h4 class="current">Parts</h4>
+
+<div class="pane" style="display: block;"><a
+	href="http://zjuchina.tk/BBa_I13602.html">BBa_I13602</a> <a
+	href="http://zjuchina.tk/BBa_K561000.html">BBa_K561000</a> <a
+	href="http://zjuchina.tk/BBa_K561002.html">BBa_K561002</a> <a
+	href="http://zjuchina.tk/BBa_K561003.html">BBa_K561003</a></div>
+<h4>Achievements</h4>
+
+<div class="pane"><a href="http://zjuchina.tk/data.html">Data
+Page</a> <a href="http://zjuchina.tk/judging.html">Judging Form</a> <a
+	href="http://zjuchina.tk/attribution.html">Attribution and
+Contributions</a></div>
+<h4>Tools</h4>
+
+<div class="pane"><a href="http://zjuchina.tk/Tools.html">Tools</a>
+</div>
+
+<script> 
+$(function() { 
+ 
+$("#accordion").tabs("#accordion div.pane", {tabs: 'h4', effect: 'slide', initialIndex: null});
+});
+</script> <!-- Navigation scroll follow --> <script type="text/javascript">
+        $(window).scroll(function () { 
+            var scrollPos = $(window).scrollTop();
+            if (scrollPos > 330) {
+                $(".leftul").addClass("stickToTop");
+            } else {
+                $(".leftul").removeClass("stickToTop");
+            }
+     
+        });
+    </script></div>
+<!--accordion--></div>
+<!--leftul--></div>
+<!--leftulcontainer-->
+
+<div class="rightcontainer">
+<div id="styleA" class="frame">
+<div id="orange">
+<p></p>
+<h1>BBa_K561002</h1>
+<!--importantcontainer-->
+<div id="importantcontainer">
+<div class="frame" id="important">
+<div class="bgcolors" id="round">
+<h1>Device</h1>
+</div>
+</div>
+</div>
+<div id="framecontent">
+<p><img src="http://2011.igem.org/wiki/images/6/68/BBa_K561002.jpg"
+	style="margin-left: 50px;" /></p>
+<div id="importantcontainer">
+<div class="frame" id="important">
+<div class="bgcolors" id="round">
+<h1>Characterization</h1>
+</div>
+</div>
+</div>
+<div id="framecontent">
+<p><strong>The expression of RFP under aerobic conditions</strong></p>
+
+<script type="text/javascript">
+	var t = n = 0, count;
+	$(document).ready(function(){	
+		counta=$("#banner_list a").length;
+		$("#banner_list a:not(:first-child)").hide();
+		$("#banner_info").html($("#banner_list a:first-child").find("img").attr('alt'));
+		$("#banner_info").click(function(){window.open($("#banner_list a:first-child").attr('href'), "_blank")});
+		$("#banner li").click(function() {
+			var i = $(this).text() - 1;//获取Li元素内的值，即1，2，3，4
+			n = i;
+			if (i >= counta) return;
+			$("#banner_info").html($("#banner_list a").eq(i).find("img").attr('alt'));
+			$("#banner_info").unbind().click(function(){window.open($("#banner_list a").eq(i).attr('href'), "_blank")})
+			$("#banner_list a").filter(":visible").fadeOut(500).parent().children().eq(i).fadeIn(1000);
+			document.getElementById("banner").style.background="";
+			$(this).toggleClass("on");
+			$(this).siblings().removeAttr("class");
+		});
+	
+	})
+	
+	
+</script>
+
+
+<div id="banner">
+<div id="banner_bg"></div>
+<div id="banner_info"></div>
+<ul>
+	<li class="on">1</li>
+	<li>2</li>
+
+</ul>
+<div id="banner_list"><a href="#" target="_blank"><img
+	src="http://2011.igem.org/wiki/images/f/ff/8.1RFPaerobic_fluorescence.png"
+	title="" alt="Fluorescenc intensity of RFP under aerobic conditions" /></a>
+<a href="#" target="_blank"><img
+	src="http://2011.igem.org/wiki/images/f/f1/8.2RFP_aerobic_lnod.png"
+	title="" alt="Growth Rate under aerobic conditions" /></a></div>
+</div>
+<p>The expression of RFP under aerobic conditions is increasing
+during the exponential phase. With the anaerobic promoter, its
+expression intensity is very low. The highest expression intensity is
+1.12. The PoPS of our device is 0.3065.</p>
+<p>&nbsp;</p>
+<p><strong>The expression of RFP under anaerobic conditions</strong></p>
+<script type="text/javascript">
+	var t = n = 0, count;
+	$(document).ready(function(){	
+		count=$("#banner_list1 a").length;
+		$("#banner_list1 a:not(:first-child)").hide();
+		$("#banner_info1").html($("#banner_list1 a:first-child").find("img").attr('alt'));
+		$("#banner_info1").click(function(){window.open($("#banner_list1 a:first-child").attr('href'), "_blank")});
+		$("#banner1 li").click(function() {
+			var i = $(this).text() - 1;//获取Li元素内的值，即1，2，3，4
+			n = i;
+			if (i >= count) return;
+			$("#banner_info1").html($("#banner_list1 a").eq(i).find("img").attr('alt'));
+			$("#banner_info1").unbind().click(function(){window.open($("#banner_list1 a").eq(i).attr('href'), "_blank")})
+			$("#banner_list1 a").filter(":visible").fadeOut(500).parent().children().eq(i).fadeIn(1000);
+			document.getElementById("banner1").style.background="";
+			$(this).toggleClass("on");
+			$(this).siblings().removeAttr("class");
+		});
+	
+	})
+	
+	
+</script>
+<div id="banner1">
+<div id="banner_bg"></div>
+<div id="banner_info1"></div>
+<ul>
+	<li class="on">1</li>
+	<li>2</li>
+
+</ul>
+<div id="banner_list1"><a href="#" target="_blank"><img
+	src="http://2011.igem.org/wiki/images/c/cc/9.1RFP_anaerobic_fluorescence.png"
+	title="" alt="Fluorescenc intensity of RFP under anaerobic conditions" /></a>
+<a href="#" target="_blank"><img
+	src="http://2011.igem.org/wiki/images/0/0a/9.2RFP_anaerobic_od.png"
+	title="" alt="Growth Rate under anaerobic conditions" /></a></div>
+</div>
+<p>&nbsp;&nbsp;The device of RFP has an anaerobic promoter, which
+leads to its high expression under anaerobic conditions, as it shows in
+the above graph. It reveals that its highest expression level is 1.12.
+The PoPS of our device is 10.45.</p>
+<p>&nbsp;</p>
+<p><strong>The expression of RFP under micro-aerobic
+conditions (2.5%)</strong></p>
+<script type="text/javascript">
+	var t = n = 0, count;
+	$(document).ready(function(){	
+		count=$("#banner_list2 a").length;
+		$("#banner_list2 a:not(:first-child)").hide();
+		$("#banner_info2").html($("#banner_list2 a:first-child").find("img").attr('alt'));
+		$("#banner_info2").click(function(){window.open($("#banner_list2 a:first-child").attr('href'), "_blank")});
+		$("#banner2 li").click(function() {
+			var i = $(this).text() - 1;//获取Li元素内的值，即1，2，3，4
+			n = i;
+			if (i >= count) return;
+			$("#banner_info2").html($("#banner_list2 a").eq(i).find("img").attr('alt'));
+			$("#banner_info2").unbind().click(function(){window.open($("#banner_list2 a").eq(i).attr('href'), "_blank")})
+			$("#banner_list2 a").filter(":visible").fadeOut(500).parent().children().eq(i).fadeIn(1000);
+			document.getElementById("banner2").style.background="";
+			$(this).toggleClass("on");
+			$(this).siblings().removeAttr("class");
+		});
+	
+	})
+	
+
+</script>
+<div id="banner2">
+<div id="banner_bg"></div>
+<div id="banner_info2"></div>
+<ul>
+	<li class="on">1</li>
+	<li>2</li>
+	<li>3</li>
+	<li>4</li>
+</ul>
+<div id="banner_list2"><a href="#" target="_blank"><img
+	src="http://2011.igem.org/wiki/images/0/08/10.1RFP_micro25_fluorescence.png"
+	title=""
+	alt="Fluorescenc intensity of RFP under micro-aerobic conditions (2.5% oxygen)" /></a>
+<a href="#" target="_blank"><img
+	src="http://2011.igem.org/wiki/images/4/46/10.2RFP_micro25_od.png"
+	title="" alt="Growth Rate under 2.5% oxygen" /></a> <a href="#"
+	target="_blank"><img
+	src="http://2011.igem.org/wiki/images/4/4d/11.1RFP_micro10_fluorescence.png"
+	title=""
+	alt="Fluorescenc intensity of RFP under micro-aerobic conditions (10% oxygen)" /></a>
+<a href="#" target="_blank"><img
+	src="http://2011.igem.org/wiki/images/2/22/11.2RFP_micro10_od.png"
+	title="" alt="Growth Rate under 10% oxygen" /></a></div>
+</div>
+<p>&nbsp;&nbsp;The anaerobic promoter (PfdhF) has low expression
+under micro-aerobic conditions. At 2.5% oxygen and 10% oxygen, its
+expression level when reaching the exponential phase is 1.02 and 1.05
+respectively. The PoPS of the device at 2.5% oxygen and 10% oxygen are
+0.4122 and 0.2127, respectively.</p>
+<p>&nbsp;</p>
+<p><strong>PoPS of RFP and the expression level of RFP</strong></p>
+<p style="text-align: center"><img
+	src="http://2011.igem.org/wiki/images/c/c2/12.0PoPS-RFP.png"/></p>
+<p>The RFP expression device has an anaerobic promoter, PfdhF. Its
+PoPS reaches the highest under anaerobic conditions. Under micro-aerobic
+or aerobic conditions,its PoPS is equal to 0 relatively.</p>
+</div>
+<!--framecontent--><!--rightnav--></div>
+<!--framecontent--> <!--rightnav--></div>
+<!--orange--></div>
+<!--frame--></div>
+<!--rightcontainer-->
+<p style="clear: both"></p>
+</div>
+<!--main-->
+<p style="clear: both"></p>
+<div class="footer" id="footer"><a href="http://2011.igem.org/">
+iGem 2011 Home Page</a> <a href="http://ung.igem.org/Special:Upload/">
+Upload Files</a> <a
+	href="http://2011.igem.org/wiki/index.php?title=Template:Zjucss_main&action=edit">Edit
+CSS</a> <a href="http://ung.igem.org/Team_Wikis?year=2011"> Team Wikis</a> <a
+	href="mailto:zjuigem@gmail.com?"><strong>Contact Us</strong></a></div>
+</div>
+<!--contentwrapper-->
+</div>
+</body>
+</html>
+
